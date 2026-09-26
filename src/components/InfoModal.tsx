@@ -71,7 +71,28 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
                   <strong>Existing Ocean / Water:</strong> Current baseline oceans are not classified as newly flooded land. At <strong>0m</strong>, there is exactly zero newly submerged land.
                 </div>
               </div>
+
+              <div className="p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/40 flex items-start gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                <div>
+                  <strong>Tracked City Submersion:</strong> A city is classified as submerged when its single reference geographic coordinate center falls below the selected sea level. This measures point-level inundation and does <strong>not</strong> imply that 100% of the municipality or metropolitan area is underwater.
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Macro Statistics Methodology */}
+          <div className="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-[11px] space-y-1.5">
+            <h4 className="font-bold text-white text-xs">Macro Statistics Methodology:</h4>
+            <p className="text-slate-300">
+              • <strong>Global Population Curve:</strong> Precomputed demographic model based on global hypsometric settlement distributions (CIESIN / WorldPop baseline ~8.05B people). It measures exposed human population, not Earth's total land area.
+            </p>
+            <p className="text-slate-300">
+              • <strong>Country Inundation Curves:</strong> Precomputed hypsometric models estimating national land and population exposure at discrete elevation tiers. They are modeled approximations and not live GIS raster clippings.
+            </p>
+            <p className="text-slate-300">
+              • <strong>Map Flood Visuals & Elevation Probe:</strong> Directly calculated in real-time from AWS Open Data Terrarium digital elevation model (DEM) pixels.
+            </p>
           </div>
 
           {/* Bathtub Model Limitation Callout */}

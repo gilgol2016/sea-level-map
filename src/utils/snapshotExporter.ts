@@ -42,7 +42,7 @@ export function getSnapshotMetadata(
     if (seaLevel <= 0) {
       impactText = 'Baseline (0 Displaced)';
     } else if (impactItem) {
-      impactText = `~${formatPopulation(impactItem.population)} People Displaced (${impactItem.percentage}% of Earth)`;
+      impactText = `~${formatPopulation(impactItem.population)} People Displaced (${impactItem.percentage}% of global population)`;
     } else {
       impactText = 'Global Population Displaced Model';
     }

@@ -618,7 +618,7 @@ export function runSanityCheck(): SanityCheckResult {
     actual: meta1000m.badgeText.includes("+1000m") &&
             meta1000m.impactText.includes("7.1B") &&
             meta1000m.impactText.includes("88.2%"),
-    detail: "Deluge metadata at +1,000m must reflect 7.1B displaced (88.2% of Earth)."
+    detail: "Deluge metadata at +1,000m must reflect 7.1B displaced (88.2% of global population)."
   });
 
   // Did You Know Facts Verification

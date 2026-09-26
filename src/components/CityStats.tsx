@@ -455,7 +455,7 @@ export const CityStats: React.FC<CityStatsProps> = ({
                           </button>
                         </div>
                         <div className="text-slate-300 leading-snug">
-                          Estimated total worldwide population living on coastal land below this elevation (~8.05B baseline).
+                          Estimated worldwide human population living below this elevation (~8.05B baseline). Represents human population, not total land area.
                         </div>
                         <div className="absolute top-full left-6 sm:left-1/2 sm:-translate-x-1/2 border-4 border-transparent border-t-slate-700" />
                       </div>
@@ -465,7 +465,7 @@ export const CityStats: React.FC<CityStatsProps> = ({
                       {formatPopulation(globalImpact.population)}
                     </div>
                     <div className="text-[10px] text-slate-400 mt-0.5">
-                      Global ({globalImpact.percentage}%)
+                      ({globalImpact.percentage}% of global pop)
                     </div>
                   </div>
 
@@ -510,7 +510,7 @@ export const CityStats: React.FC<CityStatsProps> = ({
                           </button>
                         </div>
                         <div className="text-slate-300 leading-snug">
-                          Total combined population of tracked world cities whose urban center is submerged at +{seaLevel}m.
+                          A city is marked submerged when its reference coordinate point is below the selected sea level. This does NOT mean 100% of the city or metropolitan area is underwater.
                         </div>
                         <div className="absolute top-full right-3 border-4 border-transparent border-t-slate-700" />
                       </div>
@@ -601,6 +601,11 @@ export const CityStats: React.FC<CityStatsProps> = ({
                 </button>
               </div>
 
+              {/* City List Helper Note */}
+              <div className="text-[10px] text-slate-400 italic px-1 pb-0.5">
+                * Point elevation at city center — does not represent 100% urban area.
+              </div>
+
               {/* City List */}
               <div className="max-h-56 overflow-y-auto space-y-1 pr-1 custom-scrollbar">
                 {filteredCities.length === 0 ? (
@@ -636,6 +641,7 @@ export const CityStats: React.FC<CityStatsProps> = ({
                           onSelectLandmark(null);
                           onSelectCity(city);
                         }}
+                        title={`${city.name} (${city.country}) — Point elevation at city center (${city.elevation > 0 ? '+' : ''}${city.elevation}m). Does not represent 100% urban area.`}
                         className={`w-full text-left px-2.5 py-1.5 rounded-lg border text-xs flex items-center justify-between transition ${
                           isSelected
                             ? 'bg-cyan-950/80 border-cyan-400 text-cyan-200'
@@ -1041,6 +1047,11 @@ export const CityStats: React.FC<CityStatsProps> = ({
                 >
                   Islands ({islandCountries.length})
                 </button>
+              </div>
+
+              {/* Country List Disclaimer */}
+              <div className="text-[10px] text-slate-400 italic px-1 pt-1">
+                * National land and population exposure are precomputed hypsometric estimates based on demographic exposure literature.
               </div>
 
               {/* Country List */}
