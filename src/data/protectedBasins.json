@@ -1,0 +1,74 @@
+[
+  {
+    "id": "jordan_dead_sea",
+    "name": "Jordan Rift & Dead Sea Basin",
+    "bounds": {
+      "minLat": 29.5,
+      "maxLat": 33.3,
+      "minLon": 35.0,
+      "maxLon": 36.0
+    },
+    "sillElevationMeters": 35,
+    "barrierDescription": "Jezreel Valley / Beit She'an sill (35m) blocks Mediterranean ocean ingress"
+  },
+  {
+    "id": "qattara",
+    "name": "Qattara Depression",
+    "bounds": {
+      "minLat": 29.0,
+      "maxLat": 31.0,
+      "minLon": 26.0,
+      "maxLon": 29.5
+    },
+    "sillElevationMeters": 55,
+    "barrierDescription": "Northern coastal ridge (55m) blocks Mediterranean ocean ingress"
+  },
+  {
+    "id": "caspian",
+    "name": "Caspian Sea Basin",
+    "bounds": {
+      "minLat": 36.0,
+      "maxLat": 48.0,
+      "minLon": 46.5,
+      "maxLon": 56.5
+    },
+    "sillElevationMeters": 25,
+    "barrierDescription": "Kuma-Manych Depression (25m) blocks Black Sea ocean ingress"
+  },
+  {
+    "id": "salton_sink",
+    "name": "Salton Sink & Imperial Valley",
+    "bounds": {
+      "minLat": 32.3,
+      "maxLat": 34.0,
+      "minLon": -116.5,
+      "maxLon": -114.8
+    },
+    "sillElevationMeters": 12,
+    "barrierDescription": "Colorado River Delta sediment barrier (12m) blocks Gulf of California ingress"
+  },
+  {
+    "id": "turpan",
+    "name": "Turpan Depression",
+    "bounds": {
+      "minLat": 41.5,
+      "maxLat": 43.5,
+      "minLon": 88.5,
+      "maxLon": 90.5
+    },
+    "sillElevationMeters": 800,
+    "barrierDescription": "Tian Shan mountain ranges (800m+) block ocean ingress"
+  },
+  {
+    "id": "lake_eyre",
+    "name": "Lake Eyre Basin",
+    "bounds": {
+      "minLat": -30.0,
+      "maxLat": -27.5,
+      "minLon": 136.5,
+      "maxLon": 138.8
+    },
+    "sillElevationMeters": 15,
+    "barrierDescription": "Southern coastal ridge (15m) blocks Southern Ocean ingress"
+  }
+]

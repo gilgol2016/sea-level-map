@@ -1,0 +1,503 @@
+[
+  {
+    "id": "statue-of-liberty",
+    "name": "Statue of Liberty",
+    "category": "monument",
+    "country": "United States",
+    "lat": 40.6892,
+    "lon": -74.0445,
+    "elevation": 3,
+    "description": "Iconic neoclassical colossal copper statue on Liberty Island in New York Harbor."
+  },
+  {
+    "id": "piazza-san-marco",
+    "name": "Piazza San Marco",
+    "category": "heritage",
+    "country": "Italy",
+    "lat": 45.4342,
+    "lon": 12.3385,
+    "elevation": 1,
+    "description": "Principal public square of Venice, directly exposed to Adriatic tides and sea-level rise."
+  },
+  {
+    "id": "sydney-opera-house",
+    "name": "Sydney Opera House",
+    "category": "monument",
+    "country": "Australia",
+    "lat": -33.8568,
+    "lon": 151.2153,
+    "elevation": 4,
+    "description": "Multi-venue performing arts centre perched on Bennelong Point in Sydney Harbour."
+  },
+  {
+    "id": "mont-saint-michel",
+    "name": "Mont-Saint-Michel",
+    "category": "heritage",
+    "country": "France",
+    "lat": 48.636,
+    "lon": -1.5115,
+    "elevation": 5,
+    "description": "Tidal island commune and medieval abbey in Normandy surrounded by immense tides."
+  },
+  {
+    "id": "tower-of-london",
+    "name": "Tower of London",
+    "category": "heritage",
+    "country": "United Kingdom",
+    "lat": 51.5081,
+    "lon": -0.0759,
+    "elevation": 8,
+    "description": "Historic 11th-century castle on the north bank of the tidal River Thames."
+  },
+  {
+    "id": "burj-khalifa",
+    "name": "Burj Khalifa",
+    "category": "structure",
+    "country": "United Arab Emirates",
+    "lat": 25.1972,
+    "lon": 55.2744,
+    "elevation": 11,
+    "description": "World's tallest building (828m) situated near the Arabian Gulf coast in Dubai."
+  },
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "category": "heritage",
+    "country": "India",
+    "lat": 27.1751,
+    "lon": 78.0421,
+    "elevation": 171,
+    "description": "Mughal marble mausoleum on the Yamuna river in Agra, safe from global sea rise."
+  },
+  {
+    "id": "giza-pyramids",
+    "name": "Great Pyramids of Giza",
+    "category": "heritage",
+    "country": "Egypt",
+    "lat": 29.9792,
+    "lon": 31.1342,
+    "elevation": 65,
+    "description": "Ancient wonder standing elevated on the Giza plateau above the Nile delta."
+  },
+  {
+    "id": "acropolis-athens",
+    "name": "Acropolis of Athens",
+    "category": "heritage",
+    "country": "Greece",
+    "lat": 37.9715,
+    "lon": 23.7257,
+    "elevation": 156,
+    "description": "Ancient rocky citadel towering high above Athens with the Parthenon temple."
+  },
+  {
+    "id": "golden-gate-anchorage",
+    "name": "Golden Gate Bridge (Base)",
+    "category": "structure",
+    "country": "United States",
+    "lat": 37.8199,
+    "lon": -122.4783,
+    "elevation": 6,
+    "description": "Coastal suspension bridge anchorage linking San Francisco to Marin County."
+  },
+  {
+    "id": "mount-everest",
+    "name": "Mount Everest",
+    "category": "natural",
+    "country": "Nepal",
+    "lat": 27.9881,
+    "lon": 86.925,
+    "elevation": 8848,
+    "description": "Earth's highest peak above sea level, completely impervious to sea-level fluctuations."
+  },
+  {
+    "id": "dead-sea-shore",
+    "name": "Dead Sea Shore",
+    "category": "natural",
+    "country": "Israel",
+    "lat": 31.5,
+    "lon": 35.49,
+    "elevation": -430,
+    "description": "Lowest dry land point on Earth (-430m), landlocked endorheic depression.",
+    "isDepression": true
+  },
+  {
+    "id": "saint-basils",
+    "name": "Saint Basil's Cathedral",
+    "category": "heritage",
+    "country": "Russia",
+    "lat": 55.7525,
+    "lon": 37.6231,
+    "elevation": 155,
+    "description": "16th-century landmark in Moscow's Red Square, far inland and safely elevated."
+  },
+  {
+    "id": "christ-redeemer",
+    "name": "Christ the Redeemer",
+    "category": "monument",
+    "country": "Brazil",
+    "lat": -22.9519,
+    "lon": -43.2105,
+    "elevation": 710,
+    "description": "Art Deco statue atop Corcovado mountain high above Guanabara Bay in Rio."
+  },
+  {
+    "id": "moai-ahu-tongariki",
+    "name": "Ahu Tongariki Moai",
+    "category": "heritage",
+    "country": "Chile",
+    "lat": -27.1258,
+    "lon": -109.2769,
+    "elevation": 12,
+    "description": "Largest ceremonial megalithic platform of Easter Island located near the ocean shore."
+  },
+  {
+    "id": "pompeii",
+    "name": "Pompeii Ruins",
+    "category": "heritage",
+    "country": "Italy",
+    "lat": 40.7509,
+    "lon": 14.4869,
+    "elevation": 32,
+    "description": "Ancient Roman city buried by Mount Vesuvius, situated on elevated volcanic ground."
+  },
+  {
+    "id": "petra",
+    "name": "Petra Treasury",
+    "category": "heritage",
+    "country": "Jordan",
+    "lat": 30.3222,
+    "lon": 35.4516,
+    "elevation": 890,
+    "description": "Rock-cut desert Nabataean architectural wonder sheltered in mountainous canyons."
+  },
+  {
+    "id": "palace-westminster",
+    "name": "Palace of Westminster & Big Ben",
+    "category": "heritage",
+    "country": "United Kingdom",
+    "lat": 51.4995,
+    "lon": -0.1248,
+    "elevation": 5,
+    "description": "Seat of the Parliament of the UK on the low-lying banks of the River Thames."
+  },
+  {
+    "id": "sydney-harbour-bridge",
+    "name": "Sydney Harbour Bridge",
+    "category": "structure",
+    "country": "Australia",
+    "lat": -33.8523,
+    "lon": 151.2108,
+    "elevation": 7,
+    "description": "Massive steel arch bridge spanning between Sydney CBD and the North Shore."
+  },
+  {
+    "id": "marina-bay-sands",
+    "name": "Marina Bay Sands",
+    "category": "structure",
+    "country": "Singapore",
+    "lat": 1.2834,
+    "lon": 103.8607,
+    "elevation": 3,
+    "description": "Iconic integrated resort on reclaimed coastal land facing Singapore's Marina Bay."
+  },
+  {
+    "id": "palm-jumeirah",
+    "name": "Palm Jumeirah",
+    "category": "structure",
+    "country": "United Arab Emirates",
+    "lat": 25.1124,
+    "lon": 55.139,
+    "elevation": 2,
+    "description": "Artificial island archipelago in Dubai built just meters above Gulf water level."
+  },
+  {
+    "id": "citadel-qaitbay",
+    "name": "Citadel of Qaitbay (Pharos Site)",
+    "category": "heritage",
+    "country": "Egypt",
+    "lat": 31.214,
+    "lon": 29.8856,
+    "elevation": 3,
+    "description": "15th-century maritime fortress on the Mediterranean, site of the ancient Lighthouse of Alexandria."
+  },
+  {
+    "id": "colosseum",
+    "name": "The Colosseum",
+    "category": "heritage",
+    "country": "Italy",
+    "lat": 41.8902,
+    "lon": 12.4922,
+    "elevation": 22,
+    "description": "Largest ancient amphitheatre ever built, located in the central valley of Rome."
+  },
+  {
+    "id": "machu-picchu",
+    "name": "Machu Picchu",
+    "category": "heritage",
+    "country": "Peru",
+    "lat": -13.1631,
+    "lon": -72.545,
+    "elevation": 2430,
+    "description": "Inca citadel set high on an Andean mountain ridge above the Sacred Valley."
+  },
+  {
+    "id": "great-barrier-cairns",
+    "name": "Great Barrier Reef Coastal Gateway",
+    "category": "natural",
+    "country": "Australia",
+    "lat": -16.92,
+    "lon": 145.77,
+    "elevation": 3,
+    "description": "Low-lying tropical coastal gateway to the world's most extensive coral reef system."
+  },
+  {
+    "id": "everglades-flamingo",
+    "name": "Everglades Coastal Base",
+    "category": "natural",
+    "country": "United States",
+    "lat": 25.1415,
+    "lon": -80.9254,
+    "elevation": 1,
+    "description": "Pristine subtropical mangrove wilderness at the southern tip of the Florida peninsula."
+  },
+  {
+    "id": "giants-causeway",
+    "name": "Giant's Causeway",
+    "category": "natural",
+    "country": "United Kingdom",
+    "lat": 55.2408,
+    "lon": -6.5116,
+    "elevation": 6,
+    "description": "Interlocking hexagonal basalt columns descending directly into the North Atlantic Ocean."
+  },
+  {
+    "id": "galapagos-puerto-ayora",
+    "name": "Galápagos Coast (Puerto Ayora)",
+    "category": "natural",
+    "country": "Ecuador",
+    "lat": -0.7437,
+    "lon": -90.3138,
+    "elevation": 4,
+    "description": "Biodiverse equatorial volcanic shoreline famous for Darwin's evolutionary studies."
+  },
+  {
+    "id": "shanghai-bund",
+    "name": "The Bund Waterfront",
+    "category": "heritage",
+    "country": "China",
+    "lat": 31.2402,
+    "lon": 121.4905,
+    "elevation": 4,
+    "description": "Historic colonial waterfront boulevard facing the Pudong skyline along the Huangpu River."
+  },
+  {
+    "id": "victoria-falls",
+    "name": "Victoria Falls",
+    "category": "natural",
+    "country": "Zambia",
+    "lat": -17.9243,
+    "lon": 25.8572,
+    "elevation": 885,
+    "description": "Spectacular curtain of falling water on the Zambezi River between Zambia and Zimbabwe."
+  },
+  {
+    "id": "iguazu-falls",
+    "name": "Iguazu Falls",
+    "category": "natural",
+    "country": "Argentina",
+    "lat": -25.6953,
+    "lon": -54.4367,
+    "elevation": 195,
+    "description": "Massive semicircular waterfall system on the border of Argentina and Brazil."
+  },
+  {
+    "id": "neuschwanstein",
+    "name": "Neuschwanstein Castle",
+    "category": "heritage",
+    "country": "Germany",
+    "lat": 47.5576,
+    "lon": 10.7498,
+    "elevation": 935,
+    "description": "19th-century Romanesque Revival palace on a rugged hill in southwest Bavaria."
+  },
+  {
+    "id": "alhambra",
+    "name": "Alhambra Palace",
+    "category": "heritage",
+    "country": "Spain",
+    "lat": 37.1773,
+    "lon": -3.5881,
+    "elevation": 770,
+    "description": "Moorish palace and fortress complex overlooking the city of Granada."
+  },
+  {
+    "id": "angkor-wat",
+    "name": "Angkor Wat",
+    "category": "heritage",
+    "country": "Cambodia",
+    "lat": 13.4125,
+    "lon": 103.867,
+    "elevation": 25,
+    "description": "Vast Khmer temple complex surrounded by extensive hydraulic reservoirs."
+  },
+  {
+    "id": "eiffel-tower",
+    "name": "Eiffel Tower",
+    "category": "monument",
+    "country": "France",
+    "lat": 48.8584,
+    "lon": 2.2945,
+    "elevation": 33,
+    "description": "Iconic wrought-iron lattice tower on the Champ de Mars near the Seine in Paris."
+  },
+  {
+    "id": "st-marks-campanile",
+    "name": "St Mark's Campanile",
+    "category": "monument",
+    "country": "Italy",
+    "lat": 45.4344,
+    "lon": 12.3397,
+    "elevation": 2,
+    "description": "Historic bell tower in Venice standing directly on the low-lying lagoon pavement."
+  },
+  {
+    "id": "table-mountain",
+    "name": "Table Mountain",
+    "category": "natural",
+    "country": "South Africa",
+    "lat": -33.9628,
+    "lon": 18.4098,
+    "elevation": 1086,
+    "description": "Flat-topped sandstone landmark overlooking Cape Town and Table Bay."
+  },
+  {
+    "id": "cape-good-hope",
+    "name": "Cape of Good Hope",
+    "category": "natural",
+    "country": "South Africa",
+    "lat": -34.3572,
+    "lon": 18.474,
+    "elevation": 12,
+    "description": "Famous maritime promontory where Atlantic ocean currents meet rugged cliffs."
+  },
+  {
+    "id": "gateway-of-india",
+    "name": "Gateway of India",
+    "category": "monument",
+    "country": "India",
+    "lat": 18.922,
+    "lon": 72.8347,
+    "elevation": 3,
+    "description": "Basalt triumphal arch erected on the Arabian Sea waterfront in South Mumbai."
+  },
+  {
+    "id": "petronas-towers",
+    "name": "Petronas Twin Towers",
+    "category": "structure",
+    "country": "Malaysia",
+    "lat": 3.1578,
+    "lon": 101.7119,
+    "elevation": 45,
+    "description": "88-story twin skyscrapers in Kuala Lumpur, safely inland above coastal waters."
+  },
+  {
+    "id": "merlion-singapore",
+    "name": "Merlion Landmark",
+    "category": "monument",
+    "country": "Singapore",
+    "lat": 1.2868,
+    "lon": 103.8545,
+    "elevation": 2,
+    "description": "Spouting lion-headed statue located on the waterfront of Singapore's Marina Bay."
+  },
+  {
+    "id": "ocean-drive-miami",
+    "name": "Ocean Drive Historic District",
+    "category": "heritage",
+    "country": "United States",
+    "lat": 25.7806,
+    "lon": -80.13,
+    "elevation": 2,
+    "description": "World-famous Art Deco thoroughfare directly bordering South Beach in Miami Beach."
+  },
+  {
+    "id": "venice-lido",
+    "name": "Venice Lido Barrier Island",
+    "category": "natural",
+    "country": "Italy",
+    "lat": 45.4167,
+    "lon": 12.3667,
+    "elevation": 1,
+    "description": "Crucial narrow sand barrier island shielding the Venetian Lagoon from Adriatic surges."
+  },
+  {
+    "id": "rock-of-gibraltar",
+    "name": "Rock of Gibraltar",
+    "category": "natural",
+    "country": "Gibraltar",
+    "lat": 36.1408,
+    "lon": -5.3536,
+    "elevation": 426,
+    "description": "Monolithic limestone promontory towering above the strategic Strait of Gibraltar."
+  },
+  {
+    "id": "santa-monica-pier",
+    "name": "Santa Monica Pier",
+    "category": "structure",
+    "country": "United States",
+    "lat": 34.0099,
+    "lon": -118.496,
+    "elevation": 4,
+    "description": "Double-jointed historic amusement pier extending over the Pacific Ocean surf."
+  },
+  {
+    "id": "st-peters-basilica",
+    "name": "St. Peter's Basilica",
+    "category": "heritage",
+    "country": "Vatican City",
+    "lat": 41.9022,
+    "lon": 12.4539,
+    "elevation": 21,
+    "description": "Renaissance church in Vatican City, slightly elevated above the Tiber river."
+  },
+  {
+    "id": "miraflores-locks",
+    "name": "Panama Canal Miraflores Locks",
+    "category": "structure",
+    "country": "Panama",
+    "lat": 8.9972,
+    "lon": -79.5919,
+    "elevation": 16,
+    "description": "Key gravitational lock gates operating the inter-oceanic Panama transit corridor."
+  },
+  {
+    "id": "halong-bay",
+    "name": "Ha Long Bay Karsts",
+    "category": "natural",
+    "country": "Vietnam",
+    "lat": 20.9101,
+    "lon": 107.1839,
+    "elevation": 2,
+    "description": "Emerald waters and thousands of towering rainforest-topped limestone islands."
+  },
+  {
+    "id": "mount-fuji-base",
+    "name": "Mount Fuji (5th Station)",
+    "category": "natural",
+    "country": "Japan",
+    "lat": 35.3606,
+    "lon": 138.7274,
+    "elevation": 2305,
+    "description": "Japan's sacred volcanic peak, towering vastly above Suruga Bay."
+  },
+  {
+    "id": "louvre-museum",
+    "name": "Louvre Museum",
+    "category": "heritage",
+    "country": "France",
+    "lat": 48.8606,
+    "lon": 2.3376,
+    "elevation": 34,
+    "description": "World's most visited museum on the Right Bank of the Seine in central Paris."
+  }
+]

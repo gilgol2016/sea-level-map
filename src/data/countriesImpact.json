@@ -1,0 +1,8364 @@
+[
+  {
+    "id": "ARG",
+    "name": "Argentina",
+    "flag": "🇦🇷",
+    "region": "South America",
+    "totalPopulation": 46040000,
+    "totalAreaKm2": 2780400,
+    "maxElevation": 6961,
+    "lat": -38.4161,
+    "lon": -63.6167,
+    "zoom": 3.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.8
+      },
+      {
+        "level": 2,
+        "pct": 1.6
+      },
+      {
+        "level": 5,
+        "pct": 3.4
+      },
+      {
+        "level": 10,
+        "pct": 6.2
+      },
+      {
+        "level": 25,
+        "pct": 12
+      },
+      {
+        "level": 50,
+        "pct": 20
+      },
+      {
+        "level": 66,
+        "pct": 24
+      },
+      {
+        "level": 100,
+        "pct": 33
+      },
+      {
+        "level": 200,
+        "pct": 49
+      },
+      {
+        "level": 500,
+        "pct": 70
+      },
+      {
+        "level": 1000,
+        "pct": 87
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.5
+      },
+      {
+        "level": 5,
+        "pct": 17.5
+      },
+      {
+        "level": 10,
+        "pct": 28.5
+      },
+      {
+        "level": 25,
+        "pct": 43.5
+      },
+      {
+        "level": 50,
+        "pct": 57
+      },
+      {
+        "level": 66,
+        "pct": 62
+      },
+      {
+        "level": 100,
+        "pct": 72
+      },
+      {
+        "level": 200,
+        "pct": 85
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 98.2
+      }
+    ]
+  },
+  {
+    "id": "AUS",
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "region": "Oceania",
+    "totalPopulation": 26000000,
+    "totalAreaKm2": 7692024,
+    "maxElevation": 2228,
+    "lat": -25.2744,
+    "lon": 133.7751,
+    "zoom": 3.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.8
+      },
+      {
+        "level": 2,
+        "pct": 1.5
+      },
+      {
+        "level": 5,
+        "pct": 3.2
+      },
+      {
+        "level": 10,
+        "pct": 5.8
+      },
+      {
+        "level": 25,
+        "pct": 11.5
+      },
+      {
+        "level": 50,
+        "pct": 19
+      },
+      {
+        "level": 66,
+        "pct": 22.5
+      },
+      {
+        "level": 100,
+        "pct": 30
+      },
+      {
+        "level": 200,
+        "pct": 45
+      },
+      {
+        "level": 500,
+        "pct": 65
+      },
+      {
+        "level": 1000,
+        "pct": 82
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.5
+      },
+      {
+        "level": 5,
+        "pct": 17
+      },
+      {
+        "level": 10,
+        "pct": 28
+      },
+      {
+        "level": 25,
+        "pct": 43
+      },
+      {
+        "level": 50,
+        "pct": 57
+      },
+      {
+        "level": 66,
+        "pct": 62
+      },
+      {
+        "level": 100,
+        "pct": 72
+      },
+      {
+        "level": 200,
+        "pct": 85
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 98.5
+      }
+    ]
+  },
+  {
+    "id": "BHS",
+    "name": "Bahamas",
+    "flag": "🇧🇸",
+    "region": "Caribbean",
+    "totalPopulation": 410000,
+    "totalAreaKm2": 13943,
+    "maxElevation": 63,
+    "lat": 25.0343,
+    "lon": -77.3963,
+    "zoom": 6.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 18
+      },
+      {
+        "level": 2,
+        "pct": 32
+      },
+      {
+        "level": 5,
+        "pct": 58
+      },
+      {
+        "level": 10,
+        "pct": 75
+      },
+      {
+        "level": 25,
+        "pct": 88
+      },
+      {
+        "level": 50,
+        "pct": 97
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 22
+      },
+      {
+        "level": 2,
+        "pct": 39
+      },
+      {
+        "level": 5,
+        "pct": 68
+      },
+      {
+        "level": 10,
+        "pct": 84
+      },
+      {
+        "level": 25,
+        "pct": 94
+      },
+      {
+        "level": 50,
+        "pct": 99
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "BHR",
+    "name": "Bahrain",
+    "flag": "🇧🇭",
+    "region": "Middle East",
+    "totalPopulation": 1500000,
+    "totalAreaKm2": 786,
+    "maxElevation": 134,
+    "lat": 26.0667,
+    "lon": 50.5577,
+    "zoom": 9.5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 14
+      },
+      {
+        "level": 2,
+        "pct": 25
+      },
+      {
+        "level": 5,
+        "pct": 44
+      },
+      {
+        "level": 10,
+        "pct": 62
+      },
+      {
+        "level": 25,
+        "pct": 78
+      },
+      {
+        "level": 50,
+        "pct": 88
+      },
+      {
+        "level": 66,
+        "pct": 92
+      },
+      {
+        "level": 100,
+        "pct": 97
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 20
+      },
+      {
+        "level": 2,
+        "pct": 35
+      },
+      {
+        "level": 5,
+        "pct": 58
+      },
+      {
+        "level": 10,
+        "pct": 75
+      },
+      {
+        "level": 25,
+        "pct": 89
+      },
+      {
+        "level": 50,
+        "pct": 95
+      },
+      {
+        "level": 66,
+        "pct": 97
+      },
+      {
+        "level": 100,
+        "pct": 99
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "BGD",
+    "name": "Bangladesh",
+    "flag": "🇧🇩",
+    "region": "South Asia",
+    "totalPopulation": 171180000,
+    "totalAreaKm2": 148460,
+    "maxElevation": 1052,
+    "lat": 23.685,
+    "lon": 90.3563,
+    "zoom": 6.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 11
+      },
+      {
+        "level": 2,
+        "pct": 19
+      },
+      {
+        "level": 5,
+        "pct": 38
+      },
+      {
+        "level": 10,
+        "pct": 56
+      },
+      {
+        "level": 25,
+        "pct": 74
+      },
+      {
+        "level": 50,
+        "pct": 84
+      },
+      {
+        "level": 66,
+        "pct": 88
+      },
+      {
+        "level": 100,
+        "pct": 93
+      },
+      {
+        "level": 200,
+        "pct": 97
+      },
+      {
+        "level": 500,
+        "pct": 99.5
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 15
+      },
+      {
+        "level": 2,
+        "pct": 25
+      },
+      {
+        "level": 5,
+        "pct": 48
+      },
+      {
+        "level": 10,
+        "pct": 68
+      },
+      {
+        "level": 25,
+        "pct": 84
+      },
+      {
+        "level": 50,
+        "pct": 92
+      },
+      {
+        "level": 66,
+        "pct": 95
+      },
+      {
+        "level": 100,
+        "pct": 98
+      },
+      {
+        "level": 200,
+        "pct": 99.5
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "BRB",
+    "name": "Barbados",
+    "flag": "🇧🇧",
+    "region": "Caribbean",
+    "totalPopulation": 281000,
+    "totalAreaKm2": 430,
+    "maxElevation": 340,
+    "lat": 13.1939,
+    "lon": -59.5432,
+    "zoom": 10.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 11
+      },
+      {
+        "level": 5,
+        "pct": 22
+      },
+      {
+        "level": 10,
+        "pct": 34
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 60
+      },
+      {
+        "level": 66,
+        "pct": 65
+      },
+      {
+        "level": 100,
+        "pct": 74
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 14
+      },
+      {
+        "level": 2,
+        "pct": 25
+      },
+      {
+        "level": 5,
+        "pct": 45
+      },
+      {
+        "level": 10,
+        "pct": 62
+      },
+      {
+        "level": 25,
+        "pct": 76
+      },
+      {
+        "level": 50,
+        "pct": 86
+      },
+      {
+        "level": 66,
+        "pct": 89
+      },
+      {
+        "level": 100,
+        "pct": 94
+      },
+      {
+        "level": 200,
+        "pct": 98
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "BEL",
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "region": "Europe",
+    "totalPopulation": 11680000,
+    "totalAreaKm2": 30528,
+    "maxElevation": 694,
+    "lat": 50.5039,
+    "lon": 4.4699,
+    "zoom": 7.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.8
+      },
+      {
+        "level": 5,
+        "pct": 14.5
+      },
+      {
+        "level": 10,
+        "pct": 23.5
+      },
+      {
+        "level": 25,
+        "pct": 36
+      },
+      {
+        "level": 50,
+        "pct": 48
+      },
+      {
+        "level": 66,
+        "pct": 53
+      },
+      {
+        "level": 100,
+        "pct": 63
+      },
+      {
+        "level": 200,
+        "pct": 78
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 11.5
+      },
+      {
+        "level": 5,
+        "pct": 23
+      },
+      {
+        "level": 10,
+        "pct": 35
+      },
+      {
+        "level": 25,
+        "pct": 50
+      },
+      {
+        "level": 50,
+        "pct": 63
+      },
+      {
+        "level": 66,
+        "pct": 68
+      },
+      {
+        "level": 100,
+        "pct": 77
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "BRA",
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "region": "South America",
+    "totalPopulation": 216422000,
+    "totalAreaKm2": 8515767,
+    "maxElevation": 2995,
+    "lat": -14.235,
+    "lon": -51.9253,
+    "zoom": 3.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.9
+      },
+      {
+        "level": 2,
+        "pct": 1.8
+      },
+      {
+        "level": 5,
+        "pct": 3.8
+      },
+      {
+        "level": 10,
+        "pct": 6.8
+      },
+      {
+        "level": 25,
+        "pct": 13.5
+      },
+      {
+        "level": 50,
+        "pct": 22
+      },
+      {
+        "level": 66,
+        "pct": 26
+      },
+      {
+        "level": 100,
+        "pct": 35
+      },
+      {
+        "level": 200,
+        "pct": 52
+      },
+      {
+        "level": 500,
+        "pct": 74
+      },
+      {
+        "level": 1000,
+        "pct": 90
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.2
+      },
+      {
+        "level": 2,
+        "pct": 8.2
+      },
+      {
+        "level": 5,
+        "pct": 16.8
+      },
+      {
+        "level": 10,
+        "pct": 27.5
+      },
+      {
+        "level": 25,
+        "pct": 41.5
+      },
+      {
+        "level": 50,
+        "pct": 55
+      },
+      {
+        "level": 66,
+        "pct": 60
+      },
+      {
+        "level": 100,
+        "pct": 70
+      },
+      {
+        "level": 200,
+        "pct": 83.5
+      },
+      {
+        "level": 500,
+        "pct": 93.5
+      },
+      {
+        "level": 1000,
+        "pct": 98.2
+      }
+    ]
+  },
+  {
+    "id": "CAN",
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "region": "North America",
+    "totalPopulation": 40097000,
+    "totalAreaKm2": 9984670,
+    "maxElevation": 5959,
+    "lat": 56.1304,
+    "lon": -106.3468,
+    "zoom": 3,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.6
+      },
+      {
+        "level": 2,
+        "pct": 1.2
+      },
+      {
+        "level": 5,
+        "pct": 2.6
+      },
+      {
+        "level": 10,
+        "pct": 4.8
+      },
+      {
+        "level": 25,
+        "pct": 9.5
+      },
+      {
+        "level": 50,
+        "pct": 16
+      },
+      {
+        "level": 66,
+        "pct": 19.5
+      },
+      {
+        "level": 100,
+        "pct": 27
+      },
+      {
+        "level": 200,
+        "pct": 42
+      },
+      {
+        "level": 500,
+        "pct": 63
+      },
+      {
+        "level": 1000,
+        "pct": 81
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.2
+      },
+      {
+        "level": 2,
+        "pct": 6.2
+      },
+      {
+        "level": 5,
+        "pct": 12.8
+      },
+      {
+        "level": 10,
+        "pct": 21
+      },
+      {
+        "level": 25,
+        "pct": 34
+      },
+      {
+        "level": 50,
+        "pct": 47
+      },
+      {
+        "level": 66,
+        "pct": 52
+      },
+      {
+        "level": 100,
+        "pct": 62
+      },
+      {
+        "level": 200,
+        "pct": 77
+      },
+      {
+        "level": 500,
+        "pct": 89
+      },
+      {
+        "level": 1000,
+        "pct": 96.5
+      }
+    ]
+  },
+  {
+    "id": "CPV",
+    "name": "Cape Verde",
+    "flag": "🇨🇻",
+    "region": "Atlantic Ocean",
+    "totalPopulation": 593000,
+    "totalAreaKm2": 4033,
+    "maxElevation": 2829,
+    "lat": 16.0022,
+    "lon": -24.0132,
+    "zoom": 7.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3
+      },
+      {
+        "level": 2,
+        "pct": 6
+      },
+      {
+        "level": 5,
+        "pct": 12
+      },
+      {
+        "level": 10,
+        "pct": 20
+      },
+      {
+        "level": 25,
+        "pct": 30
+      },
+      {
+        "level": 50,
+        "pct": 40
+      },
+      {
+        "level": 66,
+        "pct": 44
+      },
+      {
+        "level": 100,
+        "pct": 52
+      },
+      {
+        "level": 200,
+        "pct": 64
+      },
+      {
+        "level": 500,
+        "pct": 78
+      },
+      {
+        "level": 1000,
+        "pct": 89
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 15
+      },
+      {
+        "level": 5,
+        "pct": 28
+      },
+      {
+        "level": 10,
+        "pct": 42
+      },
+      {
+        "level": 25,
+        "pct": 56
+      },
+      {
+        "level": 50,
+        "pct": 68
+      },
+      {
+        "level": 66,
+        "pct": 72
+      },
+      {
+        "level": 100,
+        "pct": 80
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "CHL",
+    "name": "Chile",
+    "flag": "🇨🇱",
+    "region": "South America",
+    "totalPopulation": 19600000,
+    "totalAreaKm2": 756102,
+    "maxElevation": 6893,
+    "lat": -35.6751,
+    "lon": -71.543,
+    "zoom": 3.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1
+      },
+      {
+        "level": 2,
+        "pct": 1.9
+      },
+      {
+        "level": 5,
+        "pct": 4
+      },
+      {
+        "level": 10,
+        "pct": 7
+      },
+      {
+        "level": 25,
+        "pct": 13
+      },
+      {
+        "level": 50,
+        "pct": 21
+      },
+      {
+        "level": 66,
+        "pct": 25
+      },
+      {
+        "level": 100,
+        "pct": 34
+      },
+      {
+        "level": 200,
+        "pct": 50
+      },
+      {
+        "level": 500,
+        "pct": 70
+      },
+      {
+        "level": 1000,
+        "pct": 86
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.8
+      },
+      {
+        "level": 5,
+        "pct": 14
+      },
+      {
+        "level": 10,
+        "pct": 23
+      },
+      {
+        "level": 25,
+        "pct": 36.5
+      },
+      {
+        "level": 50,
+        "pct": 50
+      },
+      {
+        "level": 66,
+        "pct": 55
+      },
+      {
+        "level": 100,
+        "pct": 65
+      },
+      {
+        "level": 200,
+        "pct": 79
+      },
+      {
+        "level": 500,
+        "pct": 91
+      },
+      {
+        "level": 1000,
+        "pct": 97
+      }
+    ]
+  },
+  {
+    "id": "CHN",
+    "name": "China",
+    "flag": "🇨🇳",
+    "region": "East Asia",
+    "totalPopulation": 1412000000,
+    "totalAreaKm2": 9596961,
+    "maxElevation": 8848,
+    "lat": 35.8617,
+    "lon": 104.1954,
+    "zoom": 3.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.9
+      },
+      {
+        "level": 2,
+        "pct": 1.7
+      },
+      {
+        "level": 5,
+        "pct": 3.5
+      },
+      {
+        "level": 10,
+        "pct": 6.2
+      },
+      {
+        "level": 25,
+        "pct": 12
+      },
+      {
+        "level": 50,
+        "pct": 19.5
+      },
+      {
+        "level": 66,
+        "pct": 23
+      },
+      {
+        "level": 100,
+        "pct": 31
+      },
+      {
+        "level": 200,
+        "pct": 47
+      },
+      {
+        "level": 500,
+        "pct": 67
+      },
+      {
+        "level": 1000,
+        "pct": 84
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.2
+      },
+      {
+        "level": 2,
+        "pct": 8
+      },
+      {
+        "level": 5,
+        "pct": 16.5
+      },
+      {
+        "level": 10,
+        "pct": 27
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 56
+      },
+      {
+        "level": 66,
+        "pct": 61
+      },
+      {
+        "level": 100,
+        "pct": 71
+      },
+      {
+        "level": 200,
+        "pct": 84
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "COM",
+    "name": "Comoros",
+    "flag": "🇰🇲",
+    "region": "Indian Ocean",
+    "totalPopulation": 836000,
+    "totalAreaKm2": 1862,
+    "maxElevation": 2361,
+    "lat": -11.8765,
+    "lon": 43.8724,
+    "zoom": 8.5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 7
+      },
+      {
+        "level": 5,
+        "pct": 14
+      },
+      {
+        "level": 10,
+        "pct": 22
+      },
+      {
+        "level": 25,
+        "pct": 32
+      },
+      {
+        "level": 50,
+        "pct": 42
+      },
+      {
+        "level": 66,
+        "pct": 46
+      },
+      {
+        "level": 100,
+        "pct": 54
+      },
+      {
+        "level": 200,
+        "pct": 66
+      },
+      {
+        "level": 500,
+        "pct": 79
+      },
+      {
+        "level": 1000,
+        "pct": 90
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 9
+      },
+      {
+        "level": 2,
+        "pct": 16
+      },
+      {
+        "level": 5,
+        "pct": 30
+      },
+      {
+        "level": 10,
+        "pct": 45
+      },
+      {
+        "level": 25,
+        "pct": 60
+      },
+      {
+        "level": 50,
+        "pct": 71
+      },
+      {
+        "level": 66,
+        "pct": 75
+      },
+      {
+        "level": 100,
+        "pct": 83
+      },
+      {
+        "level": 200,
+        "pct": 91
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "CUB",
+    "name": "Cuba",
+    "flag": "🇨🇺",
+    "region": "Caribbean",
+    "totalPopulation": 11212000,
+    "totalAreaKm2": 109884,
+    "maxElevation": 1974,
+    "lat": 21.5218,
+    "lon": -77.7812,
+    "zoom": 6,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.5
+      },
+      {
+        "level": 5,
+        "pct": 17
+      },
+      {
+        "level": 10,
+        "pct": 26
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 49
+      },
+      {
+        "level": 66,
+        "pct": 53
+      },
+      {
+        "level": 100,
+        "pct": 62
+      },
+      {
+        "level": 200,
+        "pct": 74
+      },
+      {
+        "level": 500,
+        "pct": 87
+      },
+      {
+        "level": 1000,
+        "pct": 95
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 7
+      },
+      {
+        "level": 2,
+        "pct": 13
+      },
+      {
+        "level": 5,
+        "pct": 25
+      },
+      {
+        "level": 10,
+        "pct": 38
+      },
+      {
+        "level": 25,
+        "pct": 52
+      },
+      {
+        "level": 50,
+        "pct": 65
+      },
+      {
+        "level": 66,
+        "pct": 70
+      },
+      {
+        "level": 100,
+        "pct": 79
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 98.5
+      }
+    ]
+  },
+  {
+    "id": "CYP",
+    "name": "Cyprus",
+    "flag": "🇨🇾",
+    "region": "Europe",
+    "totalPopulation": 1251000,
+    "totalAreaKm2": 9251,
+    "maxElevation": 1952,
+    "lat": 35.1264,
+    "lon": 33.4299,
+    "zoom": 8.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 5
+      },
+      {
+        "level": 5,
+        "pct": 10.5
+      },
+      {
+        "level": 10,
+        "pct": 17
+      },
+      {
+        "level": 25,
+        "pct": 27
+      },
+      {
+        "level": 50,
+        "pct": 37
+      },
+      {
+        "level": 66,
+        "pct": 41
+      },
+      {
+        "level": 100,
+        "pct": 50
+      },
+      {
+        "level": 200,
+        "pct": 63
+      },
+      {
+        "level": 500,
+        "pct": 78
+      },
+      {
+        "level": 1000,
+        "pct": 90
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 12
+      },
+      {
+        "level": 5,
+        "pct": 23
+      },
+      {
+        "level": 10,
+        "pct": 36
+      },
+      {
+        "level": 25,
+        "pct": 50
+      },
+      {
+        "level": 50,
+        "pct": 63
+      },
+      {
+        "level": 66,
+        "pct": 67
+      },
+      {
+        "level": 100,
+        "pct": 75
+      },
+      {
+        "level": 200,
+        "pct": 86
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "DNK",
+    "name": "Denmark",
+    "flag": "🇩🇰",
+    "region": "Europe",
+    "totalPopulation": 5903000,
+    "totalAreaKm2": 42933,
+    "maxElevation": 171,
+    "lat": 56.2639,
+    "lon": 9.5018,
+    "zoom": 6.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6.5
+      },
+      {
+        "level": 2,
+        "pct": 12
+      },
+      {
+        "level": 5,
+        "pct": 24
+      },
+      {
+        "level": 10,
+        "pct": 38
+      },
+      {
+        "level": 25,
+        "pct": 56
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 78
+      },
+      {
+        "level": 100,
+        "pct": 89
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 10
+      },
+      {
+        "level": 2,
+        "pct": 18
+      },
+      {
+        "level": 5,
+        "pct": 34
+      },
+      {
+        "level": 10,
+        "pct": 50
+      },
+      {
+        "level": 25,
+        "pct": 68
+      },
+      {
+        "level": 50,
+        "pct": 82
+      },
+      {
+        "level": 66,
+        "pct": 87
+      },
+      {
+        "level": 100,
+        "pct": 94
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "DOM",
+    "name": "Dominican Republic",
+    "flag": "🇩🇴",
+    "region": "Caribbean",
+    "totalPopulation": 11228000,
+    "totalAreaKm2": 48670,
+    "maxElevation": 3098,
+    "lat": 18.7357,
+    "lon": -70.1627,
+    "zoom": 7,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 5
+      },
+      {
+        "level": 5,
+        "pct": 10
+      },
+      {
+        "level": 10,
+        "pct": 16
+      },
+      {
+        "level": 25,
+        "pct": 26
+      },
+      {
+        "level": 50,
+        "pct": 36
+      },
+      {
+        "level": 66,
+        "pct": 40
+      },
+      {
+        "level": 100,
+        "pct": 48
+      },
+      {
+        "level": 200,
+        "pct": 60
+      },
+      {
+        "level": 500,
+        "pct": 75
+      },
+      {
+        "level": 1000,
+        "pct": 88
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 11
+      },
+      {
+        "level": 5,
+        "pct": 22
+      },
+      {
+        "level": 10,
+        "pct": 34
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 60
+      },
+      {
+        "level": 66,
+        "pct": 64
+      },
+      {
+        "level": 100,
+        "pct": 72
+      },
+      {
+        "level": 200,
+        "pct": 83
+      },
+      {
+        "level": 500,
+        "pct": 92
+      },
+      {
+        "level": 1000,
+        "pct": 97
+      }
+    ]
+  },
+  {
+    "id": "EGY",
+    "name": "Egypt",
+    "flag": "🇪🇬",
+    "region": "North Africa",
+    "totalPopulation": 109260000,
+    "totalAreaKm2": 1002450,
+    "maxElevation": 2629,
+    "lat": 26.8206,
+    "lon": 30.8025,
+    "zoom": 5.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.8
+      },
+      {
+        "level": 2,
+        "pct": 1.5
+      },
+      {
+        "level": 5,
+        "pct": 3.2
+      },
+      {
+        "level": 10,
+        "pct": 5.5
+      },
+      {
+        "level": 25,
+        "pct": 10
+      },
+      {
+        "level": 50,
+        "pct": 16.5
+      },
+      {
+        "level": 66,
+        "pct": 19.5
+      },
+      {
+        "level": 100,
+        "pct": 26
+      },
+      {
+        "level": 200,
+        "pct": 38
+      },
+      {
+        "level": 500,
+        "pct": 58
+      },
+      {
+        "level": 1000,
+        "pct": 76
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8.5
+      },
+      {
+        "level": 2,
+        "pct": 16
+      },
+      {
+        "level": 5,
+        "pct": 32
+      },
+      {
+        "level": 10,
+        "pct": 48
+      },
+      {
+        "level": 25,
+        "pct": 64
+      },
+      {
+        "level": 50,
+        "pct": 76
+      },
+      {
+        "level": 66,
+        "pct": 80
+      },
+      {
+        "level": 100,
+        "pct": 87
+      },
+      {
+        "level": 200,
+        "pct": 93
+      },
+      {
+        "level": 500,
+        "pct": 97.5
+      },
+      {
+        "level": 1000,
+        "pct": 99.5
+      }
+    ]
+  },
+  {
+    "id": "EST",
+    "name": "Estonia",
+    "flag": "🇪🇪",
+    "region": "Europe",
+    "totalPopulation": 1331000,
+    "totalAreaKm2": 45228,
+    "maxElevation": 318,
+    "lat": 58.5953,
+    "lon": 25.0136,
+    "zoom": 7,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 7.5
+      },
+      {
+        "level": 5,
+        "pct": 16
+      },
+      {
+        "level": 10,
+        "pct": 26
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 58
+      },
+      {
+        "level": 66,
+        "pct": 64
+      },
+      {
+        "level": 100,
+        "pct": 76
+      },
+      {
+        "level": 200,
+        "pct": 94
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 15
+      },
+      {
+        "level": 5,
+        "pct": 28
+      },
+      {
+        "level": 10,
+        "pct": 42
+      },
+      {
+        "level": 25,
+        "pct": 58
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 77
+      },
+      {
+        "level": 100,
+        "pct": 86
+      },
+      {
+        "level": 200,
+        "pct": 97
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "FJI",
+    "name": "Fiji",
+    "flag": "🇫🇯",
+    "region": "Oceania",
+    "totalPopulation": 936000,
+    "totalAreaKm2": 18274,
+    "maxElevation": 1324,
+    "lat": -17.7134,
+    "lon": 178.065,
+    "zoom": 7,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9
+      },
+      {
+        "level": 5,
+        "pct": 18
+      },
+      {
+        "level": 10,
+        "pct": 27
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 48
+      },
+      {
+        "level": 66,
+        "pct": 52
+      },
+      {
+        "level": 100,
+        "pct": 60
+      },
+      {
+        "level": 200,
+        "pct": 71
+      },
+      {
+        "level": 500,
+        "pct": 84
+      },
+      {
+        "level": 1000,
+        "pct": 95
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 10
+      },
+      {
+        "level": 2,
+        "pct": 19
+      },
+      {
+        "level": 5,
+        "pct": 35
+      },
+      {
+        "level": 10,
+        "pct": 50
+      },
+      {
+        "level": 25,
+        "pct": 65
+      },
+      {
+        "level": 50,
+        "pct": 75
+      },
+      {
+        "level": 66,
+        "pct": 79
+      },
+      {
+        "level": 100,
+        "pct": 86
+      },
+      {
+        "level": 200,
+        "pct": 92
+      },
+      {
+        "level": 500,
+        "pct": 97
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "FRA",
+    "name": "France",
+    "flag": "🇫🇷",
+    "region": "Europe",
+    "totalPopulation": 67750000,
+    "totalAreaKm2": 551695,
+    "maxElevation": 4808,
+    "lat": 46.2276,
+    "lon": 2.2137,
+    "zoom": 5.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.2
+      },
+      {
+        "level": 2,
+        "pct": 2.3
+      },
+      {
+        "level": 5,
+        "pct": 5
+      },
+      {
+        "level": 10,
+        "pct": 9
+      },
+      {
+        "level": 25,
+        "pct": 16.5
+      },
+      {
+        "level": 50,
+        "pct": 26.5
+      },
+      {
+        "level": 66,
+        "pct": 31
+      },
+      {
+        "level": 100,
+        "pct": 40.5
+      },
+      {
+        "level": 200,
+        "pct": 57
+      },
+      {
+        "level": 500,
+        "pct": 77
+      },
+      {
+        "level": 1000,
+        "pct": 92
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 4.8
+      },
+      {
+        "level": 5,
+        "pct": 10.2
+      },
+      {
+        "level": 10,
+        "pct": 17.5
+      },
+      {
+        "level": 25,
+        "pct": 29
+      },
+      {
+        "level": 50,
+        "pct": 42
+      },
+      {
+        "level": 66,
+        "pct": 47
+      },
+      {
+        "level": 100,
+        "pct": 58
+      },
+      {
+        "level": 200,
+        "pct": 74
+      },
+      {
+        "level": 500,
+        "pct": 89
+      },
+      {
+        "level": 1000,
+        "pct": 97.5
+      }
+    ]
+  },
+  {
+    "id": "DEU",
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "region": "Europe",
+    "totalPopulation": 84480000,
+    "totalAreaKm2": 357022,
+    "maxElevation": 2962,
+    "lat": 51.1657,
+    "lon": 10.4515,
+    "zoom": 5.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.5
+      },
+      {
+        "level": 2,
+        "pct": 2.8
+      },
+      {
+        "level": 5,
+        "pct": 6
+      },
+      {
+        "level": 10,
+        "pct": 10.5
+      },
+      {
+        "level": 25,
+        "pct": 19
+      },
+      {
+        "level": 50,
+        "pct": 30
+      },
+      {
+        "level": 66,
+        "pct": 35
+      },
+      {
+        "level": 100,
+        "pct": 45
+      },
+      {
+        "level": 200,
+        "pct": 63
+      },
+      {
+        "level": 500,
+        "pct": 83
+      },
+      {
+        "level": 1000,
+        "pct": 96
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.8
+      },
+      {
+        "level": 2,
+        "pct": 5.5
+      },
+      {
+        "level": 5,
+        "pct": 11.5
+      },
+      {
+        "level": 10,
+        "pct": 19
+      },
+      {
+        "level": 25,
+        "pct": 31
+      },
+      {
+        "level": 50,
+        "pct": 45
+      },
+      {
+        "level": 66,
+        "pct": 50
+      },
+      {
+        "level": 100,
+        "pct": 61
+      },
+      {
+        "level": 200,
+        "pct": 77
+      },
+      {
+        "level": 500,
+        "pct": 91
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "GRC",
+    "name": "Greece",
+    "flag": "🇬🇷",
+    "region": "Europe",
+    "totalPopulation": 10430000,
+    "totalAreaKm2": 131957,
+    "maxElevation": 2917,
+    "lat": 39.0742,
+    "lon": 21.8243,
+    "zoom": 6.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.8
+      },
+      {
+        "level": 2,
+        "pct": 3.5
+      },
+      {
+        "level": 5,
+        "pct": 7.8
+      },
+      {
+        "level": 10,
+        "pct": 13.5
+      },
+      {
+        "level": 25,
+        "pct": 23.5
+      },
+      {
+        "level": 50,
+        "pct": 34.5
+      },
+      {
+        "level": 66,
+        "pct": 39.5
+      },
+      {
+        "level": 100,
+        "pct": 49
+      },
+      {
+        "level": 200,
+        "pct": 66
+      },
+      {
+        "level": 500,
+        "pct": 83
+      },
+      {
+        "level": 1000,
+        "pct": 94
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9.8
+      },
+      {
+        "level": 5,
+        "pct": 20
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 47
+      },
+      {
+        "level": 50,
+        "pct": 61
+      },
+      {
+        "level": 66,
+        "pct": 66
+      },
+      {
+        "level": 100,
+        "pct": 75
+      },
+      {
+        "level": 200,
+        "pct": 87
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 98.8
+      }
+    ]
+  },
+  {
+    "id": "GUY",
+    "name": "Guyana",
+    "flag": "🇬🇾",
+    "region": "South America",
+    "totalPopulation": 808000,
+    "totalAreaKm2": 214969,
+    "maxElevation": 2810,
+    "lat": 4.8604,
+    "lon": -58.9302,
+    "zoom": 6,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9.5
+      },
+      {
+        "level": 5,
+        "pct": 19
+      },
+      {
+        "level": 10,
+        "pct": 28
+      },
+      {
+        "level": 25,
+        "pct": 40
+      },
+      {
+        "level": 50,
+        "pct": 50
+      },
+      {
+        "level": 66,
+        "pct": 54
+      },
+      {
+        "level": 100,
+        "pct": 63
+      },
+      {
+        "level": 200,
+        "pct": 76
+      },
+      {
+        "level": 500,
+        "pct": 89
+      },
+      {
+        "level": 1000,
+        "pct": 97
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 28
+      },
+      {
+        "level": 2,
+        "pct": 48
+      },
+      {
+        "level": 5,
+        "pct": 72
+      },
+      {
+        "level": 10,
+        "pct": 85
+      },
+      {
+        "level": 25,
+        "pct": 92
+      },
+      {
+        "level": 50,
+        "pct": 96
+      },
+      {
+        "level": 66,
+        "pct": 97.5
+      },
+      {
+        "level": 100,
+        "pct": 99
+      },
+      {
+        "level": 200,
+        "pct": 99.8
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "HTI",
+    "name": "Haiti",
+    "flag": "🇭🇹",
+    "region": "Caribbean",
+    "totalPopulation": 11584000,
+    "totalAreaKm2": 27750,
+    "maxElevation": 2680,
+    "lat": 18.9712,
+    "lon": -72.2852,
+    "zoom": 7.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.8
+      },
+      {
+        "level": 2,
+        "pct": 5.5
+      },
+      {
+        "level": 5,
+        "pct": 11
+      },
+      {
+        "level": 10,
+        "pct": 18
+      },
+      {
+        "level": 25,
+        "pct": 28
+      },
+      {
+        "level": 50,
+        "pct": 38
+      },
+      {
+        "level": 66,
+        "pct": 42
+      },
+      {
+        "level": 100,
+        "pct": 50
+      },
+      {
+        "level": 200,
+        "pct": 62
+      },
+      {
+        "level": 500,
+        "pct": 77
+      },
+      {
+        "level": 1000,
+        "pct": 89
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 7
+      },
+      {
+        "level": 2,
+        "pct": 13
+      },
+      {
+        "level": 5,
+        "pct": 25
+      },
+      {
+        "level": 10,
+        "pct": 38
+      },
+      {
+        "level": 25,
+        "pct": 52
+      },
+      {
+        "level": 50,
+        "pct": 64
+      },
+      {
+        "level": 66,
+        "pct": 68
+      },
+      {
+        "level": 100,
+        "pct": 76
+      },
+      {
+        "level": 200,
+        "pct": 86
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "ISL",
+    "name": "Iceland",
+    "flag": "🇮🇸",
+    "region": "Europe",
+    "totalPopulation": 387000,
+    "totalAreaKm2": 103000,
+    "maxElevation": 2110,
+    "lat": 64.9631,
+    "lon": -19.0208,
+    "zoom": 5.5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.2
+      },
+      {
+        "level": 2,
+        "pct": 2.3
+      },
+      {
+        "level": 5,
+        "pct": 5
+      },
+      {
+        "level": 10,
+        "pct": 8.5
+      },
+      {
+        "level": 25,
+        "pct": 15
+      },
+      {
+        "level": 50,
+        "pct": 23
+      },
+      {
+        "level": 66,
+        "pct": 26
+      },
+      {
+        "level": 100,
+        "pct": 34
+      },
+      {
+        "level": 200,
+        "pct": 48
+      },
+      {
+        "level": 500,
+        "pct": 66
+      },
+      {
+        "level": 1000,
+        "pct": 84
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 10
+      },
+      {
+        "level": 5,
+        "pct": 20
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 62
+      },
+      {
+        "level": 66,
+        "pct": 66
+      },
+      {
+        "level": 100,
+        "pct": 75
+      },
+      {
+        "level": 200,
+        "pct": 87
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "IND",
+    "name": "India",
+    "flag": "🇮🇳",
+    "region": "South Asia",
+    "totalPopulation": 1428000000,
+    "totalAreaKm2": 3287263,
+    "maxElevation": 8586,
+    "lat": 20.5937,
+    "lon": 78.9629,
+    "zoom": 4,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.8
+      },
+      {
+        "level": 2,
+        "pct": 1.5
+      },
+      {
+        "level": 5,
+        "pct": 3.2
+      },
+      {
+        "level": 10,
+        "pct": 5.8
+      },
+      {
+        "level": 25,
+        "pct": 11.8
+      },
+      {
+        "level": 50,
+        "pct": 19.5
+      },
+      {
+        "level": 66,
+        "pct": 23
+      },
+      {
+        "level": 100,
+        "pct": 31
+      },
+      {
+        "level": 200,
+        "pct": 48
+      },
+      {
+        "level": 500,
+        "pct": 70
+      },
+      {
+        "level": 1000,
+        "pct": 87
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.8
+      },
+      {
+        "level": 5,
+        "pct": 14
+      },
+      {
+        "level": 10,
+        "pct": 23
+      },
+      {
+        "level": 25,
+        "pct": 37
+      },
+      {
+        "level": 50,
+        "pct": 51
+      },
+      {
+        "level": 66,
+        "pct": 56
+      },
+      {
+        "level": 100,
+        "pct": 67
+      },
+      {
+        "level": 200,
+        "pct": 81
+      },
+      {
+        "level": 500,
+        "pct": 92.5
+      },
+      {
+        "level": 1000,
+        "pct": 97.8
+      }
+    ]
+  },
+  {
+    "id": "IDN",
+    "name": "Indonesia",
+    "flag": "🇮🇩",
+    "region": "Southeast Asia",
+    "totalPopulation": 275500000,
+    "totalAreaKm2": 1904569,
+    "maxElevation": 4884,
+    "lat": -0.7893,
+    "lon": 113.9213,
+    "zoom": 4.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 4.8
+      },
+      {
+        "level": 5,
+        "pct": 10
+      },
+      {
+        "level": 10,
+        "pct": 16.5
+      },
+      {
+        "level": 25,
+        "pct": 26.5
+      },
+      {
+        "level": 50,
+        "pct": 37
+      },
+      {
+        "level": 66,
+        "pct": 41
+      },
+      {
+        "level": 100,
+        "pct": 50
+      },
+      {
+        "level": 200,
+        "pct": 64
+      },
+      {
+        "level": 500,
+        "pct": 79
+      },
+      {
+        "level": 1000,
+        "pct": 91
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6.5
+      },
+      {
+        "level": 2,
+        "pct": 12.2
+      },
+      {
+        "level": 5,
+        "pct": 23.5
+      },
+      {
+        "level": 10,
+        "pct": 36
+      },
+      {
+        "level": 25,
+        "pct": 51
+      },
+      {
+        "level": 50,
+        "pct": 64
+      },
+      {
+        "level": 66,
+        "pct": 69
+      },
+      {
+        "level": 100,
+        "pct": 77
+      },
+      {
+        "level": 200,
+        "pct": 87
+      },
+      {
+        "level": 500,
+        "pct": 94.5
+      },
+      {
+        "level": 1000,
+        "pct": 98.5
+      }
+    ]
+  },
+  {
+    "id": "IRL",
+    "name": "Ireland",
+    "flag": "🇮🇪",
+    "region": "Europe",
+    "totalPopulation": 5127000,
+    "totalAreaKm2": 70273,
+    "maxElevation": 1038,
+    "lat": 53.4129,
+    "lon": -8.2439,
+    "zoom": 6.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.2
+      },
+      {
+        "level": 2,
+        "pct": 4.2
+      },
+      {
+        "level": 5,
+        "pct": 8.5
+      },
+      {
+        "level": 10,
+        "pct": 14.5
+      },
+      {
+        "level": 25,
+        "pct": 25
+      },
+      {
+        "level": 50,
+        "pct": 37
+      },
+      {
+        "level": 66,
+        "pct": 42
+      },
+      {
+        "level": 100,
+        "pct": 52
+      },
+      {
+        "level": 200,
+        "pct": 68
+      },
+      {
+        "level": 500,
+        "pct": 85
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6.5
+      },
+      {
+        "level": 2,
+        "pct": 12.5
+      },
+      {
+        "level": 5,
+        "pct": 23
+      },
+      {
+        "level": 10,
+        "pct": 35
+      },
+      {
+        "level": 25,
+        "pct": 50
+      },
+      {
+        "level": 50,
+        "pct": 64
+      },
+      {
+        "level": 66,
+        "pct": 69
+      },
+      {
+        "level": 100,
+        "pct": 78
+      },
+      {
+        "level": 200,
+        "pct": 89
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99.5
+      }
+    ]
+  },
+  {
+    "id": "ISR",
+    "name": "Israel",
+    "flag": "🇮🇱",
+    "region": "Middle East",
+    "totalPopulation": 9840000,
+    "totalAreaKm2": 22072,
+    "maxElevation": 1208,
+    "lat": 31.0461,
+    "lon": 34.8516,
+    "zoom": 7.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.2
+      },
+      {
+        "level": 2,
+        "pct": 2.4
+      },
+      {
+        "level": 5,
+        "pct": 5.2
+      },
+      {
+        "level": 10,
+        "pct": 9.2
+      },
+      {
+        "level": 25,
+        "pct": 16.5
+      },
+      {
+        "level": 50,
+        "pct": 26
+      },
+      {
+        "level": 66,
+        "pct": 30.5
+      },
+      {
+        "level": 100,
+        "pct": 40
+      },
+      {
+        "level": 200,
+        "pct": 56
+      },
+      {
+        "level": 500,
+        "pct": 76
+      },
+      {
+        "level": 1000,
+        "pct": 94
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.8
+      },
+      {
+        "level": 2,
+        "pct": 9.5
+      },
+      {
+        "level": 5,
+        "pct": 19.8
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 63
+      },
+      {
+        "level": 66,
+        "pct": 68
+      },
+      {
+        "level": 100,
+        "pct": 78
+      },
+      {
+        "level": 200,
+        "pct": 89
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "ITA",
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "region": "Europe",
+    "totalPopulation": 58850000,
+    "totalAreaKm2": 301340,
+    "maxElevation": 4810,
+    "lat": 41.8719,
+    "lon": 12.5674,
+    "zoom": 5.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.8
+      },
+      {
+        "level": 2,
+        "pct": 3.4
+      },
+      {
+        "level": 5,
+        "pct": 7.5
+      },
+      {
+        "level": 10,
+        "pct": 13
+      },
+      {
+        "level": 25,
+        "pct": 23
+      },
+      {
+        "level": 50,
+        "pct": 34
+      },
+      {
+        "level": 66,
+        "pct": 39
+      },
+      {
+        "level": 100,
+        "pct": 49
+      },
+      {
+        "level": 200,
+        "pct": 66
+      },
+      {
+        "level": 500,
+        "pct": 84
+      },
+      {
+        "level": 1000,
+        "pct": 95
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.8
+      },
+      {
+        "level": 5,
+        "pct": 18
+      },
+      {
+        "level": 10,
+        "pct": 29
+      },
+      {
+        "level": 25,
+        "pct": 44
+      },
+      {
+        "level": 50,
+        "pct": 58
+      },
+      {
+        "level": 66,
+        "pct": 63
+      },
+      {
+        "level": 100,
+        "pct": 73
+      },
+      {
+        "level": 200,
+        "pct": 86
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "JAM",
+    "name": "Jamaica",
+    "flag": "🇯🇲",
+    "region": "Caribbean",
+    "totalPopulation": 2827000,
+    "totalAreaKm2": 10991,
+    "maxElevation": 2256,
+    "lat": 18.1096,
+    "lon": -77.2975,
+    "zoom": 8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.5
+      },
+      {
+        "level": 5,
+        "pct": 13
+      },
+      {
+        "level": 10,
+        "pct": 21
+      },
+      {
+        "level": 25,
+        "pct": 32
+      },
+      {
+        "level": 50,
+        "pct": 42
+      },
+      {
+        "level": 66,
+        "pct": 46
+      },
+      {
+        "level": 100,
+        "pct": 54
+      },
+      {
+        "level": 200,
+        "pct": 66
+      },
+      {
+        "level": 500,
+        "pct": 80
+      },
+      {
+        "level": 1000,
+        "pct": 91
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 15
+      },
+      {
+        "level": 5,
+        "pct": 29
+      },
+      {
+        "level": 10,
+        "pct": 44
+      },
+      {
+        "level": 25,
+        "pct": 58
+      },
+      {
+        "level": 50,
+        "pct": 70
+      },
+      {
+        "level": 66,
+        "pct": 74
+      },
+      {
+        "level": 100,
+        "pct": 82
+      },
+      {
+        "level": 200,
+        "pct": 90
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "JPN",
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "region": "East Asia",
+    "totalPopulation": 125120000,
+    "totalAreaKm2": 377975,
+    "maxElevation": 3776,
+    "lat": 36.2048,
+    "lon": 138.2529,
+    "zoom": 5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.5
+      },
+      {
+        "level": 2,
+        "pct": 2.8
+      },
+      {
+        "level": 5,
+        "pct": 6
+      },
+      {
+        "level": 10,
+        "pct": 10.5
+      },
+      {
+        "level": 25,
+        "pct": 18
+      },
+      {
+        "level": 50,
+        "pct": 28
+      },
+      {
+        "level": 66,
+        "pct": 32
+      },
+      {
+        "level": 100,
+        "pct": 41
+      },
+      {
+        "level": 200,
+        "pct": 56
+      },
+      {
+        "level": 500,
+        "pct": 73
+      },
+      {
+        "level": 1000,
+        "pct": 87
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9.8
+      },
+      {
+        "level": 5,
+        "pct": 20
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 64
+      },
+      {
+        "level": 66,
+        "pct": 69
+      },
+      {
+        "level": 100,
+        "pct": 78
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 98.5
+      }
+    ]
+  },
+  {
+    "id": "KIR",
+    "name": "Kiribati",
+    "flag": "🇰🇮",
+    "region": "Oceania",
+    "totalPopulation": 131000,
+    "totalAreaKm2": 811,
+    "maxElevation": 81,
+    "lat": 1.8369,
+    "lon": -157.3631,
+    "zoom": 5.5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 36
+      },
+      {
+        "level": 2,
+        "pct": 58
+      },
+      {
+        "level": 5,
+        "pct": 78
+      },
+      {
+        "level": 10,
+        "pct": 88
+      },
+      {
+        "level": 25,
+        "pct": 94
+      },
+      {
+        "level": 50,
+        "pct": 97
+      },
+      {
+        "level": 66,
+        "pct": 98.5
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 42
+      },
+      {
+        "level": 2,
+        "pct": 65
+      },
+      {
+        "level": 5,
+        "pct": 85
+      },
+      {
+        "level": 10,
+        "pct": 93
+      },
+      {
+        "level": 25,
+        "pct": 97
+      },
+      {
+        "level": 50,
+        "pct": 99
+      },
+      {
+        "level": 66,
+        "pct": 99.5
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "KWT",
+    "name": "Kuwait",
+    "flag": "🇰🇼",
+    "region": "Middle East",
+    "totalPopulation": 4250000,
+    "totalAreaKm2": 17818,
+    "maxElevation": 306,
+    "lat": 29.3117,
+    "lon": 47.4818,
+    "zoom": 7.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.8
+      },
+      {
+        "level": 5,
+        "pct": 14.5
+      },
+      {
+        "level": 10,
+        "pct": 24
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 52
+      },
+      {
+        "level": 66,
+        "pct": 58
+      },
+      {
+        "level": 100,
+        "pct": 70
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 15
+      },
+      {
+        "level": 2,
+        "pct": 28
+      },
+      {
+        "level": 5,
+        "pct": 52
+      },
+      {
+        "level": 10,
+        "pct": 70
+      },
+      {
+        "level": 25,
+        "pct": 85
+      },
+      {
+        "level": 50,
+        "pct": 93
+      },
+      {
+        "level": 66,
+        "pct": 96
+      },
+      {
+        "level": 100,
+        "pct": 99
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "LVA",
+    "name": "Latvia",
+    "flag": "🇱🇻",
+    "region": "Europe",
+    "totalPopulation": 1883000,
+    "totalAreaKm2": 64589,
+    "maxElevation": 312,
+    "lat": 56.8796,
+    "lon": 24.6032,
+    "zoom": 6.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3
+      },
+      {
+        "level": 2,
+        "pct": 5.8
+      },
+      {
+        "level": 5,
+        "pct": 12.5
+      },
+      {
+        "level": 10,
+        "pct": 21
+      },
+      {
+        "level": 25,
+        "pct": 35
+      },
+      {
+        "level": 50,
+        "pct": 50
+      },
+      {
+        "level": 66,
+        "pct": 56
+      },
+      {
+        "level": 100,
+        "pct": 68
+      },
+      {
+        "level": 200,
+        "pct": 91
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 7
+      },
+      {
+        "level": 2,
+        "pct": 13
+      },
+      {
+        "level": 5,
+        "pct": 25
+      },
+      {
+        "level": 10,
+        "pct": 38
+      },
+      {
+        "level": 25,
+        "pct": 54
+      },
+      {
+        "level": 50,
+        "pct": 68
+      },
+      {
+        "level": 66,
+        "pct": 73
+      },
+      {
+        "level": 100,
+        "pct": 83
+      },
+      {
+        "level": 200,
+        "pct": 96
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "LTU",
+    "name": "Lithuania",
+    "flag": "🇱🇹",
+    "region": "Europe",
+    "totalPopulation": 2800000,
+    "totalAreaKm2": 65300,
+    "maxElevation": 294,
+    "lat": 55.1694,
+    "lon": 23.8813,
+    "zoom": 6.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 4.8
+      },
+      {
+        "level": 5,
+        "pct": 10.5
+      },
+      {
+        "level": 10,
+        "pct": 18
+      },
+      {
+        "level": 25,
+        "pct": 31
+      },
+      {
+        "level": 50,
+        "pct": 46
+      },
+      {
+        "level": 66,
+        "pct": 52
+      },
+      {
+        "level": 100,
+        "pct": 64
+      },
+      {
+        "level": 200,
+        "pct": 89
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5.5
+      },
+      {
+        "level": 2,
+        "pct": 10.5
+      },
+      {
+        "level": 5,
+        "pct": 21
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 47
+      },
+      {
+        "level": 50,
+        "pct": 61
+      },
+      {
+        "level": 66,
+        "pct": 66
+      },
+      {
+        "level": 100,
+        "pct": 78
+      },
+      {
+        "level": 200,
+        "pct": 94
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "MDG",
+    "name": "Madagascar",
+    "flag": "🇲🇬",
+    "region": "Africa",
+    "totalPopulation": 29610000,
+    "totalAreaKm2": 587041,
+    "maxElevation": 2876,
+    "lat": -18.7669,
+    "lon": 46.8691,
+    "zoom": 5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.8
+      },
+      {
+        "level": 2,
+        "pct": 3.4
+      },
+      {
+        "level": 5,
+        "pct": 7.2
+      },
+      {
+        "level": 10,
+        "pct": 12.5
+      },
+      {
+        "level": 25,
+        "pct": 21
+      },
+      {
+        "level": 50,
+        "pct": 31
+      },
+      {
+        "level": 66,
+        "pct": 35
+      },
+      {
+        "level": 100,
+        "pct": 44
+      },
+      {
+        "level": 200,
+        "pct": 58
+      },
+      {
+        "level": 500,
+        "pct": 74
+      },
+      {
+        "level": 1000,
+        "pct": 88
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 7.8
+      },
+      {
+        "level": 5,
+        "pct": 15.5
+      },
+      {
+        "level": 10,
+        "pct": 25
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 51
+      },
+      {
+        "level": 66,
+        "pct": 56
+      },
+      {
+        "level": 100,
+        "pct": 66
+      },
+      {
+        "level": 200,
+        "pct": 79
+      },
+      {
+        "level": 500,
+        "pct": 90
+      },
+      {
+        "level": 1000,
+        "pct": 97
+      }
+    ]
+  },
+  {
+    "id": "MDV",
+    "name": "Maldives",
+    "flag": "🇲🇻",
+    "region": "Indian Ocean",
+    "totalPopulation": 521000,
+    "totalAreaKm2": 300,
+    "maxElevation": 2.4,
+    "lat": 3.2028,
+    "lon": 73.2207,
+    "zoom": 7.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 77
+      },
+      {
+        "level": 2,
+        "pct": 93
+      },
+      {
+        "level": 5,
+        "pct": 100
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 80
+      },
+      {
+        "level": 2,
+        "pct": 96
+      },
+      {
+        "level": 5,
+        "pct": 100
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "MLT",
+    "name": "Malta",
+    "flag": "🇲🇹",
+    "region": "Europe",
+    "totalPopulation": 533000,
+    "totalAreaKm2": 316,
+    "maxElevation": 253,
+    "lat": 35.9375,
+    "lon": 14.3754,
+    "zoom": 10.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9
+      },
+      {
+        "level": 5,
+        "pct": 18
+      },
+      {
+        "level": 10,
+        "pct": 28
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 55
+      },
+      {
+        "level": 66,
+        "pct": 60
+      },
+      {
+        "level": 100,
+        "pct": 72
+      },
+      {
+        "level": 200,
+        "pct": 92
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 15
+      },
+      {
+        "level": 5,
+        "pct": 28
+      },
+      {
+        "level": 10,
+        "pct": 42
+      },
+      {
+        "level": 25,
+        "pct": 58
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 76
+      },
+      {
+        "level": 100,
+        "pct": 86
+      },
+      {
+        "level": 200,
+        "pct": 97
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "MHL",
+    "name": "Marshall Islands",
+    "flag": "🇲🇭",
+    "region": "Oceania",
+    "totalPopulation": 42000,
+    "totalAreaKm2": 181,
+    "maxElevation": 10,
+    "lat": 7.1315,
+    "lon": 171.1845,
+    "zoom": 7.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 42
+      },
+      {
+        "level": 2,
+        "pct": 68
+      },
+      {
+        "level": 5,
+        "pct": 89
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 49
+      },
+      {
+        "level": 2,
+        "pct": 75
+      },
+      {
+        "level": 5,
+        "pct": 94
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "MUS",
+    "name": "Mauritius",
+    "flag": "🇲🇺",
+    "region": "Indian Ocean",
+    "totalPopulation": 1263000,
+    "totalAreaKm2": 2040,
+    "maxElevation": 828,
+    "lat": -20.3484,
+    "lon": 57.5522,
+    "zoom": 9.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9
+      },
+      {
+        "level": 5,
+        "pct": 18
+      },
+      {
+        "level": 10,
+        "pct": 28
+      },
+      {
+        "level": 25,
+        "pct": 40
+      },
+      {
+        "level": 50,
+        "pct": 52
+      },
+      {
+        "level": 66,
+        "pct": 56
+      },
+      {
+        "level": 100,
+        "pct": 65
+      },
+      {
+        "level": 200,
+        "pct": 78
+      },
+      {
+        "level": 500,
+        "pct": 92
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 11
+      },
+      {
+        "level": 2,
+        "pct": 20
+      },
+      {
+        "level": 5,
+        "pct": 36
+      },
+      {
+        "level": 10,
+        "pct": 52
+      },
+      {
+        "level": 25,
+        "pct": 68
+      },
+      {
+        "level": 50,
+        "pct": 79
+      },
+      {
+        "level": 66,
+        "pct": 83
+      },
+      {
+        "level": 100,
+        "pct": 90
+      },
+      {
+        "level": 200,
+        "pct": 96
+      },
+      {
+        "level": 500,
+        "pct": 99
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "MEX",
+    "name": "Mexico",
+    "flag": "🇲🇽",
+    "region": "North America",
+    "totalPopulation": 128500000,
+    "totalAreaKm2": 1964375,
+    "maxElevation": 5636,
+    "lat": 23.6345,
+    "lon": -102.5528,
+    "zoom": 4.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.9
+      },
+      {
+        "level": 2,
+        "pct": 1.8
+      },
+      {
+        "level": 5,
+        "pct": 3.8
+      },
+      {
+        "level": 10,
+        "pct": 7
+      },
+      {
+        "level": 25,
+        "pct": 13.5
+      },
+      {
+        "level": 50,
+        "pct": 22
+      },
+      {
+        "level": 66,
+        "pct": 26
+      },
+      {
+        "level": 100,
+        "pct": 35
+      },
+      {
+        "level": 200,
+        "pct": 51
+      },
+      {
+        "level": 500,
+        "pct": 72
+      },
+      {
+        "level": 1000,
+        "pct": 88
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3
+      },
+      {
+        "level": 2,
+        "pct": 5.8
+      },
+      {
+        "level": 5,
+        "pct": 12
+      },
+      {
+        "level": 10,
+        "pct": 20
+      },
+      {
+        "level": 25,
+        "pct": 33
+      },
+      {
+        "level": 50,
+        "pct": 46
+      },
+      {
+        "level": 66,
+        "pct": 51
+      },
+      {
+        "level": 100,
+        "pct": 61
+      },
+      {
+        "level": 200,
+        "pct": 75
+      },
+      {
+        "level": 500,
+        "pct": 88
+      },
+      {
+        "level": 1000,
+        "pct": 96
+      }
+    ]
+  },
+  {
+    "id": "FSM",
+    "name": "Micronesia",
+    "flag": "🇫🇲",
+    "region": "Oceania",
+    "totalPopulation": 115000,
+    "totalAreaKm2": 702,
+    "maxElevation": 791,
+    "lat": 6.8874,
+    "lon": 158.215,
+    "zoom": 6.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 14
+      },
+      {
+        "level": 2,
+        "pct": 24
+      },
+      {
+        "level": 5,
+        "pct": 40
+      },
+      {
+        "level": 10,
+        "pct": 54
+      },
+      {
+        "level": 25,
+        "pct": 68
+      },
+      {
+        "level": 50,
+        "pct": 78
+      },
+      {
+        "level": 66,
+        "pct": 82
+      },
+      {
+        "level": 100,
+        "pct": 88
+      },
+      {
+        "level": 200,
+        "pct": 94
+      },
+      {
+        "level": 500,
+        "pct": 98
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 22
+      },
+      {
+        "level": 2,
+        "pct": 36
+      },
+      {
+        "level": 5,
+        "pct": 56
+      },
+      {
+        "level": 10,
+        "pct": 72
+      },
+      {
+        "level": 25,
+        "pct": 84
+      },
+      {
+        "level": 50,
+        "pct": 91
+      },
+      {
+        "level": 66,
+        "pct": 94
+      },
+      {
+        "level": 100,
+        "pct": 97
+      },
+      {
+        "level": 200,
+        "pct": 99
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "NRU",
+    "name": "Nauru",
+    "flag": "🇳🇷",
+    "region": "Oceania",
+    "totalPopulation": 12500,
+    "totalAreaKm2": 21,
+    "maxElevation": 65,
+    "lat": -0.5228,
+    "lon": 166.9315,
+    "zoom": 11,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 15
+      },
+      {
+        "level": 2,
+        "pct": 24
+      },
+      {
+        "level": 5,
+        "pct": 38
+      },
+      {
+        "level": 10,
+        "pct": 52
+      },
+      {
+        "level": 25,
+        "pct": 75
+      },
+      {
+        "level": 50,
+        "pct": 92
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 25
+      },
+      {
+        "level": 2,
+        "pct": 40
+      },
+      {
+        "level": 5,
+        "pct": 62
+      },
+      {
+        "level": 10,
+        "pct": 80
+      },
+      {
+        "level": 25,
+        "pct": 95
+      },
+      {
+        "level": 50,
+        "pct": 99
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "NLD",
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "region": "Europe",
+    "totalPopulation": 17700000,
+    "totalAreaKm2": 41543,
+    "maxElevation": 322,
+    "lat": 52.1326,
+    "lon": 5.2913,
+    "zoom": 7.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 26
+      },
+      {
+        "level": 2,
+        "pct": 38
+      },
+      {
+        "level": 5,
+        "pct": 62
+      },
+      {
+        "level": 10,
+        "pct": 76
+      },
+      {
+        "level": 25,
+        "pct": 85
+      },
+      {
+        "level": 50,
+        "pct": 91
+      },
+      {
+        "level": 66,
+        "pct": 93
+      },
+      {
+        "level": 100,
+        "pct": 96
+      },
+      {
+        "level": 200,
+        "pct": 99
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 32
+      },
+      {
+        "level": 2,
+        "pct": 46
+      },
+      {
+        "level": 5,
+        "pct": 70
+      },
+      {
+        "level": 10,
+        "pct": 82
+      },
+      {
+        "level": 25,
+        "pct": 89
+      },
+      {
+        "level": 50,
+        "pct": 94
+      },
+      {
+        "level": 66,
+        "pct": 96
+      },
+      {
+        "level": 100,
+        "pct": 98
+      },
+      {
+        "level": 200,
+        "pct": 99.5
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "NZL",
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "region": "Oceania",
+    "totalPopulation": 5220000,
+    "totalAreaKm2": 268021,
+    "maxElevation": 3724,
+    "lat": -40.9006,
+    "lon": 174.886,
+    "zoom": 5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.5
+      },
+      {
+        "level": 2,
+        "pct": 2.8
+      },
+      {
+        "level": 5,
+        "pct": 6
+      },
+      {
+        "level": 10,
+        "pct": 10.5
+      },
+      {
+        "level": 25,
+        "pct": 18
+      },
+      {
+        "level": 50,
+        "pct": 27
+      },
+      {
+        "level": 66,
+        "pct": 31
+      },
+      {
+        "level": 100,
+        "pct": 40
+      },
+      {
+        "level": 200,
+        "pct": 55
+      },
+      {
+        "level": 500,
+        "pct": 72
+      },
+      {
+        "level": 1000,
+        "pct": 86
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5.2
+      },
+      {
+        "level": 2,
+        "pct": 10
+      },
+      {
+        "level": 5,
+        "pct": 19.5
+      },
+      {
+        "level": 10,
+        "pct": 31
+      },
+      {
+        "level": 25,
+        "pct": 46
+      },
+      {
+        "level": 50,
+        "pct": 60
+      },
+      {
+        "level": 66,
+        "pct": 65
+      },
+      {
+        "level": 100,
+        "pct": 74
+      },
+      {
+        "level": 200,
+        "pct": 86
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 98.5
+      }
+    ]
+  },
+  {
+    "id": "NGA",
+    "name": "Nigeria",
+    "flag": "🇳🇬",
+    "region": "Africa",
+    "totalPopulation": 218540000,
+    "totalAreaKm2": 923768,
+    "maxElevation": 2419,
+    "lat": 9.082,
+    "lon": 8.6753,
+    "zoom": 5.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.2
+      },
+      {
+        "level": 2,
+        "pct": 2.3
+      },
+      {
+        "level": 5,
+        "pct": 5
+      },
+      {
+        "level": 10,
+        "pct": 9
+      },
+      {
+        "level": 25,
+        "pct": 16.5
+      },
+      {
+        "level": 50,
+        "pct": 26.5
+      },
+      {
+        "level": 66,
+        "pct": 31
+      },
+      {
+        "level": 100,
+        "pct": 41
+      },
+      {
+        "level": 200,
+        "pct": 58
+      },
+      {
+        "level": 500,
+        "pct": 77
+      },
+      {
+        "level": 1000,
+        "pct": 91
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 7.8
+      },
+      {
+        "level": 5,
+        "pct": 16
+      },
+      {
+        "level": 10,
+        "pct": 26.5
+      },
+      {
+        "level": 25,
+        "pct": 40.5
+      },
+      {
+        "level": 50,
+        "pct": 54
+      },
+      {
+        "level": 66,
+        "pct": 59
+      },
+      {
+        "level": 100,
+        "pct": 69
+      },
+      {
+        "level": 200,
+        "pct": 83
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "PLW",
+    "name": "Palau",
+    "flag": "🇵🇼",
+    "region": "Oceania",
+    "totalPopulation": 18000,
+    "totalAreaKm2": 459,
+    "maxElevation": 242,
+    "lat": 7.515,
+    "lon": 134.5825,
+    "zoom": 8.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 10
+      },
+      {
+        "level": 2,
+        "pct": 18
+      },
+      {
+        "level": 5,
+        "pct": 32
+      },
+      {
+        "level": 10,
+        "pct": 45
+      },
+      {
+        "level": 25,
+        "pct": 60
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 77
+      },
+      {
+        "level": 100,
+        "pct": 85
+      },
+      {
+        "level": 200,
+        "pct": 96
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 16
+      },
+      {
+        "level": 2,
+        "pct": 28
+      },
+      {
+        "level": 5,
+        "pct": 48
+      },
+      {
+        "level": 10,
+        "pct": 64
+      },
+      {
+        "level": 25,
+        "pct": 78
+      },
+      {
+        "level": 50,
+        "pct": 88
+      },
+      {
+        "level": 66,
+        "pct": 92
+      },
+      {
+        "level": 100,
+        "pct": 96
+      },
+      {
+        "level": 200,
+        "pct": 99
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "PHL",
+    "name": "Philippines",
+    "flag": "🇵🇭",
+    "region": "Southeast Asia",
+    "totalPopulation": 115560000,
+    "totalAreaKm2": 300000,
+    "maxElevation": 2954,
+    "lat": 12.8797,
+    "lon": 121.774,
+    "zoom": 5.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.8
+      },
+      {
+        "level": 2,
+        "pct": 5.2
+      },
+      {
+        "level": 5,
+        "pct": 10.8
+      },
+      {
+        "level": 10,
+        "pct": 18
+      },
+      {
+        "level": 25,
+        "pct": 28
+      },
+      {
+        "level": 50,
+        "pct": 39
+      },
+      {
+        "level": 66,
+        "pct": 43
+      },
+      {
+        "level": 100,
+        "pct": 52
+      },
+      {
+        "level": 200,
+        "pct": 66
+      },
+      {
+        "level": 500,
+        "pct": 81
+      },
+      {
+        "level": 1000,
+        "pct": 92
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 7.5
+      },
+      {
+        "level": 2,
+        "pct": 14
+      },
+      {
+        "level": 5,
+        "pct": 26
+      },
+      {
+        "level": 10,
+        "pct": 39
+      },
+      {
+        "level": 25,
+        "pct": 54
+      },
+      {
+        "level": 50,
+        "pct": 67
+      },
+      {
+        "level": 66,
+        "pct": 72
+      },
+      {
+        "level": 100,
+        "pct": 80
+      },
+      {
+        "level": 200,
+        "pct": 89
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "QAT",
+    "name": "Qatar",
+    "flag": "🇶🇦",
+    "region": "Middle East",
+    "totalPopulation": 2716000,
+    "totalAreaKm2": 11586,
+    "maxElevation": 103,
+    "lat": 25.3548,
+    "lon": 51.1839,
+    "zoom": 7.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 11.5
+      },
+      {
+        "level": 5,
+        "pct": 24
+      },
+      {
+        "level": 10,
+        "pct": 38
+      },
+      {
+        "level": 25,
+        "pct": 58
+      },
+      {
+        "level": 50,
+        "pct": 76
+      },
+      {
+        "level": 66,
+        "pct": 84
+      },
+      {
+        "level": 100,
+        "pct": 98
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 18
+      },
+      {
+        "level": 2,
+        "pct": 34
+      },
+      {
+        "level": 5,
+        "pct": 60
+      },
+      {
+        "level": 10,
+        "pct": 78
+      },
+      {
+        "level": 25,
+        "pct": 91
+      },
+      {
+        "level": 50,
+        "pct": 97
+      },
+      {
+        "level": 66,
+        "pct": 99
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "RUS",
+    "name": "Russia",
+    "flag": "🇷🇺",
+    "region": "Eurasia",
+    "totalPopulation": 144240000,
+    "totalAreaKm2": 17098242,
+    "maxElevation": 5642,
+    "lat": 61.524,
+    "lon": 105.3188,
+    "zoom": 2.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.5
+      },
+      {
+        "level": 2,
+        "pct": 1
+      },
+      {
+        "level": 5,
+        "pct": 2.2
+      },
+      {
+        "level": 10,
+        "pct": 4
+      },
+      {
+        "level": 25,
+        "pct": 8
+      },
+      {
+        "level": 50,
+        "pct": 14
+      },
+      {
+        "level": 66,
+        "pct": 17
+      },
+      {
+        "level": 100,
+        "pct": 24
+      },
+      {
+        "level": 200,
+        "pct": 38
+      },
+      {
+        "level": 500,
+        "pct": 60
+      },
+      {
+        "level": 1000,
+        "pct": 80
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2
+      },
+      {
+        "level": 2,
+        "pct": 4
+      },
+      {
+        "level": 5,
+        "pct": 8.5
+      },
+      {
+        "level": 10,
+        "pct": 14.5
+      },
+      {
+        "level": 25,
+        "pct": 25
+      },
+      {
+        "level": 50,
+        "pct": 38
+      },
+      {
+        "level": 66,
+        "pct": 43
+      },
+      {
+        "level": 100,
+        "pct": 54
+      },
+      {
+        "level": 200,
+        "pct": 71
+      },
+      {
+        "level": 500,
+        "pct": 86
+      },
+      {
+        "level": 1000,
+        "pct": 95
+      }
+    ]
+  },
+  {
+    "id": "WSM",
+    "name": "Samoa",
+    "flag": "🇼🇸",
+    "region": "Oceania",
+    "totalPopulation": 222000,
+    "totalAreaKm2": 2842,
+    "maxElevation": 1857,
+    "lat": -13.759,
+    "lon": -172.1046,
+    "zoom": 8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 6
+      },
+      {
+        "level": 2,
+        "pct": 11
+      },
+      {
+        "level": 5,
+        "pct": 20
+      },
+      {
+        "level": 10,
+        "pct": 30
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 52
+      },
+      {
+        "level": 66,
+        "pct": 56
+      },
+      {
+        "level": 100,
+        "pct": 64
+      },
+      {
+        "level": 200,
+        "pct": 74
+      },
+      {
+        "level": 500,
+        "pct": 85
+      },
+      {
+        "level": 1000,
+        "pct": 94
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 12
+      },
+      {
+        "level": 2,
+        "pct": 22
+      },
+      {
+        "level": 5,
+        "pct": 40
+      },
+      {
+        "level": 10,
+        "pct": 56
+      },
+      {
+        "level": 25,
+        "pct": 70
+      },
+      {
+        "level": 50,
+        "pct": 80
+      },
+      {
+        "level": 66,
+        "pct": 84
+      },
+      {
+        "level": 100,
+        "pct": 90
+      },
+      {
+        "level": 200,
+        "pct": 95
+      },
+      {
+        "level": 500,
+        "pct": 98
+      },
+      {
+        "level": 1000,
+        "pct": 99.5
+      }
+    ]
+  },
+  {
+    "id": "STP",
+    "name": "São Tomé and Príncipe",
+    "flag": "🇸🇹",
+    "region": "Atlantic Ocean",
+    "totalPopulation": 227000,
+    "totalAreaKm2": 964,
+    "maxElevation": 2024,
+    "lat": 0.1864,
+    "lon": 6.6131,
+    "zoom": 9.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 8
+      },
+      {
+        "level": 5,
+        "pct": 15
+      },
+      {
+        "level": 10,
+        "pct": 24
+      },
+      {
+        "level": 25,
+        "pct": 35
+      },
+      {
+        "level": 50,
+        "pct": 45
+      },
+      {
+        "level": 66,
+        "pct": 49
+      },
+      {
+        "level": 100,
+        "pct": 58
+      },
+      {
+        "level": 200,
+        "pct": 70
+      },
+      {
+        "level": 500,
+        "pct": 83
+      },
+      {
+        "level": 1000,
+        "pct": 92
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 10
+      },
+      {
+        "level": 2,
+        "pct": 18
+      },
+      {
+        "level": 5,
+        "pct": 34
+      },
+      {
+        "level": 10,
+        "pct": 50
+      },
+      {
+        "level": 25,
+        "pct": 65
+      },
+      {
+        "level": 50,
+        "pct": 76
+      },
+      {
+        "level": 66,
+        "pct": 80
+      },
+      {
+        "level": 100,
+        "pct": 88
+      },
+      {
+        "level": 200,
+        "pct": 94
+      },
+      {
+        "level": 500,
+        "pct": 98
+      },
+      {
+        "level": 1000,
+        "pct": 99.5
+      }
+    ]
+  },
+  {
+    "id": "SAU",
+    "name": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "region": "Middle East",
+    "totalPopulation": 36400000,
+    "totalAreaKm2": 2149690,
+    "maxElevation": 3000,
+    "lat": 23.8859,
+    "lon": 45.0792,
+    "zoom": 4.8,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.6
+      },
+      {
+        "level": 2,
+        "pct": 1.2
+      },
+      {
+        "level": 5,
+        "pct": 2.5
+      },
+      {
+        "level": 10,
+        "pct": 4.5
+      },
+      {
+        "level": 25,
+        "pct": 9
+      },
+      {
+        "level": 50,
+        "pct": 15.5
+      },
+      {
+        "level": 66,
+        "pct": 18.5
+      },
+      {
+        "level": 100,
+        "pct": 25.5
+      },
+      {
+        "level": 200,
+        "pct": 39
+      },
+      {
+        "level": 500,
+        "pct": 60
+      },
+      {
+        "level": 1000,
+        "pct": 79
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 4.8
+      },
+      {
+        "level": 5,
+        "pct": 10.2
+      },
+      {
+        "level": 10,
+        "pct": 17.5
+      },
+      {
+        "level": 25,
+        "pct": 29
+      },
+      {
+        "level": 50,
+        "pct": 42
+      },
+      {
+        "level": 66,
+        "pct": 47
+      },
+      {
+        "level": 100,
+        "pct": 58
+      },
+      {
+        "level": 200,
+        "pct": 73
+      },
+      {
+        "level": 500,
+        "pct": 87
+      },
+      {
+        "level": 1000,
+        "pct": 95.5
+      }
+    ]
+  },
+  {
+    "id": "SYC",
+    "name": "Seychelles",
+    "flag": "🇸🇨",
+    "region": "Indian Ocean",
+    "totalPopulation": 100000,
+    "totalAreaKm2": 459,
+    "maxElevation": 905,
+    "lat": -4.6796,
+    "lon": 55.492,
+    "zoom": 8.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 14
+      },
+      {
+        "level": 5,
+        "pct": 25
+      },
+      {
+        "level": 10,
+        "pct": 36
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 60
+      },
+      {
+        "level": 66,
+        "pct": 65
+      },
+      {
+        "level": 100,
+        "pct": 75
+      },
+      {
+        "level": 200,
+        "pct": 85
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 15
+      },
+      {
+        "level": 2,
+        "pct": 28
+      },
+      {
+        "level": 5,
+        "pct": 46
+      },
+      {
+        "level": 10,
+        "pct": 62
+      },
+      {
+        "level": 25,
+        "pct": 75
+      },
+      {
+        "level": 50,
+        "pct": 84
+      },
+      {
+        "level": 66,
+        "pct": 88
+      },
+      {
+        "level": 100,
+        "pct": 93
+      },
+      {
+        "level": 200,
+        "pct": 97
+      },
+      {
+        "level": 500,
+        "pct": 99
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "SGP",
+    "name": "Singapore",
+    "flag": "🇸🇬",
+    "region": "Southeast Asia",
+    "totalPopulation": 5918000,
+    "totalAreaKm2": 728,
+    "maxElevation": 164,
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "zoom": 10.5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 12
+      },
+      {
+        "level": 2,
+        "pct": 22
+      },
+      {
+        "level": 5,
+        "pct": 42
+      },
+      {
+        "level": 10,
+        "pct": 60
+      },
+      {
+        "level": 25,
+        "pct": 78
+      },
+      {
+        "level": 50,
+        "pct": 89
+      },
+      {
+        "level": 66,
+        "pct": 92
+      },
+      {
+        "level": 100,
+        "pct": 97
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 18
+      },
+      {
+        "level": 2,
+        "pct": 32
+      },
+      {
+        "level": 5,
+        "pct": 55
+      },
+      {
+        "level": 10,
+        "pct": 74
+      },
+      {
+        "level": 25,
+        "pct": 88
+      },
+      {
+        "level": 50,
+        "pct": 95
+      },
+      {
+        "level": 66,
+        "pct": 97
+      },
+      {
+        "level": 100,
+        "pct": 99
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "SLB",
+    "name": "Solomon Islands",
+    "flag": "🇸🇧",
+    "region": "Oceania",
+    "totalPopulation": 724000,
+    "totalAreaKm2": 28896,
+    "maxElevation": 2335,
+    "lat": -9.6457,
+    "lon": 160.1562,
+    "zoom": 6.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 7
+      },
+      {
+        "level": 5,
+        "pct": 14
+      },
+      {
+        "level": 10,
+        "pct": 22
+      },
+      {
+        "level": 25,
+        "pct": 33
+      },
+      {
+        "level": 50,
+        "pct": 42
+      },
+      {
+        "level": 66,
+        "pct": 46
+      },
+      {
+        "level": 100,
+        "pct": 54
+      },
+      {
+        "level": 200,
+        "pct": 65
+      },
+      {
+        "level": 500,
+        "pct": 78
+      },
+      {
+        "level": 1000,
+        "pct": 90
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8
+      },
+      {
+        "level": 2,
+        "pct": 15
+      },
+      {
+        "level": 5,
+        "pct": 28
+      },
+      {
+        "level": 10,
+        "pct": 42
+      },
+      {
+        "level": 25,
+        "pct": 56
+      },
+      {
+        "level": 50,
+        "pct": 67
+      },
+      {
+        "level": 66,
+        "pct": 71
+      },
+      {
+        "level": 100,
+        "pct": 79
+      },
+      {
+        "level": 200,
+        "pct": 87
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "ZAF",
+    "name": "South Africa",
+    "flag": "🇿🇦",
+    "region": "Africa",
+    "totalPopulation": 60040000,
+    "totalAreaKm2": 1221037,
+    "maxElevation": 3450,
+    "lat": -30.5595,
+    "lon": 22.9375,
+    "zoom": 5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.6
+      },
+      {
+        "level": 2,
+        "pct": 1.2
+      },
+      {
+        "level": 5,
+        "pct": 2.6
+      },
+      {
+        "level": 10,
+        "pct": 4.8
+      },
+      {
+        "level": 25,
+        "pct": 9.5
+      },
+      {
+        "level": 50,
+        "pct": 16
+      },
+      {
+        "level": 66,
+        "pct": 19.5
+      },
+      {
+        "level": 100,
+        "pct": 27
+      },
+      {
+        "level": 200,
+        "pct": 42
+      },
+      {
+        "level": 500,
+        "pct": 63
+      },
+      {
+        "level": 1000,
+        "pct": 82
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3
+      },
+      {
+        "level": 2,
+        "pct": 5.8
+      },
+      {
+        "level": 5,
+        "pct": 12
+      },
+      {
+        "level": 10,
+        "pct": 20
+      },
+      {
+        "level": 25,
+        "pct": 33
+      },
+      {
+        "level": 50,
+        "pct": 46
+      },
+      {
+        "level": 66,
+        "pct": 51
+      },
+      {
+        "level": 100,
+        "pct": 61
+      },
+      {
+        "level": 200,
+        "pct": 76
+      },
+      {
+        "level": 500,
+        "pct": 89
+      },
+      {
+        "level": 1000,
+        "pct": 96.5
+      }
+    ]
+  },
+  {
+    "id": "KOR",
+    "name": "South Korea",
+    "flag": "🇰🇷",
+    "region": "East Asia",
+    "totalPopulation": 51740000,
+    "totalAreaKm2": 100210,
+    "maxElevation": 1950,
+    "lat": 35.9078,
+    "lon": 127.7669,
+    "zoom": 6.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.8
+      },
+      {
+        "level": 2,
+        "pct": 3.4
+      },
+      {
+        "level": 5,
+        "pct": 7.5
+      },
+      {
+        "level": 10,
+        "pct": 13
+      },
+      {
+        "level": 25,
+        "pct": 23
+      },
+      {
+        "level": 50,
+        "pct": 34
+      },
+      {
+        "level": 66,
+        "pct": 39
+      },
+      {
+        "level": 100,
+        "pct": 48
+      },
+      {
+        "level": 200,
+        "pct": 64
+      },
+      {
+        "level": 500,
+        "pct": 81
+      },
+      {
+        "level": 1000,
+        "pct": 93
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9.8
+      },
+      {
+        "level": 5,
+        "pct": 20
+      },
+      {
+        "level": 10,
+        "pct": 32
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 63
+      },
+      {
+        "level": 66,
+        "pct": 68
+      },
+      {
+        "level": 100,
+        "pct": 77
+      },
+      {
+        "level": 200,
+        "pct": 88
+      },
+      {
+        "level": 500,
+        "pct": 95.5
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "ESP",
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "region": "Europe",
+    "totalPopulation": 47615000,
+    "totalAreaKm2": 505990,
+    "maxElevation": 3718,
+    "lat": 40.4637,
+    "lon": -3.7492,
+    "zoom": 5.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1
+      },
+      {
+        "level": 2,
+        "pct": 1.9
+      },
+      {
+        "level": 5,
+        "pct": 4.2
+      },
+      {
+        "level": 10,
+        "pct": 7.5
+      },
+      {
+        "level": 25,
+        "pct": 14
+      },
+      {
+        "level": 50,
+        "pct": 23
+      },
+      {
+        "level": 66,
+        "pct": 27
+      },
+      {
+        "level": 100,
+        "pct": 36
+      },
+      {
+        "level": 200,
+        "pct": 52
+      },
+      {
+        "level": 500,
+        "pct": 73
+      },
+      {
+        "level": 1000,
+        "pct": 91
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.5
+      },
+      {
+        "level": 2,
+        "pct": 6.8
+      },
+      {
+        "level": 5,
+        "pct": 14.5
+      },
+      {
+        "level": 10,
+        "pct": 24
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 52
+      },
+      {
+        "level": 66,
+        "pct": 57
+      },
+      {
+        "level": 100,
+        "pct": 68
+      },
+      {
+        "level": 200,
+        "pct": 82
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "LKA",
+    "name": "Sri Lanka",
+    "flag": "🇱🇰",
+    "region": "South Asia",
+    "totalPopulation": 22180000,
+    "totalAreaKm2": 65610,
+    "maxElevation": 2524,
+    "lat": 7.8731,
+    "lon": 80.7718,
+    "zoom": 7.2,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.2
+      },
+      {
+        "level": 2,
+        "pct": 4.2
+      },
+      {
+        "level": 5,
+        "pct": 8.8
+      },
+      {
+        "level": 10,
+        "pct": 15
+      },
+      {
+        "level": 25,
+        "pct": 24.5
+      },
+      {
+        "level": 50,
+        "pct": 35
+      },
+      {
+        "level": 66,
+        "pct": 39
+      },
+      {
+        "level": 100,
+        "pct": 48
+      },
+      {
+        "level": 200,
+        "pct": 62
+      },
+      {
+        "level": 500,
+        "pct": 77
+      },
+      {
+        "level": 1000,
+        "pct": 89
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5.5
+      },
+      {
+        "level": 2,
+        "pct": 10.5
+      },
+      {
+        "level": 5,
+        "pct": 20.5
+      },
+      {
+        "level": 10,
+        "pct": 32.5
+      },
+      {
+        "level": 25,
+        "pct": 47
+      },
+      {
+        "level": 50,
+        "pct": 60
+      },
+      {
+        "level": 66,
+        "pct": 65
+      },
+      {
+        "level": 100,
+        "pct": 74
+      },
+      {
+        "level": 200,
+        "pct": 85
+      },
+      {
+        "level": 500,
+        "pct": 93
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ]
+  },
+  {
+    "id": "PSE",
+    "name": "State of Palestine",
+    "flag": "🇵🇸",
+    "region": "Middle East",
+    "totalPopulation": 5480000,
+    "totalAreaKm2": 6020,
+    "maxElevation": 1022,
+    "lat": 31.9522,
+    "lon": 35.2332,
+    "zoom": 8.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.5
+      },
+      {
+        "level": 2,
+        "pct": 2.9
+      },
+      {
+        "level": 5,
+        "pct": 6.5
+      },
+      {
+        "level": 10,
+        "pct": 11.5
+      },
+      {
+        "level": 25,
+        "pct": 20
+      },
+      {
+        "level": 50,
+        "pct": 30
+      },
+      {
+        "level": 66,
+        "pct": 34.5
+      },
+      {
+        "level": 100,
+        "pct": 44
+      },
+      {
+        "level": 200,
+        "pct": 60
+      },
+      {
+        "level": 500,
+        "pct": 78
+      },
+      {
+        "level": 1000,
+        "pct": 95
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5.5
+      },
+      {
+        "level": 2,
+        "pct": 10.5
+      },
+      {
+        "level": 5,
+        "pct": 21
+      },
+      {
+        "level": 10,
+        "pct": 33
+      },
+      {
+        "level": 25,
+        "pct": 48
+      },
+      {
+        "level": 50,
+        "pct": 62
+      },
+      {
+        "level": 66,
+        "pct": 67
+      },
+      {
+        "level": 100,
+        "pct": 76
+      },
+      {
+        "level": 200,
+        "pct": 87
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "SUR",
+    "name": "Suriname",
+    "flag": "🇸🇷",
+    "region": "South America",
+    "totalPopulation": 618000,
+    "totalAreaKm2": 163820,
+    "maxElevation": 1280,
+    "lat": 3.9193,
+    "lon": -56.0278,
+    "zoom": 6,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.8
+      },
+      {
+        "level": 2,
+        "pct": 9
+      },
+      {
+        "level": 5,
+        "pct": 18
+      },
+      {
+        "level": 10,
+        "pct": 27
+      },
+      {
+        "level": 25,
+        "pct": 38
+      },
+      {
+        "level": 50,
+        "pct": 48
+      },
+      {
+        "level": 66,
+        "pct": 52
+      },
+      {
+        "level": 100,
+        "pct": 61
+      },
+      {
+        "level": 200,
+        "pct": 74
+      },
+      {
+        "level": 500,
+        "pct": 88
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 26
+      },
+      {
+        "level": 2,
+        "pct": 45
+      },
+      {
+        "level": 5,
+        "pct": 68
+      },
+      {
+        "level": 10,
+        "pct": 82
+      },
+      {
+        "level": 25,
+        "pct": 90
+      },
+      {
+        "level": 50,
+        "pct": 95
+      },
+      {
+        "level": 66,
+        "pct": 96.8
+      },
+      {
+        "level": 100,
+        "pct": 98.5
+      },
+      {
+        "level": 200,
+        "pct": 99.7
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "THA",
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "region": "Southeast Asia",
+    "totalPopulation": 71700000,
+    "totalAreaKm2": 513120,
+    "maxElevation": 2565,
+    "lat": 15.87,
+    "lon": 100.9925,
+    "zoom": 5.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 2.5
+      },
+      {
+        "level": 2,
+        "pct": 4.8
+      },
+      {
+        "level": 5,
+        "pct": 10
+      },
+      {
+        "level": 10,
+        "pct": 17
+      },
+      {
+        "level": 25,
+        "pct": 28
+      },
+      {
+        "level": 50,
+        "pct": 39
+      },
+      {
+        "level": 66,
+        "pct": 44
+      },
+      {
+        "level": 100,
+        "pct": 53
+      },
+      {
+        "level": 200,
+        "pct": 68
+      },
+      {
+        "level": 500,
+        "pct": 83
+      },
+      {
+        "level": 1000,
+        "pct": 93
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 8.5
+      },
+      {
+        "level": 2,
+        "pct": 16
+      },
+      {
+        "level": 5,
+        "pct": 31
+      },
+      {
+        "level": 10,
+        "pct": 46
+      },
+      {
+        "level": 25,
+        "pct": 62
+      },
+      {
+        "level": 50,
+        "pct": 74
+      },
+      {
+        "level": 66,
+        "pct": 78
+      },
+      {
+        "level": 100,
+        "pct": 86
+      },
+      {
+        "level": 200,
+        "pct": 93.5
+      },
+      {
+        "level": 500,
+        "pct": 97.5
+      },
+      {
+        "level": 1000,
+        "pct": 99.5
+      }
+    ]
+  },
+  {
+    "id": "TON",
+    "name": "Tonga",
+    "flag": "🇹🇴",
+    "region": "Oceania",
+    "totalPopulation": 106000,
+    "totalAreaKm2": 747,
+    "maxElevation": 1033,
+    "lat": -21.1789,
+    "lon": -175.1982,
+    "zoom": 8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 12
+      },
+      {
+        "level": 2,
+        "pct": 20
+      },
+      {
+        "level": 5,
+        "pct": 35
+      },
+      {
+        "level": 10,
+        "pct": 48
+      },
+      {
+        "level": 25,
+        "pct": 62
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 76
+      },
+      {
+        "level": 100,
+        "pct": 82
+      },
+      {
+        "level": 200,
+        "pct": 89
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 18
+      },
+      {
+        "level": 2,
+        "pct": 30
+      },
+      {
+        "level": 5,
+        "pct": 52
+      },
+      {
+        "level": 10,
+        "pct": 68
+      },
+      {
+        "level": 25,
+        "pct": 80
+      },
+      {
+        "level": 50,
+        "pct": 88
+      },
+      {
+        "level": 66,
+        "pct": 91
+      },
+      {
+        "level": 100,
+        "pct": 95
+      },
+      {
+        "level": 200,
+        "pct": 98
+      },
+      {
+        "level": 500,
+        "pct": 99.5
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "TTO",
+    "name": "Trinidad and Tobago",
+    "flag": "🇹🇹",
+    "region": "Caribbean",
+    "totalPopulation": 1531000,
+    "totalAreaKm2": 5130,
+    "maxElevation": 940,
+    "lat": 10.6918,
+    "lon": -61.2225,
+    "zoom": 8.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 5
+      },
+      {
+        "level": 2,
+        "pct": 9.5
+      },
+      {
+        "level": 5,
+        "pct": 19
+      },
+      {
+        "level": 10,
+        "pct": 29
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 54
+      },
+      {
+        "level": 66,
+        "pct": 58
+      },
+      {
+        "level": 100,
+        "pct": 68
+      },
+      {
+        "level": 200,
+        "pct": 80
+      },
+      {
+        "level": 500,
+        "pct": 92
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 12
+      },
+      {
+        "level": 2,
+        "pct": 22
+      },
+      {
+        "level": 5,
+        "pct": 39
+      },
+      {
+        "level": 10,
+        "pct": 55
+      },
+      {
+        "level": 25,
+        "pct": 70
+      },
+      {
+        "level": 50,
+        "pct": 81
+      },
+      {
+        "level": 66,
+        "pct": 85
+      },
+      {
+        "level": 100,
+        "pct": 91
+      },
+      {
+        "level": 200,
+        "pct": 96
+      },
+      {
+        "level": 500,
+        "pct": 99
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "TUR",
+    "name": "Turkey",
+    "flag": "🇹🇷",
+    "region": "Middle East",
+    "totalPopulation": 85370000,
+    "totalAreaKm2": 783562,
+    "maxElevation": 5137,
+    "lat": 38.9637,
+    "lon": 35.2433,
+    "zoom": 5.2,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.7
+      },
+      {
+        "level": 2,
+        "pct": 1.4
+      },
+      {
+        "level": 5,
+        "pct": 3
+      },
+      {
+        "level": 10,
+        "pct": 5.5
+      },
+      {
+        "level": 25,
+        "pct": 10.5
+      },
+      {
+        "level": 50,
+        "pct": 17.5
+      },
+      {
+        "level": 66,
+        "pct": 21
+      },
+      {
+        "level": 100,
+        "pct": 28.5
+      },
+      {
+        "level": 200,
+        "pct": 43
+      },
+      {
+        "level": 500,
+        "pct": 65
+      },
+      {
+        "level": 1000,
+        "pct": 83
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.2
+      },
+      {
+        "level": 2,
+        "pct": 6.2
+      },
+      {
+        "level": 5,
+        "pct": 13
+      },
+      {
+        "level": 10,
+        "pct": 22
+      },
+      {
+        "level": 25,
+        "pct": 35.5
+      },
+      {
+        "level": 50,
+        "pct": 49
+      },
+      {
+        "level": 66,
+        "pct": 54
+      },
+      {
+        "level": 100,
+        "pct": 64
+      },
+      {
+        "level": 200,
+        "pct": 78
+      },
+      {
+        "level": 500,
+        "pct": 90
+      },
+      {
+        "level": 1000,
+        "pct": 97
+      }
+    ]
+  },
+  {
+    "id": "TUV",
+    "name": "Tuvalu",
+    "flag": "🇹🇻",
+    "region": "Oceania",
+    "totalPopulation": 11200,
+    "totalAreaKm2": 26,
+    "maxElevation": 4.6,
+    "lat": -7.1095,
+    "lon": 177.6493,
+    "zoom": 9,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 48
+      },
+      {
+        "level": 2,
+        "pct": 72
+      },
+      {
+        "level": 5,
+        "pct": 100
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 55
+      },
+      {
+        "level": 2,
+        "pct": 80
+      },
+      {
+        "level": 5,
+        "pct": 100
+      },
+      {
+        "level": 10,
+        "pct": 100
+      },
+      {
+        "level": 25,
+        "pct": 100
+      },
+      {
+        "level": 50,
+        "pct": 100
+      },
+      {
+        "level": 66,
+        "pct": 100
+      },
+      {
+        "level": 100,
+        "pct": 100
+      },
+      {
+        "level": 200,
+        "pct": 100
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "ARE",
+    "name": "United Arab Emirates",
+    "flag": "🇦🇪",
+    "region": "Middle East",
+    "totalPopulation": 9441000,
+    "totalAreaKm2": 83600,
+    "maxElevation": 1910,
+    "lat": 23.4241,
+    "lon": 53.8478,
+    "zoom": 6.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.5
+      },
+      {
+        "level": 5,
+        "pct": 17.5
+      },
+      {
+        "level": 10,
+        "pct": 27.5
+      },
+      {
+        "level": 25,
+        "pct": 42
+      },
+      {
+        "level": 50,
+        "pct": 55
+      },
+      {
+        "level": 66,
+        "pct": 60
+      },
+      {
+        "level": 100,
+        "pct": 70
+      },
+      {
+        "level": 200,
+        "pct": 84
+      },
+      {
+        "level": 500,
+        "pct": 94
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 16
+      },
+      {
+        "level": 2,
+        "pct": 30
+      },
+      {
+        "level": 5,
+        "pct": 55
+      },
+      {
+        "level": 10,
+        "pct": 74
+      },
+      {
+        "level": 25,
+        "pct": 88
+      },
+      {
+        "level": 50,
+        "pct": 95
+      },
+      {
+        "level": 66,
+        "pct": 97
+      },
+      {
+        "level": 100,
+        "pct": 99
+      },
+      {
+        "level": 200,
+        "pct": 99.8
+      },
+      {
+        "level": 500,
+        "pct": 100
+      },
+      {
+        "level": 1000,
+        "pct": 100
+      }
+    ]
+  },
+  {
+    "id": "GBR",
+    "name": "United Kingdom",
+    "flag": "🇬🇧",
+    "region": "Europe",
+    "totalPopulation": 67330000,
+    "totalAreaKm2": 242495,
+    "maxElevation": 1345,
+    "lat": 55.3781,
+    "lon": -3.436,
+    "zoom": 5,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 1.8
+      },
+      {
+        "level": 2,
+        "pct": 3.5
+      },
+      {
+        "level": 5,
+        "pct": 7.5
+      },
+      {
+        "level": 10,
+        "pct": 13
+      },
+      {
+        "level": 25,
+        "pct": 23
+      },
+      {
+        "level": 50,
+        "pct": 35
+      },
+      {
+        "level": 66,
+        "pct": 40
+      },
+      {
+        "level": 100,
+        "pct": 50
+      },
+      {
+        "level": 200,
+        "pct": 67
+      },
+      {
+        "level": 500,
+        "pct": 85
+      },
+      {
+        "level": 1000,
+        "pct": 98
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.8
+      },
+      {
+        "level": 5,
+        "pct": 17.5
+      },
+      {
+        "level": 10,
+        "pct": 28
+      },
+      {
+        "level": 25,
+        "pct": 43
+      },
+      {
+        "level": 50,
+        "pct": 58
+      },
+      {
+        "level": 66,
+        "pct": 63
+      },
+      {
+        "level": 100,
+        "pct": 73
+      },
+      {
+        "level": 200,
+        "pct": 86
+      },
+      {
+        "level": 500,
+        "pct": 95
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "USA",
+    "name": "United States",
+    "flag": "🇺🇸",
+    "region": "North America",
+    "totalPopulation": 335000000,
+    "totalAreaKm2": 9833517,
+    "maxElevation": 6190,
+    "lat": 37.0902,
+    "lon": -95.7129,
+    "zoom": 3.5,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 0.7
+      },
+      {
+        "level": 2,
+        "pct": 1.4
+      },
+      {
+        "level": 5,
+        "pct": 3
+      },
+      {
+        "level": 10,
+        "pct": 5.5
+      },
+      {
+        "level": 25,
+        "pct": 11
+      },
+      {
+        "level": 50,
+        "pct": 18
+      },
+      {
+        "level": 66,
+        "pct": 21.5
+      },
+      {
+        "level": 100,
+        "pct": 29
+      },
+      {
+        "level": 200,
+        "pct": 44
+      },
+      {
+        "level": 500,
+        "pct": 65
+      },
+      {
+        "level": 1000,
+        "pct": 82
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 3.8
+      },
+      {
+        "level": 2,
+        "pct": 7.2
+      },
+      {
+        "level": 5,
+        "pct": 14.8
+      },
+      {
+        "level": 10,
+        "pct": 24.5
+      },
+      {
+        "level": 25,
+        "pct": 38.5
+      },
+      {
+        "level": 50,
+        "pct": 52
+      },
+      {
+        "level": 66,
+        "pct": 57
+      },
+      {
+        "level": 100,
+        "pct": 67
+      },
+      {
+        "level": 200,
+        "pct": 81
+      },
+      {
+        "level": 500,
+        "pct": 92
+      },
+      {
+        "level": 1000,
+        "pct": 97.5
+      }
+    ]
+  },
+  {
+    "id": "VUT",
+    "name": "Vanuatu",
+    "flag": "🇻🇺",
+    "region": "Oceania",
+    "totalPopulation": 326000,
+    "totalAreaKm2": 12189,
+    "maxElevation": 1877,
+    "lat": -15.3767,
+    "lon": 166.9592,
+    "zoom": 6.8,
+    "isIslandNation": true,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4
+      },
+      {
+        "level": 2,
+        "pct": 8
+      },
+      {
+        "level": 5,
+        "pct": 15
+      },
+      {
+        "level": 10,
+        "pct": 24
+      },
+      {
+        "level": 25,
+        "pct": 35
+      },
+      {
+        "level": 50,
+        "pct": 45
+      },
+      {
+        "level": 66,
+        "pct": 49
+      },
+      {
+        "level": 100,
+        "pct": 58
+      },
+      {
+        "level": 200,
+        "pct": 69
+      },
+      {
+        "level": 500,
+        "pct": 82
+      },
+      {
+        "level": 1000,
+        "pct": 93
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 9
+      },
+      {
+        "level": 2,
+        "pct": 17
+      },
+      {
+        "level": 5,
+        "pct": 32
+      },
+      {
+        "level": 10,
+        "pct": 48
+      },
+      {
+        "level": 25,
+        "pct": 62
+      },
+      {
+        "level": 50,
+        "pct": 72
+      },
+      {
+        "level": 66,
+        "pct": 76
+      },
+      {
+        "level": 100,
+        "pct": 84
+      },
+      {
+        "level": 200,
+        "pct": 91
+      },
+      {
+        "level": 500,
+        "pct": 96
+      },
+      {
+        "level": 1000,
+        "pct": 99
+      }
+    ]
+  },
+  {
+    "id": "VNM",
+    "name": "Vietnam",
+    "flag": "🇻🇳",
+    "region": "Southeast Asia",
+    "totalPopulation": 98180000,
+    "totalAreaKm2": 331210,
+    "maxElevation": 3143,
+    "lat": 14.0583,
+    "lon": 108.2772,
+    "zoom": 5.4,
+    "isIslandNation": false,
+    "landSubmergedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 4.5
+      },
+      {
+        "level": 2,
+        "pct": 8.2
+      },
+      {
+        "level": 5,
+        "pct": 16.5
+      },
+      {
+        "level": 10,
+        "pct": 26
+      },
+      {
+        "level": 25,
+        "pct": 37
+      },
+      {
+        "level": 50,
+        "pct": 47
+      },
+      {
+        "level": 66,
+        "pct": 51
+      },
+      {
+        "level": 100,
+        "pct": 60
+      },
+      {
+        "level": 200,
+        "pct": 73
+      },
+      {
+        "level": 500,
+        "pct": 86
+      },
+      {
+        "level": 1000,
+        "pct": 94
+      }
+    ],
+    "popDisplacedCurve": [
+      {
+        "level": 0,
+        "pct": 0
+      },
+      {
+        "level": 1,
+        "pct": 12
+      },
+      {
+        "level": 2,
+        "pct": 21
+      },
+      {
+        "level": 5,
+        "pct": 39
+      },
+      {
+        "level": 10,
+        "pct": 54
+      },
+      {
+        "level": 25,
+        "pct": 68
+      },
+      {
+        "level": 50,
+        "pct": 79
+      },
+      {
+        "level": 66,
+        "pct": 83
+      },
+      {
+        "level": 100,
+        "pct": 89
+      },
+      {
+        "level": 200,
+        "pct": 95
+      },
+      {
+        "level": 500,
+        "pct": 98.5
+      },
+      {
+        "level": 1000,
+        "pct": 99.8
+      }
+    ]
+  }
+]

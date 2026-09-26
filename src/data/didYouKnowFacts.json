@@ -1,0 +1,399 @@
+[
+  {
+    "id": "lesotho_mountain_sanctuary",
+    "category": "geography",
+    "title": "The 1,000m Mountain Nation",
+    "fact": "Lesotho is the only independent state on Earth whose entire territory lies above 1,000 meters. Its lowest point is 1,400m (4,593 ft) above sea level, making it 100% immune to even a hypothetical +1,000m deluge.",
+    "highlightLevel": 1000,
+    "tags": ["mountains", "africa", "elevation", "sanctuary"]
+  },
+  {
+    "id": "ice_sheet_melt_ceiling",
+    "category": "deluge",
+    "title": "The 66-Meter Ceiling",
+    "fact": "If every glacier and ice sheet on Earth (Antarctica and Greenland) were to melt completely, global sea level would rise by approximately 66 meters (216 feet). Beyond +66m requires extraterrestrial cometary impacts or colossal plate tectonic shifts.",
+    "highlightLevel": 66,
+    "tags": ["ice", "antarctica", "greenland", "physics"]
+  },
+  {
+    "id": "global_rice_basket",
+    "category": "population",
+    "title": "The Global Rice Basket",
+    "fact": "The low-lying river deltas of the Mekong, Ganges-Brahmaputra, and Irrawaddy produce over 30% of the world's rice supply. Just 1 meter of sea rise salinizes millions of hectares of freshwater agricultural paddies.",
+    "highlightLevel": 1,
+    "tags": ["agriculture", "food", "deltas", "asia"]
+  },
+  {
+    "id": "undersea_internet_cables",
+    "category": "economy",
+    "title": "Undersea Internet Hubs",
+    "fact": "Over 99% of international internet traffic travels through transoceanic fiber-optic cables. Almost all cable landing stations and power terminations sit within 2 to 4 meters of sea level on beaches and coastal margins.",
+    "highlightLevel": 2,
+    "tags": ["internet", "technology", "cables", "infrastructure"]
+  },
+  {
+    "id": "port_bottleneck_economy",
+    "category": "economy",
+    "title": "The 80% Port Bottleneck",
+    "fact": "More than 80% of all global merchandise trade by volume travels on container ships. The world's top 50 container ports are engineered for current sea levels ±2 meters, making logistics hyper-sensitive to coastal change.",
+    "highlightLevel": 3,
+    "tags": ["shipping", "ports", "trade", "logistics"]
+  },
+  {
+    "id": "doggerland_lost_europe",
+    "category": "history",
+    "title": "Doggerland — The Lost Land of Europe",
+    "fact": "Until approximately 6,500 BCE, you could walk on dry land from Britain to the Netherlands and Denmark across 'Doggerland', a fertile tundra gradually submerged as ice age glaciers retreated.",
+    "tags": ["prehistory", "europe", "submerged", "archaeology"]
+  },
+  {
+    "id": "zanclean_cataclysm",
+    "category": "history",
+    "title": "The Zanclean Cataclysm",
+    "fact": "5.3 million years ago, the Mediterranean was a completely dry salt basin until the Atlantic breached the Strait of Gibraltar, pouring in at 1,000 times the flow of the Amazon and filling the entire sea in less than 2 years.",
+    "tags": ["geology", "mediterranean", "floods", "cataclysm"]
+  },
+  {
+    "id": "sunken_alexandria",
+    "category": "heritage",
+    "title": "Sunken Alexandria",
+    "fact": "Parts of ancient Alexandria, including Cleopatra's palace and the foundations of the ancient Pharos Lighthouse, already lie 5 to 6 meters underwater in the Mediterranean due to seismic ground subsidence over 2,000 years.",
+    "highlightLevel": 5,
+    "tags": ["egypt", "alexandria", "cleopatra", "ruins"]
+  },
+  {
+    "id": "venice_mose_barriers",
+    "category": "heritage",
+    "title": "Venice & The MOSE Barriers",
+    "fact": "Venice is sinking at ~2mm per year while the Adriatic rises. Italy spent over $6 billion constructing the MOSE barrier system—78 submerged yellow gates that rise from the seafloor during high tides (Acqua Alta).",
+    "highlightLevel": 1,
+    "tags": ["venice", "italy", "engineering", "mose"]
+  },
+  {
+    "id": "qattara_hydroelectric_canal",
+    "category": "geography",
+    "title": "The Mediterranean to Qattara Canal",
+    "fact": "During the 20th century, scientists and engineers proposed digging a 60km canal from the Mediterranean to the dry Qattara Depression (-133m) to generate hydroelectric power from incoming sea water.",
+    "highlightLevel": 55,
+    "tags": ["egypt", "depression", "energy", "canals"]
+  },
+  {
+    "id": "jordan_rift_sill",
+    "category": "geography",
+    "title": "The Valley of Jezreel Gateway",
+    "fact": "The Dead Sea (-430m) is completely landlocked today. Only if global sea level rises past +35m would Mediterranean waters physically spill through the low Valley of Jezreel near Haifa into the Jordan Rift.",
+    "highlightLevel": 35,
+    "tags": ["dead sea", "jordan", "israel", "hydrology"]
+  },
+  {
+    "id": "maldives_lowest_country",
+    "category": "geography",
+    "title": "The Flattest Nation on Earth",
+    "fact": "The Maldives holds the world record for the lowest natural high point of any sovereign nation: its highest natural sand ridge is just 2.4 meters (7.9 feet) above sea level, with an average elevation of 1.5 meters.",
+    "highlightLevel": 2,
+    "tags": ["maldives", "atoll", "islands", "elevation"]
+  },
+  {
+    "id": "bangladesh_delta_density",
+    "category": "population",
+    "title": "The World's Most Vulnerable Megadelta",
+    "fact": "Over 170 million people live in Bangladesh, mostly on the low-lying Ganges-Brahmaputra delta. More than 30 million citizens reside on land less than 10 meters above mean sea level.",
+    "highlightLevel": 10,
+    "tags": ["bangladesh", "population", "deltas", "displacement"]
+  },
+  {
+    "id": "netherlands_dike_engineering",
+    "category": "geography",
+    "title": "A Nation Sculpted From the Sea",
+    "fact": "About 26% of the Netherlands lies below mean sea level, and 50% of its land is less than 1 meter above sea level, safeguarded by the world's most sophisticated coastal defense network: the Delta Works.",
+    "highlightLevel": 0,
+    "tags": ["netherlands", "dikes", "polders", "engineering"]
+  },
+  {
+    "id": "salton_sea_accident",
+    "category": "history",
+    "title": "The Salton Sea Accidental Ocean",
+    "fact": "In 1905, the Colorado River breached an irrigation headgate and poured into the dry Salton Sink (-69m) for two full years, creating California's largest inland lake. A 12m natural sill blocks the Gulf of California today.",
+    "highlightLevel": 12,
+    "tags": ["california", "salton sea", "rivers", "sill"]
+  },
+  {
+    "id": "lake_eyre_australia_heart",
+    "category": "geography",
+    "title": "Australia's Inland Salt Heart",
+    "fact": "Lake Eyre (Kati Thanda) in South Australia sits at -15 meters below sea level. It is usually a dry salt pan, filling completely with floodwaters only about four times per century.",
+    "tags": ["australia", "lake eyre", "desert", "salt"]
+  },
+  {
+    "id": "turpan_oasis_grapes",
+    "category": "geography",
+    "title": "Turpan — The Oasis Below Sea Level",
+    "fact": "The Turpan Depression in Xinjiang, China reaches -154 meters (-505 ft), making it the 4th lowest dry land on Earth. Despite searing heat, ancient underground Karez aqueducts nourish world-famous grape vineyards.",
+    "tags": ["china", "turpan", "depression", "agriculture"]
+  },
+  {
+    "id": "death_valley_badwater",
+    "category": "geography",
+    "title": "Death Valley's Sunken Salt Pan",
+    "fact": "Badwater Basin in California sits at -86 meters (-282 ft) below sea level. Less than 85 miles away lies Mount Whitney (+4,421m), the highest peak in the contiguous United States.",
+    "tags": ["death valley", "california", "badwater", "desert"]
+  },
+  {
+    "id": "caspian_sea_isolation",
+    "category": "geography",
+    "title": "The World's Largest Lake",
+    "fact": "The Caspian Sea surface sits at -28 meters below ocean sea level. Cities like Baku in Azerbaijan lie below oceanic sea level, separated from the Black Sea by the Kuma-Manych depression sill (+25m).",
+    "highlightLevel": 25,
+    "tags": ["caspian", "baku", "lakes", "azerbaijan"]
+  },
+  {
+    "id": "london_thames_barrier",
+    "category": "heritage",
+    "title": "The Thames Barrier Safeguard",
+    "fact": "Spanning 520 meters across the River Thames, the Thames Barrier protects 1.4 million Londoners and £300+ billion in property from North Sea storm surges. It has been raised over 200 times since 1982.",
+    "highlightLevel": 5,
+    "tags": ["london", "uk", "thames", "defense"]
+  },
+  {
+    "id": "new_york_coastal_aquifers",
+    "category": "economy",
+    "title": "Manhattan's Subterranean Pumps",
+    "fact": "New York City's subway system continuously pumps out 13 million gallons of groundwater every single day. At +5m sea level, high storm tides would overwhelm coastal pump stations across lower Manhattan.",
+    "highlightLevel": 5,
+    "tags": ["nyc", "subway", "infrastructure", "usa"]
+  },
+  {
+    "id": "tokyo_g_cans_cavern",
+    "category": "economy",
+    "title": "Tokyo's Underground Temple",
+    "fact": "To prevent catastrophic flooding, Tokyo built the G-Cans project: a gargantuan underground storm sewer with 59 colossal pillars (500 tons each) that discharge 200 cubic meters of water per second into the Edo River.",
+    "highlightLevel": 10,
+    "tags": ["tokyo", "japan", "engineering", "sewers"]
+  },
+  {
+    "id": "florida_limestone_sponge",
+    "category": "geography",
+    "title": "Florida's Porous Limestone Ground",
+    "fact": "Southern Florida rests on porous karst limestone that acts like a Swiss cheese sponge. Because seawater seeps horizontally through the bedrock beneath seawalls, conventional coastal dikes cannot keep groundwater from rising.",
+    "highlightLevel": 2,
+    "tags": ["florida", "miami", "limestone", "geology"]
+  },
+  {
+    "id": "antarctic_east_ice_lock",
+    "category": "deluge",
+    "title": "The East Antarctic Ice Vault",
+    "fact": "The East Antarctic Ice Sheet holds enough frozen water to raise global sea levels by 52 meters (170 feet) on its own. It is the coldest, thickest ice dome on Earth, reaching over 4,000 meters in thickness.",
+    "highlightLevel": 66,
+    "tags": ["antarctica", "ice sheet", "glaciers", "deluge"]
+  },
+  {
+    "id": "greenland_ice_sheet_volume",
+    "category": "deluge",
+    "title": "Greenland's 7.4-Meter Reservoir",
+    "fact": "The Greenland Ice Sheet contains 2.9 million cubic kilometers of freshwater. If entirely melted into the oceans, it would raise global sea levels by approximately 7.4 meters (24.3 feet).",
+    "highlightLevel": 10,
+    "tags": ["greenland", "arctic", "glaciers", "ice"]
+  },
+  {
+    "id": "gulf_stream_slowdown",
+    "category": "geography",
+    "title": "The AMOC Ocean Conveyor",
+    "fact": "As Arctic freshwater from melting glaciers pours into the North Atlantic, it weakens the Atlantic Meridional Overturning Circulation (AMOC), causing ocean water to back up against the US East Coast and accelerating sea level rise there.",
+    "tags": ["ocean", "gulf stream", "currents", "climate"]
+  },
+  {
+    "id": "post_glacial_rebound",
+    "category": "geography",
+    "title": "Land Rising Out of the Sea",
+    "fact": "Parts of Scandinavia, Canada, and Scotland are actually experiencing falling relative sea levels! Relieved of the colossal weight of Ice Age glaciers 12,000 years ago, the Earth's crust is rebounding upwards by up to 1 cm per year.",
+    "tags": ["isostasy", "scandinavia", "rebound", "geology"]
+  },
+  {
+    "id": "kiribati_land_purchase",
+    "category": "population",
+    "title": "Kiribati Buys Land in Fiji",
+    "fact": "In 2014, the island nation of Kiribati purchased 6,000 acres of elevated forested land on Vanua Levu, Fiji, for $8.77 million as a potential future agricultural reserve and resettlement sanctuary for its citizens.",
+    "tags": ["kiribati", "fiji", "pacific", "migration"]
+  },
+  {
+    "id": "tuvalu_digital_nation",
+    "category": "heritage",
+    "title": "Tuvalu's Digital Nation Plan",
+    "fact": "Faced with rising Pacific waters, Tuvalu announced an initiative to create a digital twin of its islands, historical artifacts, and sovereign identity in the cloud, becoming the world's first virtual nation in the metaverse.",
+    "highlightLevel": 1,
+    "tags": ["tuvalu", "digital", "pacific", "sovereignty"]
+  },
+  {
+    "id": "nile_delta_breadbasket",
+    "category": "population",
+    "title": "Egypt's Nile Delta Granary",
+    "fact": "The Nile Delta occupies just 2% of Egypt's land area but houses over 40% of its population and produces 60% of its food. A 1-meter sea level rise would submerge roughly one-third of this ancient breadbasket.",
+    "highlightLevel": 2,
+    "tags": ["egypt", "nile", "agriculture", "deltas"]
+  },
+  {
+    "id": "jakarta_sinking_capital",
+    "category": "population",
+    "title": "Jakarta Sinks & Nusantara Rises",
+    "fact": "Parts of North Jakarta have sunk by over 4 meters in the last 40 years due to massive groundwater pumping. This unprecedented subsidence prompted Indonesia to begin constructing a brand new capital, Nusantara, in Borneo.",
+    "tags": ["indonesia", "jakarta", "nusantara", "subsidence"]
+  },
+  {
+    "id": "saint_marks_acqua_alta",
+    "category": "heritage",
+    "title": "Acqua Alta in St. Mark's Square",
+    "fact": "Piazza San Marco is the lowest point in Venice at just 64 centimeters above sea level. Without the MOSE flood barriers, high tides regularly cover the square and flood the 1,000-year-old marble crypts of St. Mark's Basilica.",
+    "highlightLevel": 1,
+    "tags": ["venice", "heritage", "floods", "basilica"]
+  },
+  {
+    "id": "statue_of_liberty_bedloe",
+    "category": "heritage",
+    "title": "Lady Liberty on Bedloe's Island",
+    "fact": "The Statue of Liberty stands on an island pedestal only 5 meters above mean sea level. In 2012, Hurricane Sandy's 4.3m storm surge submerged 75% of Liberty Island, destroying electrical and security infrastructure.",
+    "highlightLevel": 5,
+    "tags": ["new york", "statue of liberty", "sandy", "monument"]
+  },
+  {
+    "id": "mont_saint_michel_tides",
+    "category": "heritage",
+    "title": "Mont-Saint-Michel Tidal Island",
+    "fact": "The tidal range around France's Mont-Saint-Michel reaches up to 14 meters (46 feet) between low and high tide. Medieval pilgrims had to cross quicksands before the tide rushed in 'with the speed of a galloping horse.'",
+    "tags": ["france", "tides", "castle", "heritage"]
+  },
+  {
+    "id": "mississippi_delta_loss",
+    "category": "geography",
+    "title": "Louisiana's Disappearing Coast",
+    "fact": "Due to river levees blocking natural sediment replenishment and rising sea levels, coastal Louisiana has lost roughly 5,000 km² of land since the 1930s—equivalent to losing an entire football field of wetlands every 100 minutes.",
+    "tags": ["louisiana", "mississippi", "wetlands", "erosion"]
+  },
+  {
+    "id": "amazon_fluvial_basin",
+    "category": "geography",
+    "title": "The Remarkable Flatness of the Amazon",
+    "fact": "The Amazon River descends only 100 meters over its final 3,000 kilometers from the Peruvian Andes foothills to the Atlantic Ocean. A +100m sea level rise would transform the interior Amazon Basin into a colossal freshwater inland sea.",
+    "highlightLevel": 100,
+    "tags": ["amazon", "brazil", "river", "gradient"]
+  },
+  {
+    "id": "denver_mile_high_sanctuary",
+    "category": "deluge",
+    "title": "Denver's Mile-High High Ground",
+    "fact": "At an elevation of 1,609 meters (exactly one mile) above sea level, Denver, Colorado would remain high, dry, and over 600 meters above the waterline even if Earth experienced a hypothetical +1,000m planetary deluge.",
+    "highlightLevel": 1000,
+    "tags": ["denver", "colorado", "mile high", "mountains"]
+  },
+  {
+    "id": "madrid_high_plateau",
+    "category": "geography",
+    "title": "Madrid's High Meseta",
+    "fact": "Perched on Spain's central Meseta plateau at 667 meters (2,188 ft) elevation, Madrid is the second highest capital city in Europe. It remains safe from rising waters until sea levels exceed +667 meters.",
+    "highlightLevel": 700,
+    "tags": ["madrid", "spain", "plateau", "europe"]
+  },
+  {
+    "id": "bering_land_bridge",
+    "category": "history",
+    "title": "The Ancient Beringia Highway",
+    "fact": "During the Last Glacial Maximum 20,000 years ago, global sea levels were 120 meters lower than today. A 1,000-mile-wide land bridge (Beringia) connected Siberia and Alaska, allowing humans and megafauna to walk into the Americas.",
+    "tags": ["ice age", "beringia", "migration", "archaeology"]
+  },
+  {
+    "id": "black_sea_deluge_hypothesis",
+    "category": "history",
+    "title": "The Black Sea Flood Theory",
+    "fact": "Around 5,600 BCE, rising Mediterranean waters may have violently breached the Bosporus bedrock sill, pouring 40 km³ of seawater daily into the low freshwater Black Sea basin and expanding its shoreline by hundreds of miles in months.",
+    "tags": ["black sea", "bosporus", "turkey", "flood myth"]
+  },
+  {
+    "id": "atlantis_santorini_eruption",
+    "category": "history",
+    "title": "Santorini & The Atlantis Legend",
+    "fact": "Around 1600 BCE, the catastrophic Minoan eruption of Thera (Santorini) generated 30-meter tsunamis across the Aegean and submerged much of the island, an event widely linked to Plato's legend of the lost city of Atlantis.",
+    "tags": ["greece", "santorini", "atlantis", "volcano"]
+  },
+  {
+    "id": "mangrove_tsunami_shield",
+    "category": "geography",
+    "title": "Nature's Coastal Armor",
+    "fact": "Coastal mangrove forests act as natural shock absorbers: just 100 meters of dense mangrove root canopy attenuates incoming wave and storm surge energy by up to 66%, shielding inland communities from flooding.",
+    "tags": ["mangroves", "nature", "protection", "ecology"]
+  },
+  {
+    "id": "coral_reef_wave_break",
+    "category": "geography",
+    "title": "Coral Reefs as Wave Breakers",
+    "fact": "Living coral barrier reefs reduce wave energy reaching coastal shorelines by an average of 97%. Preserving healthy reefs provides coastal protection worth an estimated $4 billion globally every year.",
+    "tags": ["coral reefs", "ocean", "waves", "ecology"]
+  },
+  {
+    "id": "coastal_megacities_economic_share",
+    "category": "economy",
+    "title": "Coastal Megacities Power the Economy",
+    "fact": "Coastal zones cover less than 10% of the Earth's land surface but generate over 40% of the world's GDP. 15 of the 20 largest metropolitan areas globally are located directly on oceans, bays, or tidal estuaries.",
+    "highlightLevel": 10,
+    "tags": ["gdp", "cities", "economy", "metropolis"]
+  },
+  {
+    "id": "shanghai_yangtze_floodwalls",
+    "category": "geography",
+    "title": "Shanghai's Mega-Polder Dikes",
+    "fact": "Most of Shanghai's urban core sits between 3 and 4 meters above sea level. The city is protected by over 500 kilometers of fortified sea dikes and massive tidal sluice gates along the Yangtze River and Hangzhou Bay.",
+    "highlightLevel": 5,
+    "tags": ["shanghai", "china", "dikes", "yangtze"]
+  },
+  {
+    "id": "hamburg_hafencity_amphibious",
+    "category": "heritage",
+    "title": "Hamburg's Amphibious District",
+    "fact": "Rather than surrounding its historic harbor with dikes, Hamburg's HafenCity district is designed to be amphibious: buildings sit on elevated 8-meter mounds (Warften) and feature waterproof reinforced gates that seal during Elbe storm floods.",
+    "tags": ["germany", "hamburg", "architecture", "amphibious"]
+  },
+  {
+    "id": "marshall_islands_atolls",
+    "category": "population",
+    "title": "1,156 Atolls, Average 2 Meters",
+    "fact": "The Republic of the Marshall Islands comprises 29 coral atolls and 1,156 individual islands. Its average ground elevation is barely 2 meters (6.5 feet) above sea level, with no natural high ground anywhere in the nation.",
+    "highlightLevel": 2,
+    "tags": ["marshall islands", "pacific", "atolls", "vulnerable"]
+  },
+  {
+    "id": "red_sea_bab_el_mandeb",
+    "category": "geography",
+    "title": "The Gate of Tears Sill",
+    "fact": "The Red Sea connects to the Indian Ocean via the narrow Bab-el-Mandeb strait ('Gate of Tears'), where a shallow underwater sill at 137 meters depth restricts deep ocean circulation and keeps the Red Sea exceptionally warm and saline.",
+    "highlightLevel": 100,
+    "tags": ["red sea", "strait", "sill", "oceanography"]
+  },
+  {
+    "id": "gibraltar_atlantic_gateway",
+    "category": "geography",
+    "title": "The Gibraltar Water Inflow",
+    "fact": "Because evaporation greatly exceeds rainfall and river runoff across the Mediterranean Basin, 1 million cubic meters of Atlantic water flows inward through the Strait of Gibraltar every second to keep the sea level stable.",
+    "tags": ["gibraltar", "mediterranean", "currents", "hydrology"]
+  },
+  {
+    "id": "hypothetical_1000m_displacement",
+    "category": "deluge",
+    "title": "The 88% Human Threshold",
+    "fact": "Approximately 88.2% of all human beings (over 7.1 billion people) live below 1,000 meters elevation. An elevation rise of 1,000 meters leaves only high plateaus like Tibet, the Andes, the Colorado Plateau, and Ethiopia above water.",
+    "highlightLevel": 1000,
+    "tags": ["deluge", "population", "demographics", "plateaus"]
+  },
+  {
+    "id": "saint_petersburg_flood_dam",
+    "category": "heritage",
+    "title": "The Saint Petersburg Flood Dam",
+    "fact": "Founded by Peter the Great on marshy Baltic islands, Saint Petersburg suffered over 300 floods in its history until Russia completed the 25km Saint Petersburg Dam in 2011, equipped with two 125m-wide floating canal gates.",
+    "tags": ["russia", "saint petersburg", "dam", "baltic"]
+  },
+  {
+    "id": "dubai_artificial_islands",
+    "category": "economy",
+    "title": "The Palm & World Islands",
+    "fact": "Dubai's world-famous artificial archipelagos, Palm Jumeirah and The World, were built from over 500 million cubic meters of sand and rock dredged from the Persian Gulf floor, elevated between 2 and 4 meters above sea level.",
+    "highlightLevel": 2,
+    "tags": ["dubai", "uae", "islands", "megaprojects"]
+  }
+]

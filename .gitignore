@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.local
+
+# Editor & OS files
+.vscode
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vercel
