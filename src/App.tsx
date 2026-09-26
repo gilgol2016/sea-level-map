@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import type { Map as MapLibreMap } from 'maplibre-gl';
+import { Analytics } from '@vercel/analytics/react';
 import { MapView } from './components/Map';
 import { Controls } from './components/Controls';
 import { CityStats } from './components/CityStats';
@@ -496,6 +497,9 @@ export function App() {
       {/* Modals */}
       <InfoModal isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />
       <SanityCheckModal isOpen={isSanityOpen} onClose={() => setIsSanityOpen(false)} />
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
