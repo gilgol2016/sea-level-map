@@ -10,6 +10,7 @@
     "test": "node test/sanity.test.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "^1.16.0",
     "maplibre-gl": "^5.2.0",
     "react": "^19.0.0",
