@@ -19,6 +19,8 @@ interface ControlsProps {
   playbackSpeed?: PlaybackSpeed;
   onPlaybackSpeedChange?: (spd: PlaybackSpeed) => void;
   onAutoPlayStart?: () => void;
+  embedded?: boolean;
+  hideHeader?: boolean;
 }
 
 const COASTAL_PRESETS = [
@@ -66,7 +68,9 @@ export const Controls: React.FC<ControlsProps> = ({
   onTogglePlay,
   playbackSpeed: playbackSpeedProp,
   onPlaybackSpeedChange,
-  onAutoPlayStart
+  onAutoPlayStart,
+  embedded = false,
+  hideHeader = false
 }) => {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
   const [internalRangeMode, setInternalRangeMode] = useState<RangeMode>('coastal');
@@ -175,58 +179,68 @@ export const Controls: React.FC<ControlsProps> = ({
   const formattedLevel =
     seaLevel % 1 !== 0 ? seaLevel.toFixed(1) : seaLevel.toLocaleString();
 
+  const isExpanded = hideHeader ? true : !isCollapsed;
+
   return (
-    <div className={`bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-2xl ${isCollapsed ? 'p-4' : 'p-5'} shadow-2xl text-slate-100 flex flex-col gap-3.5 max-w-md w-full transition-all duration-200`}>
-      {/* Header with Title & Level Badge */}
-      <div
-        onPointerDown={onDragStart}
-        className={`flex items-center justify-between ${onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
-      >
-        <div className="flex items-center gap-2.5">
-          {onDragStart && (
-            <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
-              <GripHorizontal className="w-4 h-4" />
+    <div
+      className={
+        embedded
+          ? "w-full text-slate-100 flex flex-col gap-3.5 font-sans"
+          : `bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-2xl ${isCollapsed ? 'p-4' : 'p-5'} shadow-2xl text-slate-100 flex flex-col gap-3.5 max-w-md w-full transition-all duration-200`
+      }
+    >
+      {/* Header with Title & Level Badge (rendered only if not hidden) */}
+      {!hideHeader && (
+        <div
+          onPointerDown={onDragStart}
+          className={`flex items-center justify-between ${onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
+        >
+          <div className="flex items-center gap-2.5">
+            {onDragStart && (
+              <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
+                <GripHorizontal className="w-4 h-4" />
+              </div>
+            )}
+            <div className="p-2 rounded-xl bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
+              <Waves className="w-5 h-5" />
             </div>
-          )}
-          <div className="p-2 rounded-xl bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
-            <Waves className="w-5 h-5" />
+            <div>
+              <h1 className="text-base font-bold tracking-tight text-white leading-tight">
+                Sea Level Control
+              </h1>
+              <p className="text-xs text-slate-400">
+                {rangeMode === 'coastal'
+                  ? 'Coastal elevation model (0–100m)'
+                  : 'Extreme deluge model (0–1,000m, 50m steps)'}
+              </p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-base font-bold tracking-tight text-white leading-tight">
-              Sea Level Control
-            </h1>
-            <p className="text-xs text-slate-400">
-              {rangeMode === 'coastal'
-                ? 'Coastal elevation model (0–100m)'
-                : 'Extreme deluge model (0–1,000m, 50m steps)'}
-            </p>
+
+          <div className="flex items-center gap-2">
+            <div className="flex items-baseline gap-1 bg-slate-800/80 px-3.5 py-1.5 rounded-xl border border-slate-700">
+              <span className="text-2xl font-black tracking-tight text-cyan-400">
+                +{formattedLevel}
+              </span>
+              <span className="text-xs font-semibold text-slate-400">meters</span>
+            </div>
+
+            <button
+              onClick={() => setIsCollapsed(!isCollapsed)}
+              className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
+              title={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
+              aria-label={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
+              aria-expanded={!isCollapsed}
+            >
+              {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+            </button>
           </div>
         </div>
+      )}
 
-        <div className="flex items-center gap-2">
-          <div className="flex items-baseline gap-1 bg-slate-800/80 px-3.5 py-1.5 rounded-xl border border-slate-700">
-            <span className="text-2xl font-black tracking-tight text-cyan-400">
-              +{formattedLevel}
-            </span>
-            <span className="text-xs font-semibold text-slate-400">meters</span>
-          </div>
-
-          <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
-            title={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
-            aria-label={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
-            aria-expanded={!isCollapsed}
-          >
-            {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
-          </button>
-        </div>
-      </div>
-
-      {!isCollapsed && (
+      {isExpanded && (
         <>
           {/* Mode Selector & Precision / Step Indicator */}
-      <div className="flex items-center justify-between gap-2 pt-1 border-t border-slate-800 text-xs">
+      <div className={`flex items-center justify-between gap-2 text-xs ${!hideHeader ? 'pt-1 border-t border-slate-800' : ''}`}>
         {/* Coastal vs Extreme Tabs */}
         <div className="flex rounded-lg bg-slate-950/70 p-0.5 border border-slate-800">
           <button

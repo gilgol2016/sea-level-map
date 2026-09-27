@@ -36,6 +36,16 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
           </button>
         </div>
 
+        {/* Geographic Model Overview */}
+        <div className="bg-gradient-to-r from-cyan-950/60 to-blue-950/60 p-3.5 rounded-xl border border-cyan-500/30 text-xs text-cyan-200">
+          <p className="font-semibold text-white mb-1">
+            Interactive 0–1,000m Geographic Elevation Model
+          </p>
+          <p className="text-slate-300">
+            Featuring 684 tracked global cities, 50 iconic world heritage landmarks, and 74 national vulnerability profiles with hydrologically isolated depression protection.
+          </p>
+        </div>
+
         {/* Core Model Definition */}
         <div className="space-y-3 text-xs text-slate-300 leading-relaxed">
           <div className="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/60">

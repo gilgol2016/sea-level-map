@@ -34,6 +34,8 @@ interface CityStatsProps {
   activeTab?: 'cities' | 'landmarks' | 'countries';
   onActiveTabChange?: (tab: 'cities' | 'landmarks' | 'countries') => void;
   onDragStart?: (e: React.PointerEvent) => void;
+  embedded?: boolean;
+  hideHeader?: boolean;
 }
 
 export const CityStats: React.FC<CityStatsProps> = ({
@@ -52,7 +54,9 @@ export const CityStats: React.FC<CityStatsProps> = ({
   onSelectHotspot,
   activeTab: activeTabProp,
   onActiveTabChange,
-  onDragStart
+  onDragStart,
+  embedded = false,
+  hideHeader = false
 }) => {
   const [internalTab, setInternalTab] = useState<'cities' | 'landmarks' | 'countries'>('cities');
   const activeTab = activeTabProp ?? internalTab;
@@ -276,60 +280,68 @@ export const CityStats: React.FC<CityStatsProps> = ({
     });
   }, [countryFilterMode, countrySortMode, fullySubmergedCountries, affectedCountries, islandCountries, countryStatsList, searchTerm]);
 
+  const isExpanded = hideHeader ? true : !isCollapsed;
+
   return (
     <div
       onClick={() => setActiveTooltip(null)}
-      className="bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-2xl p-4 shadow-2xl text-slate-100 flex flex-col max-w-sm w-full transition-all"
+      className={
+        embedded
+          ? "w-full text-slate-100 flex flex-col font-sans transition-all"
+          : "bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-2xl p-4 shadow-2xl text-slate-100 flex flex-col max-w-sm w-full transition-all"
+      }
     >
       {/* Header & Toggle */}
-      <div
-        onPointerDown={onDragStart}
-        className={`flex items-center justify-between pb-3 border-b border-slate-800 ${onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
-      >
-        <div className="flex items-center gap-2">
-          {onDragStart && (
-            <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
-              <GripHorizontal className="w-4 h-4" />
+      {!hideHeader && (
+        <div
+          onPointerDown={onDragStart}
+          className={`flex items-center justify-between pb-3 border-b border-slate-800 ${onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
+        >
+          <div className="flex items-center gap-2">
+            {onDragStart && (
+              <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
+                <GripHorizontal className="w-4 h-4" />
+              </div>
+            )}
+            <div>
+              <h2 className="text-sm font-bold text-white flex items-center gap-1.5">
+                <span>Impact Statistics</span>
+              </h2>
+              <p className="text-xs text-slate-400">
+                {activeTab === 'cities'
+                  ? `${submergedCitiesCount} of ${totalTrackedCities} cities (${submergedCitiesPercent}%)`
+                  : activeTab === 'landmarks'
+                  ? `${submergedLandmarksCount} of ${totalLandmarks} landmarks (${submergedLandmarksPercent}%)`
+                  : `${fullySubmergedCountries.length} fully submerged • ${affectedCountries.length} impacted`}
+              </p>
             </div>
-          )}
-          <div>
-            <h2 className="text-sm font-bold text-white flex items-center gap-1.5">
-              <span>Impact Statistics</span>
-            </h2>
-            <p className="text-xs text-slate-400">
-              {activeTab === 'cities'
-                ? `${submergedCitiesCount} of ${totalTrackedCities} cities (${submergedCitiesPercent}%)`
-                : activeTab === 'landmarks'
-                ? `${submergedLandmarksCount} of ${totalLandmarks} landmarks (${submergedLandmarksPercent}%)`
-                : `${fullySubmergedCountries.length} fully submerged • ${affectedCountries.length} impacted`}
-            </p>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <button
+              onClick={onOpenSanityModal}
+              className="p-1.5 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-900 transition text-xs font-semibold flex items-center gap-1"
+              title="View depression verification checks"
+            >
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span className="text-[11px]">Sanity Tests</span>
+            </button>
+
+            <button
+              onClick={() => setIsCollapsed(!isCollapsed)}
+              className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
+              title={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
+              aria-label={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
+              aria-expanded={!isCollapsed}
+            >
+              {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+            </button>
           </div>
         </div>
+      )}
 
-        <div className="flex items-center gap-1">
-          <button
-            onClick={onOpenSanityModal}
-            className="p-1.5 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-900 transition text-xs font-semibold flex items-center gap-1"
-            title="View depression verification checks"
-          >
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span className="text-[11px]">Sanity Tests</span>
-          </button>
-
-          <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
-            title={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
-            aria-label={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
-            aria-expanded={!isCollapsed}
-          >
-            {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
-          </button>
-        </div>
-      </div>
-
-      {!isCollapsed && (
-        <div className="flex flex-col gap-3 pt-3">
+      {isExpanded && (
+        <div className={`flex flex-col gap-3 ${!hideHeader ? 'pt-3' : ''}`}>
           {/* Map Layer Visibility Checkboxes */}
           <div className="flex items-center justify-between bg-slate-850/80 bg-slate-800/50 rounded-xl px-3 py-2 border border-slate-700/60 text-xs">
             <span className="text-slate-400 text-[11px] font-semibold uppercase tracking-wider">Map Layers:</span>

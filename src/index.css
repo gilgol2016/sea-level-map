@@ -57,3 +57,13 @@ html, body, #root {
 .animate-fade-in {
   animation: fadeIn 0.15s ease-out forwards;
 }
+
+/* Mobile: offset MapLibre bottom controls so they are not obscured by the mobile bottom bar */
+@media (max-width: 767px) {
+  .maplibregl-ctrl-bottom-right {
+    bottom: calc(6.5rem + env(safe-area-inset-bottom)) !important;
+  }
+  .maplibregl-ctrl-bottom-left {
+    bottom: calc(6.5rem + env(safe-area-inset-bottom)) !important;
+  }
+}

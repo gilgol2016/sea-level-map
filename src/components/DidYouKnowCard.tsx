@@ -42,9 +42,10 @@ interface DidYouKnowCardProps {
   seaLevel: number;
   onDragStart?: (e: React.PointerEvent) => void;
   forceExpanded?: boolean;
+  embedded?: boolean;
 }
 
-export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDragStart, forceExpanded = false }) => {
+export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDragStart, forceExpanded = false, embedded = false }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const isCardExpanded = forceExpanded || isExpanded;
@@ -108,14 +109,20 @@ export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDrag
   }
 
   return (
-    <div className="pointer-events-auto w-80 sm:w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/70 rounded-2xl p-3.5 shadow-2xl transition-all duration-200 animate-fade-in text-slate-100 flex flex-col gap-2.5">
+    <div
+      className={
+        embedded
+          ? "w-full text-slate-100 flex flex-col gap-2.5 transition-all"
+          : "pointer-events-auto w-80 sm:w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/70 rounded-2xl p-3.5 shadow-2xl transition-all duration-200 animate-fade-in text-slate-100 flex flex-col gap-2.5"
+      }
+    >
       {/* Header */}
       <div
-        onPointerDown={onDragStart}
-        className={`flex items-center justify-between gap-2 border-b border-slate-800/80 pb-2 ${onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
+        onPointerDown={!embedded ? onDragStart : undefined}
+        className={`flex items-center justify-between gap-2 border-b border-slate-800/80 pb-2 ${!embedded && onDragStart ? 'cursor-grab active:cursor-grabbing select-none' : ''}`}
       >
         <div className="flex items-center gap-2">
-          {onDragStart && (
+          {!embedded && onDragStart && (
             <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
               <GripHorizontal className="w-4 h-4" />
             </div>

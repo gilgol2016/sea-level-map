@@ -9,7 +9,7 @@ import { SanityCheckModal } from './components/SanityCheckModal';
 import { City, Landmark, Hotspot } from './types';
 import rawCities from './data/cities.json';
 import rawLandmarks from './data/landmarks.json';
-import { Waves, Info, ShieldCheck, Share2, Check, Camera, Loader2, GripHorizontal, Sliders, BarChart3, Lightbulb, RotateCcw, Sparkles, Pause, Play } from 'lucide-react';
+import { Waves, Info, ShieldCheck, Share2, Check, Camera, Loader2, GripHorizontal, Sliders, BarChart3, Lightbulb, RotateCcw, Sparkles, Pause, Play, Menu, ChevronDown, ChevronUp } from 'lucide-react';
 import { parseScenarioParams, serializeScenarioParams } from './utils/urlState';
 import { captureMapSnapshot } from './utils/snapshotExporter';
 import { useDraggable } from './utils/useDraggable';
@@ -46,6 +46,10 @@ export function App() {
   const [isSanityOpen, setIsSanityOpen] = useState<boolean>(false);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState<boolean>(false);
   const [mobileTab, setMobileTab] = useState<MobileTab>('controls');
+  const [desktopTab, setDesktopTab] = useState<'controls' | 'stats' | 'facts'>('controls');
+  const [isPanelCollapsed, setIsPanelCollapsed] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   const [rangeMode, setRangeMode] = useState<RangeMode>(
     initialParams.seaLevel > 100 ? 'extreme' : 'coastal'
   );
@@ -53,9 +57,7 @@ export function App() {
 
   // Draggable hooks for desktop floating panels (in-memory, resets on reload)
   const headerDrag = useDraggable();
-  const controlsDrag = useDraggable();
-  const statsDrag = useDraggable();
-  const didYouKnowDrag = useDraggable();
+  const panelDrag = useDraggable();
 
   // Debounced URL synchronization for scenario sharing
   useEffect(() => {
@@ -105,6 +107,21 @@ export function App() {
     return () => clearInterval(timer);
   }, [isPlaying, playbackSpeed, rangeMode, isPrecision]);
 
+  // Close menu on click outside
+  useEffect(() => {
+    const handleOutsideClick = (e: PointerEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+    if (isMenuOpen) {
+      document.addEventListener('pointerdown', handleOutsideClick);
+    }
+    return () => {
+      document.removeEventListener('pointerdown', handleOutsideClick);
+    };
+  }, [isMenuOpen]);
+
   // Global keyboard ergonomics: Esc to close modals/deselect, Arrow keys to nudge sea level, Space to Play/Pause
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -121,6 +138,10 @@ export function App() {
       }
 
       if (e.key === 'Escape') {
+        if (isMenuOpen) {
+          setIsMenuOpen(false);
+          return;
+        }
         if (isInfoOpen) {
           setIsInfoOpen(false);
           return;
@@ -248,145 +269,247 @@ export function App() {
       </div>
 
       {/* Top Navbar */}
-      <header className="absolute top-0 left-0 right-0 z-20 pointer-events-none p-4 flex justify-between items-start">
+      <header className="absolute top-0 left-0 right-0 z-20 pointer-events-none p-4 flex justify-between items-center">
+        {/* Brand Header: Minimal, clean, no "Phase 2" badge or subtitle */}
         <div
           ref={headerDrag.targetRef}
           style={headerDrag.style}
           onPointerDown={headerDrag.handlePointerDown}
-          className="pointer-events-auto bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-2xl px-4 py-2.5 shadow-2xl flex items-center gap-3 cursor-grab active:cursor-grabbing select-none"
+          className="pointer-events-auto bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-xl px-3.5 py-2 shadow-xl flex items-center gap-2.5 cursor-grab active:cursor-grabbing select-none"
         >
           <div className="hidden sm:flex text-slate-500 hover:text-slate-300">
-            <GripHorizontal className="w-4 h-4" />
+            <GripHorizontal className="w-3.5 h-3.5" />
           </div>
-          <div className="p-2 rounded-xl bg-gradient-to-tr from-cyan-600 to-blue-500 text-white shadow-md shadow-cyan-500/20">
-            <Waves className="w-5 h-5" />
+          <div className="p-1.5 rounded-lg bg-gradient-to-tr from-cyan-600 to-blue-500 text-white shadow-md shadow-cyan-500/20">
+            <Waves className="w-4 h-4" />
           </div>
-          <div>
-            <div className="text-sm font-black tracking-tight text-white flex items-center gap-2">
-              Global Sea Level Explorer
-              <span className="text-[10px] uppercase font-bold tracking-widest bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded-full">
-                Phase 2
-              </span>
-            </div>
-            <p className="text-[11px] text-slate-400 hidden sm:block">
-              Interactive 0–1,000m Geographic Elevation Model &bull; {CITIES.length} Cities &bull; {LANDMARKS.length} Landmarks &bull; 74 Nations
-            </p>
-          </div>
+          <span className="text-sm font-bold tracking-tight text-white">
+            Global Sea Level Explorer
+          </span>
         </div>
 
-        {/* Top Right Action Buttons */}
-        <div className="pointer-events-auto flex items-center gap-2">
+        {/* Top Right Action Menu Dropdown */}
+        <div className="relative pointer-events-auto" ref={menuRef}>
           <button
-            onClick={handleExportSnapshot}
-            disabled={isExporting}
-            className="bg-slate-900/90 hover:bg-slate-800 text-sky-400 hover:text-sky-300 border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl backdrop-blur-md text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-            title="Copy snapshot to clipboard (Ctrl+V) & download PNG"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl backdrop-blur-md text-xs font-semibold flex items-center gap-2 transition cursor-pointer"
+            aria-expanded={isMenuOpen}
+            aria-haspopup="true"
           >
-            {isExporting ? (
-              <Loader2 className="w-4 h-4 animate-spin text-sky-400" />
-            ) : exportSuccess ? (
-              <Check className="w-4 h-4 text-emerald-400" />
-            ) : (
-              <Camera className="w-4 h-4 text-sky-400" />
-            )}
-            <span className="hidden sm:inline">
-              {isExporting ? 'Exporting...' : exportSuccess ? 'Copied & Saved!' : 'Snapshot'}
-            </span>
+            <Menu className="w-4 h-4 text-cyan-400" />
+            <span>Menu</span>
+            <ChevronDown className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${isMenuOpen ? 'rotate-180' : ''}`} />
           </button>
 
-          <button
-            onClick={handleShareScenario}
-            className="bg-slate-900/90 hover:bg-slate-800 text-cyan-300 hover:text-white border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl backdrop-blur-md text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
-            title="Copy shareable link to this scenario"
-          >
-            <Share2 className="w-4 h-4 text-cyan-400" />
-            <span className="hidden sm:inline">Share</span>
-          </button>
+          {/* Dropdown Menu Modal / Popover */}
+          {isMenuOpen && (
+            <div className="absolute right-0 mt-2 w-52 bg-slate-900/95 backdrop-blur-md border border-slate-700/80 rounded-2xl shadow-2xl p-1.5 flex flex-col gap-1 z-30 animate-fade-in text-xs font-medium">
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleExportSnapshot();
+                }}
+                disabled={isExporting}
+                className="w-full text-left px-3 py-2 rounded-xl hover:bg-slate-800 text-slate-200 hover:text-white flex items-center gap-2.5 transition cursor-pointer disabled:opacity-50"
+              >
+                {isExporting ? (
+                  <Loader2 className="w-4 h-4 animate-spin text-sky-400" />
+                ) : exportSuccess ? (
+                  <Check className="w-4 h-4 text-emerald-400" />
+                ) : (
+                  <Camera className="w-4 h-4 text-sky-400" />
+                )}
+                <span>{isExporting ? 'Exporting...' : exportSuccess ? 'Copied & Saved!' : 'Snapshot'}</span>
+              </button>
 
-          <button
-            onClick={() => setIsSanityOpen(true)}
-            className="bg-slate-900/90 hover:bg-slate-800 text-emerald-400 border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl backdrop-blur-md text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
-            title="Inspect depression & data sanity checks"
-          >
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span className="hidden sm:inline">Sanity Tests</span>
-            <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.2 rounded-full border border-emerald-500/30">
-              Passed
-            </span>
-          </button>
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleShareScenario();
+                }}
+                className="w-full text-left px-3 py-2 rounded-xl hover:bg-slate-800 text-slate-200 hover:text-white flex items-center gap-2.5 transition cursor-pointer"
+              >
+                <Share2 className="w-4 h-4 text-cyan-400" />
+                <span>Share Scenario</span>
+              </button>
 
-          <button
-            onClick={() => setIsInfoOpen(true)}
-            className="bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700/60 rounded-xl px-3 py-2 shadow-xl backdrop-blur-md text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer"
-            title="Read about the model methodology"
-          >
-            <Info className="w-4 h-4 text-cyan-400" />
-            <span className="hidden sm:inline">About Model</span>
-          </button>
+              <div className="my-1 border-t border-slate-800" />
+
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setIsSanityOpen(true);
+                }}
+                className="w-full text-left px-3 py-2 rounded-xl hover:bg-slate-800 text-slate-200 hover:text-white flex items-center justify-between transition cursor-pointer"
+              >
+                <div className="flex items-center gap-2.5">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                  <span>Sanity Tests</span>
+                </div>
+                <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.2 rounded-full border border-emerald-500/30">
+                  Passed
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setIsInfoOpen(true);
+                }}
+                className="w-full text-left px-3 py-2 rounded-xl hover:bg-slate-800 text-slate-200 hover:text-white flex items-center gap-2.5 transition cursor-pointer"
+              >
+                <Info className="w-4 h-4 text-cyan-400" />
+                <span>About Model</span>
+              </button>
+            </div>
+          )}
         </div>
       </header>
 
-      {/* Floating Left: Sea Level Controls (Desktop Draggable) */}
+      {/* Unified Floating Explorer Panel (Desktop md:flex) */}
       <div
-        ref={controlsDrag.targetRef}
-        style={controlsDrag.style}
-        className="absolute top-20 left-4 z-20 pointer-events-auto hidden md:block"
+        ref={panelDrag.targetRef}
+        style={panelDrag.style}
+        className="absolute top-[72px] left-4 z-20 pointer-events-auto hidden md:flex flex-col bg-slate-900/95 backdrop-blur-md border border-slate-700/70 rounded-2xl shadow-2xl w-84 lg:w-92 xl:w-96 max-h-[calc(100vh-6rem)] overflow-hidden font-sans transition-all duration-200"
       >
-        <Controls
-          seaLevel={seaLevel}
-          onSeaLevelChange={(val) => {
-            setIsPlaying(false);
-            setSeaLevel(val);
-          }}
-          onSelectHotspot={handleSelectHotspot}
-          onDragStart={controlsDrag.handlePointerDown}
-          rangeMode={rangeMode}
-          onRangeModeChange={setRangeMode}
-          isPrecision={isPrecision}
-          onPrecisionChange={setIsPrecision}
-          isPlaying={isPlaying}
-          onTogglePlay={setIsPlaying}
-          playbackSpeed={playbackSpeed}
-          onPlaybackSpeedChange={setPlaybackSpeed}
-        />
-      </div>
+        {/* Panel Header & Navigation Tabs */}
+        <div className="flex items-center justify-between px-3.5 py-2.5 bg-slate-950/80 border-b border-slate-800 select-none">
+          {/* Drag Handle + Title */}
+          <div
+            onPointerDown={panelDrag.handlePointerDown}
+            className="flex items-center gap-1.5 cursor-grab active:cursor-grabbing text-slate-400 hover:text-slate-200"
+            title="Drag panel to reposition"
+          >
+            <GripHorizontal className="w-4 h-4 text-slate-500" />
+          </div>
 
-      {/* Floating Right: City, Landmark & Country Impact Statistics (Desktop Draggable) */}
-      <div
-        ref={statsDrag.targetRef}
-        style={statsDrag.style}
-        className="absolute top-20 right-4 z-20 pointer-events-auto hidden md:block"
-      >
-        <CityStats
-          cities={CITIES}
-          landmarks={LANDMARKS}
-          seaLevel={seaLevel}
-          selectedCity={selectedCity}
-          onSelectCity={setSelectedCity}
-          selectedLandmark={selectedLandmark}
-          onSelectLandmark={setSelectedLandmark}
-          showCities={showCities}
-          onToggleShowCities={() => setShowCities(!showCities)}
-          showLandmarks={showLandmarks}
-          onToggleShowLandmarks={() => setShowLandmarks(!showLandmarks)}
-          onOpenSanityModal={() => setIsSanityOpen(true)}
-          onSelectHotspot={handleSelectHotspot}
-          activeTab={activeTab}
-          onActiveTabChange={setActiveTab}
-          onDragStart={statsDrag.handlePointerDown}
-        />
-      </div>
+          {/* Mode Tabs */}
+          <div className="flex items-center gap-1 bg-slate-900 p-0.5 rounded-xl border border-slate-800">
+            <button
+              onClick={() => {
+                setDesktopTab('controls');
+                setIsPanelCollapsed(false);
+              }}
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer ${
+                desktopTab === 'controls' && !isPanelCollapsed
+                  ? 'bg-cyan-500 text-slate-950 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+              title="Sea level controls & simulation"
+            >
+              <Sliders className="w-3.5 h-3.5" />
+              <span>Controls</span>
+            </button>
 
-      {/* Floating Bottom-Left: Did You Know? Knowledge Engine (Desktop Draggable) */}
-      <div
-        ref={didYouKnowDrag.targetRef}
-        style={didYouKnowDrag.style}
-        className="absolute bottom-5 left-4 z-20 pointer-events-auto hidden md:block"
-      >
-        <DidYouKnowCard
-          seaLevel={seaLevel}
-          onDragStart={didYouKnowDrag.handlePointerDown}
-        />
+            <button
+              onClick={() => {
+                setDesktopTab('stats');
+                setIsPanelCollapsed(false);
+              }}
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer ${
+                desktopTab === 'stats' && !isPanelCollapsed
+                  ? 'bg-cyan-500 text-slate-950 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+              title="Impact statistics and city tracking"
+            >
+              <BarChart3 className="w-3.5 h-3.5" />
+              <span>Impact</span>
+            </button>
+
+            <button
+              onClick={() => {
+                setDesktopTab('facts');
+                setIsPanelCollapsed(false);
+              }}
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer ${
+                desktopTab === 'facts' && !isPanelCollapsed
+                  ? 'bg-amber-400 text-slate-950 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+              title="Curated geographical insights"
+            >
+              <Lightbulb className="w-3.5 h-3.5" />
+              <span>Facts</span>
+            </button>
+          </div>
+
+          {/* Live Sea Level Badge & Collapse Button */}
+          <div className="flex items-center gap-1.5">
+            <div className="flex items-baseline gap-0.5 bg-slate-800/90 px-2 py-0.5 rounded-lg border border-slate-700">
+              <span className="text-xs font-black text-cyan-400">
+                +{seaLevel % 1 !== 0 ? seaLevel.toFixed(1) : seaLevel.toLocaleString()}
+              </span>
+              <span className="text-[10px] font-semibold text-slate-400">m</span>
+            </div>
+
+            <button
+              onClick={() => setIsPanelCollapsed(!isPanelCollapsed)}
+              className="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
+              title={isPanelCollapsed ? "Expand explorer panel" : "Minimize explorer panel"}
+              aria-label={isPanelCollapsed ? "Expand explorer panel" : "Minimize explorer panel"}
+              aria-expanded={!isPanelCollapsed}
+            >
+              {isPanelCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Panel Content Body */}
+        {!isPanelCollapsed && (
+          <div className="p-3.5 overflow-y-auto max-h-[calc(100vh-10rem)] custom-scrollbar">
+            {desktopTab === 'controls' && (
+              <Controls
+                seaLevel={seaLevel}
+                onSeaLevelChange={(val) => {
+                  setIsPlaying(false);
+                  setSeaLevel(val);
+                }}
+                onSelectHotspot={handleSelectHotspot}
+                rangeMode={rangeMode}
+                onRangeModeChange={setRangeMode}
+                isPrecision={isPrecision}
+                onPrecisionChange={setIsPrecision}
+                isPlaying={isPlaying}
+                onTogglePlay={setIsPlaying}
+                playbackSpeed={playbackSpeed}
+                onPlaybackSpeedChange={setPlaybackSpeed}
+                embedded={true}
+                hideHeader={true}
+              />
+            )}
+
+            {desktopTab === 'stats' && (
+              <CityStats
+                cities={CITIES}
+                landmarks={LANDMARKS}
+                seaLevel={seaLevel}
+                selectedCity={selectedCity}
+                onSelectCity={setSelectedCity}
+                selectedLandmark={selectedLandmark}
+                onSelectLandmark={setSelectedLandmark}
+                showCities={showCities}
+                onToggleShowCities={() => setShowCities(!showCities)}
+                showLandmarks={showLandmarks}
+                onToggleShowLandmarks={() => setShowLandmarks(!showLandmarks)}
+                onOpenSanityModal={() => setIsSanityOpen(true)}
+                onSelectHotspot={handleSelectHotspot}
+                activeTab={activeTab}
+                onActiveTabChange={setActiveTab}
+                embedded={true}
+                hideHeader={true}
+              />
+            )}
+
+            {desktopTab === 'facts' && (
+              <DidYouKnowCard
+                seaLevel={seaLevel}
+                forceExpanded={true}
+                embedded={true}
+              />
+            )}
+          </div>
+        )}
       </div>
 
       {/* Mobile Bottom Thumb Bar (< 768px) */}
@@ -560,7 +683,7 @@ export function App() {
         onTabChange={setMobileTab}
       >
         {mobileTab === 'controls' && (
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md p-1">
             <Controls
               seaLevel={seaLevel}
               onSeaLevelChange={(val) => {
@@ -583,12 +706,14 @@ export function App() {
                 // Automatically hide/close the panel so the user can see the animated map rise immediately!
                 setIsMobileDrawerOpen(false);
               }}
+              embedded={true}
+              hideHeader={true}
             />
           </div>
         )}
 
         {mobileTab === 'stats' && (
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md p-1">
             <CityStats
               cities={CITIES}
               landmarks={LANDMARKS}
@@ -617,13 +742,19 @@ export function App() {
               }}
               activeTab={activeTab}
               onActiveTabChange={setActiveTab}
+              embedded={true}
+              hideHeader={true}
             />
           </div>
         )}
 
         {mobileTab === 'facts' && (
-          <div className="w-full max-w-md flex justify-center">
-            <DidYouKnowCard seaLevel={seaLevel} forceExpanded={true} />
+          <div className="w-full max-w-md p-1">
+            <DidYouKnowCard
+              seaLevel={seaLevel}
+              forceExpanded={true}
+              embedded={true}
+            />
           </div>
         )}
       </MobileDrawer>

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "node test/sanity.test.js"
+    "test": "node test/sanity.test.js",
+    "screenshots": "node scripts/capture_screenshots.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -21,6 +22,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.63.0",
     "pngjs": "^7.0.0",
     "typescript": "^5.7.0",
     "vite": "^6.2.0"
