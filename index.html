@@ -5,8 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Sea Level Explorer</title>
-    <!-- MapLibre GL CSS -->
-    <link href="https://unpkg.com/maplibre-gl@5.2.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://basemaps.cartocdn.com https://s3.amazonaws.com; connect-src 'self' https://s3.amazonaws.com https://basemaps.cartocdn.com https://vitals.vercel-insights.com blob:; worker-src 'self' blob:;"
+    />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>

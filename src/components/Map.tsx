@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import maplibregl, { Map as MapLibreMap, GeoJSONSource, RasterTileSource, Popup, Marker } from 'maplibre-gl';
+import * as maplibregl from 'maplibre-gl';
+import { Map as MapLibreMap, GeoJSONSource, RasterTileSource, Popup, Marker, type RequestParameters } from 'maplibre-gl';
 import { City, Landmark, Hotspot, ProbeLocation } from '../types';
 import { generateSubmergedTile } from '../utils/demProcessor';
 import { formatPopulation } from '../utils/formatters';
@@ -30,13 +31,27 @@ const CATEGORY_META: Record<string, { label: string; icon: string; color: string
   structure: { label: 'Iconic Structure', icon: '🏗️', color: '#06b6d4' }
 };
 
+function escapeHtml(value: string | number | undefined | null): string {
+  if (value === undefined || value === null) return '';
+  return String(value).replace(/[&<>"']/g, (char) => {
+    switch (char) {
+      case '&': return '&amp;';
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '"': return '&quot;';
+      case "'": return '&#39;';
+      default: return char;
+    }
+  });
+}
+
 // Register custom protocol once globally
 let protocolRegistered = false;
 function ensureCustomProtocol() {
   if (protocolRegistered) return;
   protocolRegistered = true;
 
-  maplibregl.addProtocol('sealevel', async (params) => {
+  maplibregl.addProtocol('sealevel', async (params: RequestParameters) => {
     try {
       const urlObj = new URL(params.url.replace('sealevel://', 'https://dummy.local/'));
       const pathParts = urlObj.pathname.replace(/^\//, '').split('/');
@@ -572,8 +587,8 @@ export const MapView: React.FC<MapProps> = ({
 
     const htmlContent = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; min-width: 170px;">
-        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${selectedCity.name}</div>
-        <div style="font-size: 12px; color: #64748b; margin-bottom: 6px;">${selectedCity.country}</div>
+        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${escapeHtml(selectedCity.name)}</div>
+        <div style="font-size: 12px; color: #64748b; margin-bottom: 6px;">${escapeHtml(selectedCity.country)}</div>
         <div style="font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 6px; display: flex; justify-content: space-between; gap: 8px;">
           <span><strong>Elevation:</strong> ${selectedCity.elevation > 0 ? `+${selectedCity.elevation}m` : `${selectedCity.elevation}m`}</span>
           <span><strong>Metro Pop:</strong> ${formatPopulation(selectedCity.population)}</span>
@@ -657,10 +672,10 @@ export const MapView: React.FC<MapProps> = ({
           <span>${catInfo.icon}</span>
           <span>${catInfo.label}</span>
           <span>&bull;</span>
-          <span>${selectedLandmark.country}</span>
+          <span>${escapeHtml(selectedLandmark.country)}</span>
         </div>
-        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${selectedLandmark.name}</div>
-        <div style="font-size: 11px; color: #475569; margin: 4px 0 6px 0; line-height: 1.35;">${selectedLandmark.description}</div>
+        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${escapeHtml(selectedLandmark.name)}</div>
+        <div style="font-size: 11px; color: #475569; margin: 4px 0 6px 0; line-height: 1.35;">${escapeHtml(selectedLandmark.description)}</div>
         <div style="font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 5px;">
           <strong>Elevation:</strong> ${selectedLandmark.elevation > 0 ? `+${selectedLandmark.elevation}m` : `${selectedLandmark.elevation}m`}
         </div>

@@ -45,13 +45,28 @@ export function parseScenarioParams(search: string): ScenarioParams {
   const zoomStr = params.get('zoom');
   const tabStr = params.get('tab');
 
-  const seaLevel = levelStr !== null && !isNaN(parseFloat(levelStr))
-    ? Math.max(0, Math.min(1000, parseFloat(levelStr)))
+  const parsedLevel = levelStr !== null ? parseFloat(levelStr) : null;
+  const seaLevel = parsedLevel !== null && Number.isFinite(parsedLevel)
+    ? Math.max(0, Math.min(1000, parsedLevel))
     : 0;
 
-  const lat = latStr !== null && !isNaN(parseFloat(latStr)) ? parseFloat(latStr) : null;
-  const lon = lonStr !== null && !isNaN(parseFloat(lonStr)) ? parseFloat(lonStr) : null;
-  const zoom = zoomStr !== null && !isNaN(parseFloat(zoomStr)) ? parseFloat(zoomStr) : null;
+  // Validate and clamp Web Mercator latitude [-85.0511, 85.0511]
+  const parsedLat = latStr !== null ? parseFloat(latStr) : null;
+  const lat = parsedLat !== null && Number.isFinite(parsedLat)
+    ? Math.max(-85.0511, Math.min(85.0511, parsedLat))
+    : null;
+
+  // Validate and clamp longitude [-180, 180]
+  const parsedLon = lonStr !== null ? parseFloat(lonStr) : null;
+  const lon = parsedLon !== null && Number.isFinite(parsedLon)
+    ? Math.max(-180, Math.min(180, parsedLon))
+    : null;
+
+  // Validate and clamp zoom level [0, 22]
+  const parsedZoom = zoomStr !== null ? parseFloat(zoomStr) : null;
+  const zoom = parsedZoom !== null && Number.isFinite(parsedZoom)
+    ? Math.max(0, Math.min(22, parsedZoom))
+    : null;
 
   const tab: 'cities' | 'landmarks' | 'countries' =
     tabStr === 'landmarks' || tabStr === 'countries' ? tabStr : 'cities';
