@@ -44,7 +44,7 @@ interface DidYouKnowCardProps {
 }
 
 export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDragStart }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(true);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isMilestoneActive, setIsMilestoneActive] = useState<boolean>(false);
   const lastSeaLevelRef = useRef<number>(seaLevel);

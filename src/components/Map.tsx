@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as maplibregl from 'maplibre-gl';
-import { Map as MapLibreMap, GeoJSONSource, RasterTileSource, Popup, Marker, type RequestParameters } from 'maplibre-gl';
+import { Map as MapLibreMap, GeoJSONSource, RasterTileSource, Popup, Marker, setWorkerUrl, type RequestParameters } from 'maplibre-gl';
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { City, Landmark, Hotspot, ProbeLocation } from '../types';
+
+setWorkerUrl(maplibreWorkerUrl);
 import { generateSubmergedTile } from '../utils/demProcessor';
 import { formatPopulation } from '../utils/formatters';
 import { sampleElevationAt, getProbeStatus, formatCoordinates } from '../utils/elevationProbe';
@@ -113,6 +116,16 @@ export const MapView: React.FC<MapProps> = ({
   const [probeLocation, setProbeLocation] = useState<ProbeLocation | null>(null);
   const [isMapReady, setIsMapReady] = useState<boolean>(false);
   const latestSeaLevelRef = useRef<number>(seaLevel);
+  const selectedCityRef = useRef<City | null>(selectedCity);
+  const selectedLandmarkRef = useRef<Landmark | null>(selectedLandmark);
+
+  useEffect(() => {
+    selectedCityRef.current = selectedCity;
+  }, [selectedCity]);
+
+  useEffect(() => {
+    selectedLandmarkRef.current = selectedLandmark;
+  }, [selectedLandmark]);
 
   const onMapReadyRef = useRef(onMapReady);
   useEffect(() => {
@@ -403,13 +416,37 @@ export const MapView: React.FC<MapProps> = ({
           return;
         }
 
+        // If a city/landmark or probe popup is active, clicking map dismisses it rather than dropping a new probe
+        const hasActiveSelection = !!(
+          selectedCityRef.current ||
+          selectedLandmarkRef.current ||
+          probeMarkerRef.current ||
+          (popupRef.current && popupRef.current.isOpen()) ||
+          (probePopupRef.current && probePopupRef.current.isOpen())
+        );
+
+        if (hasActiveSelection) {
+          if (selectedCityRef.current) onSelectCity(null);
+          if (selectedLandmarkRef.current) onSelectLandmark(null);
+          if (popupRef.current) {
+            popupRef.current.remove();
+            popupRef.current = null;
+          }
+          if (probePopupRef.current) {
+            probePopupRef.current.remove();
+            probePopupRef.current = null;
+          }
+          if (probeMarkerRef.current) {
+            probeMarkerRef.current.remove();
+            probeMarkerRef.current = null;
+          }
+          setProbeLocation(null);
+          return;
+        }
+
         const lon = e.lngLat.lng;
         const lat = e.lngLat.lat;
         const currentZoom = map.getZoom();
-
-        // Clear city or landmark selections
-        onSelectCity(null);
-        onSelectLandmark(null);
 
         // Remove previous probe marker/popup
         if (probePopupRef.current) {
@@ -565,13 +602,13 @@ export const MapView: React.FC<MapProps> = ({
     const formattedSeaLevel = seaLevel % 1 !== 0 ? seaLevel.toFixed(1) : seaLevel.toLocaleString();
     if (isSubmerged) {
       statusHtml = `
-        <div style="background-color: #fee2e2; color: #991b1b; padding: 4px 8px; border-radius: 4px; font-weight: 700; font-size: 12px; margin-top: 6px; display: flex; align-items: center; gap: 4px;">
+        <div style="background-color: rgba(127, 29, 29, 0.45); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 4px 8px; border-radius: 6px; font-weight: 700; font-size: 12px; margin-top: 6px; display: flex; align-items: center; gap: 4px;">
           <span>⚠️</span> SUBMERGED at +${formattedSeaLevel}m
         </div>
       `;
     } else if (isDepression) {
       statusHtml = `
-        <div style="background-color: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-weight: 600; font-size: 11px; margin-top: 6px;">
+        <div style="background-color: rgba(120, 53, 15, 0.45); border: 1px solid rgba(245, 158, 11, 0.4); color: #fde68a; padding: 4px 8px; border-radius: 6px; font-weight: 600; font-size: 11px; margin-top: 6px;">
           <span>ℹ️</span> Natural depression (below sea level today, not newly flooded)
         </div>
       `;
@@ -579,19 +616,19 @@ export const MapView: React.FC<MapProps> = ({
       const clearanceVal = selectedCity.elevation - seaLevel;
       const clearance = clearanceVal % 1 !== 0 ? clearanceVal.toFixed(1) : clearanceVal.toFixed(0);
       statusHtml = `
-        <div style="background-color: #e0f2fe; color: #075985; padding: 4px 8px; border-radius: 4px; font-weight: 600; font-size: 11px; margin-top: 6px;">
+        <div style="background-color: rgba(12, 74, 110, 0.45); border: 1px solid rgba(14, 165, 233, 0.4); color: #7dd3fc; padding: 4px 8px; border-radius: 6px; font-weight: 600; font-size: 11px; margin-top: 6px;">
           <span>🛡️</span> Safe (${clearance}m clearance above water)
         </div>
       `;
     }
 
     const htmlContent = `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; min-width: 170px;">
-        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${escapeHtml(selectedCity.name)}</div>
-        <div style="font-size: 12px; color: #64748b; margin-bottom: 6px;">${escapeHtml(selectedCity.country)}</div>
-        <div style="font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 6px; display: flex; justify-content: space-between; gap: 8px;">
-          <span><strong>Elevation:</strong> ${selectedCity.elevation > 0 ? `+${selectedCity.elevation}m` : `${selectedCity.elevation}m`}</span>
-          <span><strong>Metro Pop:</strong> ${formatPopulation(selectedCity.population)}</span>
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #f1f5f9; min-width: 170px;">
+        <div style="font-size: 15px; font-weight: 700; line-height: 1.2; color: #ffffff;">${escapeHtml(selectedCity.name)}</div>
+        <div style="font-size: 12px; color: #94a3b8; margin-bottom: 6px;">${escapeHtml(selectedCity.country)}</div>
+        <div style="font-size: 12px; border-top: 1px solid rgba(51, 65, 85, 0.8); padding-top: 6px; display: flex; justify-content: space-between; gap: 8px; color: #cbd5e1;">
+          <span><strong style="color: #f1f5f9;">Elevation:</strong> ${selectedCity.elevation > 0 ? `+${selectedCity.elevation}m` : `${selectedCity.elevation}m`}</span>
+          <span><strong style="color: #f1f5f9;">Metro Pop:</strong> ${formatPopulation(selectedCity.population)}</span>
         </div>
         ${statusHtml}
       </div>
@@ -646,13 +683,13 @@ export const MapView: React.FC<MapProps> = ({
     const formattedSeaLevel = seaLevel % 1 !== 0 ? seaLevel.toFixed(1) : seaLevel.toLocaleString();
     if (isSubmerged) {
       statusHtml = `
-        <div style="background-color: #fee2e2; color: #991b1b; padding: 4px 8px; border-radius: 4px; font-weight: 700; font-size: 12px; margin-top: 6px; display: flex; align-items: center; gap: 4px;">
+        <div style="background-color: rgba(127, 29, 29, 0.45); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 4px 8px; border-radius: 6px; font-weight: 700; font-size: 12px; margin-top: 6px; display: flex; align-items: center; gap: 4px;">
           <span>⚠️</span> SUBMERGED at +${formattedSeaLevel}m
         </div>
       `;
     } else if (isDepression) {
       statusHtml = `
-        <div style="background-color: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-weight: 600; font-size: 11px; margin-top: 6px;">
+        <div style="background-color: rgba(120, 53, 15, 0.45); border: 1px solid rgba(245, 158, 11, 0.4); color: #fde68a; padding: 4px 8px; border-radius: 6px; font-weight: 600; font-size: 11px; margin-top: 6px;">
           <span>ℹ️</span> Natural depression (below sea level today, not newly flooded)
         </div>
       `;
@@ -660,24 +697,24 @@ export const MapView: React.FC<MapProps> = ({
       const clearanceVal = selectedLandmark.elevation - seaLevel;
       const clearance = clearanceVal % 1 !== 0 ? clearanceVal.toFixed(1) : clearanceVal.toFixed(0);
       statusHtml = `
-        <div style="background-color: #e0f2fe; color: #075985; padding: 4px 8px; border-radius: 4px; font-weight: 600; font-size: 11px; margin-top: 6px;">
+        <div style="background-color: rgba(12, 74, 110, 0.45); border: 1px solid rgba(14, 165, 233, 0.4); color: #7dd3fc; padding: 4px 8px; border-radius: 6px; font-weight: 600; font-size: 11px; margin-top: 6px;">
           <span>🛡️</span> Safe (${clearance}m clearance above water)
         </div>
       `;
     }
 
     const htmlContent = `
-      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; min-width: 200px; max-width: 260px;">
-        <div style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #64748b; margin-bottom: 2px;">
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #f1f5f9; min-width: 200px; max-width: 260px;">
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: #94a3b8; margin-bottom: 2px;">
           <span>${catInfo.icon}</span>
           <span>${catInfo.label}</span>
           <span>&bull;</span>
           <span>${escapeHtml(selectedLandmark.country)}</span>
         </div>
-        <div style="font-size: 15px; font-weight: 700; line-height: 1.2;">${escapeHtml(selectedLandmark.name)}</div>
-        <div style="font-size: 11px; color: #475569; margin: 4px 0 6px 0; line-height: 1.35;">${escapeHtml(selectedLandmark.description)}</div>
-        <div style="font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 5px;">
-          <strong>Elevation:</strong> ${selectedLandmark.elevation > 0 ? `+${selectedLandmark.elevation}m` : `${selectedLandmark.elevation}m`}
+        <div style="font-size: 15px; font-weight: 700; line-height: 1.2; color: #ffffff;">${escapeHtml(selectedLandmark.name)}</div>
+        <div style="font-size: 11px; color: #cbd5e1; margin: 4px 0 6px 0; line-height: 1.35;">${escapeHtml(selectedLandmark.description)}</div>
+        <div style="font-size: 12px; border-top: 1px solid rgba(51, 65, 85, 0.8); padding-top: 5px; color: #cbd5e1;">
+          <strong style="color: #f1f5f9;">Elevation:</strong> ${selectedLandmark.elevation > 0 ? `+${selectedLandmark.elevation}m` : `${selectedLandmark.elevation}m`}
         </div>
         ${statusHtml}
       </div>
@@ -807,45 +844,49 @@ function buildProbePopupHtml(probe: ProbeLocation, seaLevel: number): string {
   const formattedSeaLevel = seaLevel % 1 !== 0 ? seaLevel.toFixed(1) : seaLevel.toLocaleString();
   const elevText = probe.elevation > 0 ? `+${probe.elevation}m` : `${probe.elevation}m`;
 
-  let statusBg = '#fee2e2';
-  let statusColor = '#991b1b';
+  let statusBg = 'rgba(127, 29, 29, 0.45)';
+  let statusBorder = 'rgba(239, 68, 68, 0.4)';
+  let statusColor = '#fca5a5';
   let statusIcon = '⚠️';
 
   if (status.badgeType === 'safe') {
-    statusBg = '#e0f2fe';
-    statusColor = '#075985';
+    statusBg = 'rgba(12, 74, 110, 0.45)';
+    statusBorder = 'rgba(14, 165, 233, 0.4)';
+    statusColor = '#7dd3fc';
     statusIcon = '🛡️';
   } else if (status.badgeType === 'basin_protected') {
-    statusBg = '#dcfce7';
-    statusColor = '#166534';
+    statusBg = 'rgba(20, 83, 45, 0.45)';
+    statusBorder = 'rgba(34, 197, 94, 0.4)';
+    statusColor = '#86efac';
     statusIcon = '🛡️';
   } else if (status.badgeType === 'depression') {
-    statusBg = '#fef3c7';
-    statusColor = '#92400e';
+    statusBg = 'rgba(120, 53, 15, 0.45)';
+    statusBorder = 'rgba(245, 158, 11, 0.4)';
+    statusColor = '#fde68a';
     statusIcon = 'ℹ️';
   }
 
   return `
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; min-width: 210px; max-width: 270px;">
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #f1f5f9; min-width: 210px; max-width: 270px;">
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 2px;">
-        <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; display: flex; align-items: center; gap: 4px;">
+        <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; display: flex; align-items: center; gap: 4px;">
           <span>📍</span> Elevation Probe
         </span>
-        <span style="font-size: 10px; background-color: #f1f5f9; color: #475569; padding: 1px 6px; border-radius: 9999px; font-weight: 600;">
+        <span style="font-size: 10px; background-color: rgba(30, 41, 59, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); color: #38bdf8; padding: 1px 6px; border-radius: 9999px; font-weight: 600;">
           +${formattedSeaLevel}m Sea
         </span>
       </div>
 
-      <div style="font-size: 11px; color: #64748b; margin-bottom: 6px; font-family: monospace;">
+      <div style="font-size: 11px; color: #94a3b8; margin-bottom: 6px; font-family: monospace;">
         ${formatCoordinates(probe.lat, probe.lon)}
       </div>
 
-      <div style="font-size: 12px; border-top: 1px solid #e2e8f0; padding-top: 6px; display: flex; justify-content: space-between; align-items: center;">
-        <span style="color: #475569;">Ground Elevation:</span>
-        <strong style="font-size: 13px; color: #0f172a;">${elevText}</strong>
+      <div style="font-size: 12px; border-top: 1px solid rgba(51, 65, 85, 0.8); padding-top: 6px; display: flex; justify-content: space-between; align-items: center; color: #cbd5e1;">
+        <span>Ground Elevation:</span>
+        <strong style="font-size: 13px; color: #ffffff;">${elevText}</strong>
       </div>
 
-      <div style="background-color: ${statusBg}; color: ${statusColor}; padding: 6px 8px; border-radius: 6px; font-weight: 700; font-size: 11px; margin-top: 6px; line-height: 1.35; display: flex; align-items: center; gap: 6px;">
+      <div style="background-color: ${statusBg}; border: 1px solid ${statusBorder}; color: ${statusColor}; padding: 6px 8px; border-radius: 6px; font-weight: 700; font-size: 11px; margin-top: 6px; line-height: 1.35; display: flex; align-items: center; gap: 6px;">
         <span style="font-size: 13px; flex-shrink: 0;">${statusIcon}</span>
         <span>${status.statusText}</span>
       </div>
@@ -855,14 +896,14 @@ function buildProbePopupHtml(probe: ProbeLocation, seaLevel: number): string {
 
 function buildProbeLoadingHtml(lat: number, lon: number): string {
   return `
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #0f172a; min-width: 180px; padding: 4px 0;">
-      <div style="font-size: 12px; font-weight: 700; color: #0f172a; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #f1f5f9; min-width: 180px; padding: 4px 0;">
+      <div style="font-size: 12px; font-weight: 700; color: #ffffff; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
         <span>📍</span> Probing Elevation...
       </div>
-      <div style="font-size: 10px; color: #64748b; font-family: monospace;">
+      <div style="font-size: 10px; color: #94a3b8; font-family: monospace;">
         ${formatCoordinates(lat, lon)}
       </div>
-      <div style="font-size: 11px; color: #94a3b8; margin-top: 4px; font-style: italic;">
+      <div style="font-size: 11px; color: #64748b; margin-top: 4px; font-style: italic;">
         Sampling DEM elevation raster...
       </div>
     </div>

@@ -65,6 +65,65 @@ export function App() {
     return () => clearTimeout(timer);
   }, [seaLevel, viewport, activeTab]);
 
+  // Global keyboard ergonomics: Esc to close modals/deselect, Arrow keys to nudge sea level
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Do not intercept if user is typing in a search or text input
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) {
+        return;
+      }
+
+      if (e.key === 'Escape') {
+        if (isInfoOpen) {
+          setIsInfoOpen(false);
+          return;
+        }
+        if (isSanityOpen) {
+          setIsSanityOpen(false);
+          return;
+        }
+        if (isMobileDrawerOpen) {
+          setIsMobileDrawerOpen(false);
+          return;
+        }
+        if (selectedCity) {
+          setSelectedCity(null);
+          return;
+        }
+        if (selectedLandmark) {
+          setSelectedLandmark(null);
+          return;
+        }
+      }
+
+      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        setSeaLevel((prev) => {
+          if (rangeMode === 'extreme') {
+            return Math.min(1000, Math.floor(prev / 50) * 50 + 50);
+          }
+          const step = isPrecision && prev < 10 ? 0.5 : 1;
+          return Math.min(100, prev + step);
+        });
+      }
+
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        setSeaLevel((prev) => {
+          if (rangeMode === 'extreme') {
+            return Math.max(0, Math.ceil(prev / 50) * 50 - 50);
+          }
+          const step = isPrecision && prev <= 10 ? 0.5 : 1;
+          return Math.max(0, prev - step);
+        });
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isInfoOpen, isSanityOpen, isMobileDrawerOpen, selectedCity, selectedLandmark, rangeMode, isPrecision]);
+
   const handleShareScenario = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);

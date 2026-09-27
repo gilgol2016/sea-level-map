@@ -318,7 +318,10 @@ export const CityStats: React.FC<CityStatsProps> = ({
 
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
+            title={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
+            aria-label={isCollapsed ? "Expand impact statistics" : "Collapse impact statistics"}
+            aria-expanded={!isCollapsed}
           >
             {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
           </button>

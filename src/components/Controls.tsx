@@ -198,6 +198,8 @@ export const Controls: React.FC<ControlsProps> = ({
             onClick={() => setIsCollapsed(!isCollapsed)}
             className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition cursor-pointer"
             title={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
+            aria-label={isCollapsed ? "Expand sea level controls" : "Minimize sea level controls"}
+            aria-expanded={!isCollapsed}
           >
             {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
           </button>
@@ -273,6 +275,7 @@ export const Controls: React.FC<ControlsProps> = ({
               step={isPrecision && seaLevel <= 10 ? 0.5 : 1}
               value={seaLevel}
               onChange={handleSliderChange}
+              aria-label="Coastal sea level in meters"
               className="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300 transition-all"
             />
 
@@ -349,6 +352,7 @@ export const Controls: React.FC<ControlsProps> = ({
               step={50}
               value={Math.round(seaLevel / 50) * 50}
               onChange={handleSliderChange}
+              aria-label="Extreme sea level in meters"
               className="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500 hover:accent-purple-400 transition-all"
             />
 

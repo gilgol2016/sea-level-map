@@ -23,28 +23,30 @@ html, body, #root {
   background: rgba(100, 116, 139, 1);
 }
 
-/* MapLibre custom popup styling */
+/* MapLibre custom popup styling (Dark Glassmorphic Theme) */
 .maplibregl-popup-content {
-  background: #ffffff !important;
-  border-radius: 12px !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2) !important;
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 14px !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5) !important;
   padding: 14px 16px !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid rgba(51, 65, 85, 0.8) !important;
+  color: #f1f5f9 !important;
 }
 
 .maplibregl-popup-close-button {
-  color: #64748b !important;
+  color: #94a3b8 !important;
   font-size: 16px !important;
   padding: 4px 8px !important;
   border-radius: 6px !important;
 }
 .maplibregl-popup-close-button:hover {
-  background: #f1f5f9 !important;
-  color: #0f172a !important;
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #ffffff !important;
 }
 
 .maplibregl-popup-tip {
-  border-top-color: #ffffff !important;
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
 }
 
 @keyframes fadeIn {
