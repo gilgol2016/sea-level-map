@@ -3,6 +3,7 @@ import { Waves, ChevronLeft, ChevronRight, Navigation, RotateCcw, Play, Pause, G
 import { Hotspot } from '../types';
 
 export type RangeMode = 'coastal' | 'extreme';
+export type PlaybackSpeed = 1 | 2 | 4;
 
 interface ControlsProps {
   seaLevel: number;
@@ -13,9 +14,12 @@ interface ControlsProps {
   onRangeModeChange?: (mode: RangeMode) => void;
   isPrecision?: boolean;
   onPrecisionChange?: (precision: boolean) => void;
+  isPlaying?: boolean;
+  onTogglePlay?: (playing: boolean) => void;
+  playbackSpeed?: PlaybackSpeed;
+  onPlaybackSpeedChange?: (spd: PlaybackSpeed) => void;
+  onAutoPlayStart?: () => void;
 }
-
-type PlaybackSpeed = 1 | 2 | 4;
 
 const COASTAL_PRESETS = [
   { level: 0, label: '0m', desc: "Today's baseline" },
@@ -57,13 +61,18 @@ export const Controls: React.FC<ControlsProps> = ({
   rangeMode: rangeModeProp,
   onRangeModeChange,
   isPrecision: isPrecisionProp,
-  onPrecisionChange
+  onPrecisionChange,
+  isPlaying: isPlayingProp,
+  onTogglePlay,
+  playbackSpeed: playbackSpeedProp,
+  onPlaybackSpeedChange,
+  onAutoPlayStart
 }) => {
   const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
   const [internalRangeMode, setInternalRangeMode] = useState<RangeMode>('coastal');
   const [internalPrecision, setInternalPrecision] = useState<boolean>(false); // Default: 1m precision
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [playbackSpeed, setPlaybackSpeed] = useState<PlaybackSpeed>(1);
+  const [internalIsPlaying, setInternalIsPlaying] = useState<boolean>(false);
+  const [internalPlaybackSpeed, setInternalPlaybackSpeed] = useState<PlaybackSpeed>(1);
 
   const rangeMode = rangeModeProp ?? internalRangeMode;
   const setRangeMode = onRangeModeChange ?? setInternalRangeMode;
@@ -71,11 +80,19 @@ export const Controls: React.FC<ControlsProps> = ({
   const isPrecision = isPrecisionProp ?? internalPrecision;
   const setIsPrecision = onPrecisionChange ?? setInternalPrecision;
 
+  const isPlaying = isPlayingProp ?? internalIsPlaying;
+  const setIsPlaying = onTogglePlay ?? setInternalIsPlaying;
+
+  const playbackSpeed = playbackSpeedProp ?? internalPlaybackSpeed;
+  const setPlaybackSpeed = onPlaybackSpeedChange ?? setInternalPlaybackSpeed;
+
   // Auto-play timeline loop
   const seaLevelRef = useRef(seaLevel);
   seaLevelRef.current = seaLevel;
 
   useEffect(() => {
+    // If parent controls auto-play, parent manages the interval timer
+    if (isPlayingProp !== undefined) return;
     if (!isPlaying) return;
 
     const intervalMs =
@@ -416,7 +433,13 @@ export const Controls: React.FC<ControlsProps> = ({
       <div className="bg-slate-800/60 rounded-xl p-2.5 border border-slate-700/70 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setIsPlaying(!isPlaying)}
+            onClick={() => {
+              const nextState = !isPlaying;
+              setIsPlaying(nextState);
+              if (nextState) {
+                onAutoPlayStart?.();
+              }
+            }}
             className={`px-3 py-1.5 rounded-lg font-bold text-xs flex items-center gap-1.5 transition cursor-pointer shadow-md ${
               isPlaying
                 ? 'bg-amber-500 text-slate-950 hover:bg-amber-400 ring-2 ring-amber-400/40'

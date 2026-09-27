@@ -41,11 +41,13 @@ const CATEGORY_META: Record<FactCategory, { label: string; icon: string; badgeCl
 interface DidYouKnowCardProps {
   seaLevel: number;
   onDragStart?: (e: React.PointerEvent) => void;
+  forceExpanded?: boolean;
 }
 
-export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDragStart }) => {
+export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDragStart, forceExpanded = false }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const isCardExpanded = forceExpanded || isExpanded;
   const [isMilestoneActive, setIsMilestoneActive] = useState<boolean>(false);
   const lastSeaLevelRef = useRef<number>(seaLevel);
 
@@ -87,7 +89,7 @@ export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDrag
 
   const categoryMeta = CATEGORY_META[currentFact.category] || CATEGORY_META.geography;
 
-  if (!isExpanded) {
+  if (!isCardExpanded) {
     return (
       <button
         onClick={() => setIsExpanded(true)}
@@ -144,13 +146,15 @@ export const DidYouKnowCard: React.FC<DidYouKnowCardProps> = ({ seaLevel, onDrag
           >
             <Dices className="w-3.5 h-3.5" />
           </button>
-          <button
-            onClick={() => setIsExpanded(false)}
-            className="p-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-white transition cursor-pointer"
-            title="Minimize"
-          >
-            <X className="w-3.5 h-3.5" />
-          </button>
+          {!forceExpanded && (
+            <button
+              onClick={() => setIsExpanded(false)}
+              className="p-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-white transition cursor-pointer"
+              title="Minimize"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
         </div>
       </div>
 

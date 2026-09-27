@@ -9,12 +9,12 @@ import { SanityCheckModal } from './components/SanityCheckModal';
 import { City, Landmark, Hotspot } from './types';
 import rawCities from './data/cities.json';
 import rawLandmarks from './data/landmarks.json';
-import { Waves, Info, ShieldCheck, Share2, Check, Camera, Loader2, GripHorizontal, Sliders, BarChart3, Lightbulb, RotateCcw, Sparkles } from 'lucide-react';
+import { Waves, Info, ShieldCheck, Share2, Check, Camera, Loader2, GripHorizontal, Sliders, BarChart3, Lightbulb, RotateCcw, Sparkles, Pause, Play } from 'lucide-react';
 import { parseScenarioParams, serializeScenarioParams } from './utils/urlState';
 import { captureMapSnapshot } from './utils/snapshotExporter';
 import { useDraggable } from './utils/useDraggable';
 import { MobileDrawer, MobileTab } from './components/MobileDrawer';
-import { RangeMode } from './components/Controls';
+import { RangeMode, PlaybackSpeed } from './components/Controls';
 
 const CITIES: City[] = rawCities as City[];
 const LANDMARKS: Landmark[] = rawLandmarks as Landmark[];
@@ -23,6 +23,8 @@ export function App() {
   const initialParams = parseScenarioParams(window.location.search);
 
   const [seaLevel, setSeaLevel] = useState<number>(initialParams.seaLevel);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [playbackSpeed, setPlaybackSpeed] = useState<PlaybackSpeed>(1);
   const [activeTab, setActiveTab] = useState<'cities' | 'landmarks' | 'countries'>(initialParams.tab);
   const [viewport, setViewport] = useState<{ lat: number; lon: number; zoom: number } | null>(
     initialParams.lat !== null && initialParams.lon !== null && initialParams.zoom !== null
@@ -65,12 +67,56 @@ export function App() {
     return () => clearTimeout(timer);
   }, [seaLevel, viewport, activeTab]);
 
-  // Global keyboard ergonomics: Esc to close modals/deselect, Arrow keys to nudge sea level
+  // Auto-play timeline simulation loop
+  const seaLevelRef = useRef(seaLevel);
+  seaLevelRef.current = seaLevel;
+
+  useEffect(() => {
+    if (!isPlaying) return;
+
+    const intervalMs =
+      rangeMode === 'extreme'
+        ? (playbackSpeed === 1 ? 400 : playbackSpeed === 2 ? 200 : 100)
+        : (playbackSpeed === 1 ? 250 : playbackSpeed === 2 ? 120 : 60);
+
+    const maxLimit = rangeMode === 'coastal' ? 100 : 1000;
+
+    const timer = setInterval(() => {
+      const current = seaLevelRef.current;
+      if (current >= maxLimit) {
+        setIsPlaying(false);
+        return;
+      }
+
+      let nextVal = current;
+      if (rangeMode === 'extreme') {
+        nextVal = Math.min(maxLimit, Math.floor(current / 50) * 50 + 50);
+      } else {
+        if (current < 10 && isPrecision) {
+          nextVal = Math.min(maxLimit, current + 0.5);
+        } else {
+          nextVal = Math.min(maxLimit, current + 1);
+        }
+      }
+
+      setSeaLevel(nextVal);
+    }, intervalMs);
+
+    return () => clearInterval(timer);
+  }, [isPlaying, playbackSpeed, rangeMode, isPrecision]);
+
+  // Global keyboard ergonomics: Esc to close modals/deselect, Arrow keys to nudge sea level, Space to Play/Pause
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Do not intercept if user is typing in a search or text input
       const target = e.target as HTMLElement | null;
       if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) {
+        return;
+      }
+
+      if (e.code === 'Space') {
+        e.preventDefault();
+        setIsPlaying((prev) => !prev);
         return;
       }
 
@@ -99,6 +145,7 @@ export function App() {
 
       if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
         e.preventDefault();
+        setIsPlaying(false);
         setSeaLevel((prev) => {
           if (rangeMode === 'extreme') {
             return Math.min(1000, Math.floor(prev / 50) * 50 + 50);
@@ -110,6 +157,7 @@ export function App() {
 
       if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
         e.preventDefault();
+        setIsPlaying(false);
         setSeaLevel((prev) => {
           if (rangeMode === 'extreme') {
             return Math.max(0, Math.ceil(prev / 50) * 50 - 50);
@@ -165,6 +213,7 @@ export function App() {
   };
 
   const handleSelectHotspot = (hotspot: Hotspot) => {
+    setIsPlaying(false);
     setSelectedCity(null);
     setSelectedLandmark(null);
     setTargetHotspot(hotspot);
@@ -285,13 +334,20 @@ export function App() {
       >
         <Controls
           seaLevel={seaLevel}
-          onSeaLevelChange={setSeaLevel}
+          onSeaLevelChange={(val) => {
+            setIsPlaying(false);
+            setSeaLevel(val);
+          }}
           onSelectHotspot={handleSelectHotspot}
           onDragStart={controlsDrag.handlePointerDown}
           rangeMode={rangeMode}
           onRangeModeChange={setRangeMode}
           isPrecision={isPrecision}
           onPrecisionChange={setIsPrecision}
+          isPlaying={isPlaying}
+          onTogglePlay={setIsPlaying}
+          playbackSpeed={playbackSpeed}
+          onPlaybackSpeedChange={setPlaybackSpeed}
         />
       </div>
 
@@ -348,6 +404,7 @@ export function App() {
             {/* Mode Toggle Button */}
             <button
               onClick={() => {
+                if (isPlaying) setIsPlaying(false);
                 if (rangeMode === 'coastal') {
                   setRangeMode('extreme');
                   const snapped = Math.round(seaLevel / 50) * 50;
@@ -369,6 +426,35 @@ export function App() {
           </div>
 
           <div className="flex items-center gap-1.5">
+            {/* Permanent Auto-Play / Pause Button on mobile */}
+            <button
+              onClick={() => {
+                const maxLimit = rangeMode === 'coastal' ? 100 : 1000;
+                if (!isPlaying && seaLevel >= maxLimit) {
+                  setSeaLevel(0);
+                }
+                setIsPlaying(!isPlaying);
+              }}
+              className={`flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded-lg border transition cursor-pointer shrink-0 shadow-md ${
+                isPlaying
+                  ? 'bg-amber-500 text-slate-950 border-amber-400 ring-2 ring-amber-400/40 animate-pulse'
+                  : 'bg-cyan-500 text-slate-950 border-cyan-400 hover:bg-cyan-400'
+              }`}
+              title={isPlaying ? "Pause simulation" : "Auto-Play sea level rise"}
+            >
+              {isPlaying ? (
+                <>
+                  <Pause className="w-3 h-3 fill-current" />
+                  <span>Pause</span>
+                </>
+              ) : (
+                <>
+                  <Play className="w-3 h-3 fill-current" />
+                  <span>Play</span>
+                </>
+              )}
+            </button>
+
             {/* Coastal Precision Switch: Default 1m step, optional 0.5m */}
             {rangeMode === 'coastal' ? (
               <button
@@ -392,7 +478,10 @@ export function App() {
             {/* Quick Reset to 0m Baseline */}
             {seaLevel > 0 && (
               <button
-                onClick={() => setSeaLevel(0)}
+                onClick={() => {
+                  if (isPlaying) setIsPlaying(false);
+                  setSeaLevel(0);
+                }}
                 className="p-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white transition cursor-pointer"
                 title="Reset to 0m baseline"
               >
@@ -411,6 +500,7 @@ export function App() {
             step={rangeMode === 'extreme' ? 50 : (isPrecision && seaLevel < 10 ? 0.5 : 1)}
             value={seaLevel}
             onChange={(e) => {
+              if (isPlaying) setIsPlaying(false);
               const val = parseFloat(e.target.value);
               if (isNaN(val) || val <= 0.05) {
                 setSeaLevel(0);
@@ -473,7 +563,10 @@ export function App() {
           <div className="w-full max-w-md">
             <Controls
               seaLevel={seaLevel}
-              onSeaLevelChange={setSeaLevel}
+              onSeaLevelChange={(val) => {
+                setIsPlaying(false);
+                setSeaLevel(val);
+              }}
               onSelectHotspot={(hotspot) => {
                 handleSelectHotspot(hotspot);
                 setIsMobileDrawerOpen(false);
@@ -482,6 +575,14 @@ export function App() {
               onRangeModeChange={setRangeMode}
               isPrecision={isPrecision}
               onPrecisionChange={setIsPrecision}
+              isPlaying={isPlaying}
+              onTogglePlay={setIsPlaying}
+              playbackSpeed={playbackSpeed}
+              onPlaybackSpeedChange={setPlaybackSpeed}
+              onAutoPlayStart={() => {
+                // Automatically hide/close the panel so the user can see the animated map rise immediately!
+                setIsMobileDrawerOpen(false);
+              }}
             />
           </div>
         )}
@@ -522,7 +623,7 @@ export function App() {
 
         {mobileTab === 'facts' && (
           <div className="w-full max-w-md flex justify-center">
-            <DidYouKnowCard seaLevel={seaLevel} />
+            <DidYouKnowCard seaLevel={seaLevel} forceExpanded={true} />
           </div>
         )}
       </MobileDrawer>
